@@ -12,7 +12,7 @@
 <div th:include="~{index.html :: navbar}"></div>
 
 <div class="container">
-    <form th:object="${articleId}" action="/createArticle" method="post" enctype="multipart/form-data">
+    <form th:object="${article}" action="/createArticle" method="post" enctype="multipart/form-data">
         <input placeholder="title" class="form-control" th:field="*{title}">
         <input placeholder="content" class="form-control" th:field="*{content}">
         <input placeholder="type" class="form-control" th:field="*{type}">

@@ -5,14 +5,13 @@ import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 @Secured("ROLE_ADMIN")
 @Controller
+@RequestMapping(value = "/admin")
 public class AdminController {
 
     @Autowired
@@ -30,6 +29,31 @@ public class AdminController {
         return "<i>success</i>";
     }
 
-    
+    @GetMapping("/edit/{id}")
+    public ModelAndView editArticle(@PathVariable String id){
+        Article articleById = articleDao.findArticleById(Long.parseLong(id));
+        if (articleById!=null) {
+            return new ModelAndView("editArticle", "article", articleById);
+        }
+        return new ModelAndView("redirect:/");
+    }
+
+    @PostMapping(value = "/edit/{id}")
+    public String updateArticlePost(@PathVariable String id, Article article, MultipartFile file){
+        if (article!=null){
+            try {
+                if (!file.getOriginalFilename().equals("")){
+                    article.setPathToFile(articleDao.saveFile(file));
+                }else{
+                    article.setPathToFile(articleDao.findArticleById(Long.parseLong(id)).getPathToFile());
+                }
+                articleDao.update(Long.parseLong(id), article);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        return "redirect:/admin";
+    }
 
 }

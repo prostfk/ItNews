@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class ArticleController {
@@ -40,6 +41,12 @@ public class ArticleController {
             commentDao.save(com);
         }
         return "redirect:/article/" + id;
+    }
+
+    @GetMapping(value = "/articles/{type}")
+    public ModelAndView searchByType(@PathVariable String type){
+        List<Article> articlesByType = articleDao.findArticlesByType(type);
+        return new ModelAndView("indexTest", "articles",articlesByType);
     }
 
 }

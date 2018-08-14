@@ -12,7 +12,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -49,7 +48,7 @@ public class IndexController {
 
     @GetMapping(value = "/")
     public ModelAndView getIndexPage(){
-        return new ModelAndView("indexTest", "articles",articleDao.findAll());
+        return new ModelAndView("indexTest", "articles",articleDao.findAllReversed());
     }
 
     @Secured("ROLE_USER")

@@ -53,9 +53,20 @@ public class ArticleDao extends Dao{
         }
     }
 
-    public List<Article> findAll(){
+    public List<Article> findArticlesByType(String type){
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult("SELECT * FROM article");
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE type='%s'", type));
+        try {
+            return articlesFromResultSet(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
+    }
+
+    public List<Article> findAllReversed(){
+        //language=SQL
+        ResultSet resultSet = executeQueryWithResult("SELECT * FROM article ORDER BY id DESC");
         try{
             return articlesFromResultSet(resultSet);
         }catch (SQLException e){
@@ -75,7 +86,12 @@ public class ArticleDao extends Dao{
         }
     }
 
-    private String saveFile(MultipartFile file) throws Exception {
+    public void update(Long id, Article article){
+        //language=SQL
+        executeQuery(String.format("UPDATE article SET title='%s', content='%s', type='%s', path='%s' WHERE id='%d'",article.getTitle(),article.getContent(),article.getType(),article.getPathToFile(),id));
+    }
+
+    public String saveFile(MultipartFile file) throws Exception {
         String filePath = "src/main/webapp/resources/pics/";
         File javaFile = new File(filePath + file.getOriginalFilename());
         try {
