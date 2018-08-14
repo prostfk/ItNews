@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>SPRING</ID>
+  <OriginalElement>mappedClass=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication</OriginalElement>
+  <nodes>
+    <node x="58.5" y="1736.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication</node>
+    <node x="522.5" y="1860.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController;bean_name=dataController</node>
+    <node x="521.0" y="1798.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController;bean_name=mainController</node>
+    <node x="523.0" y="1736.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController;bean_name=typeController</node>
+    <node x="523.0" y="1674.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController;bean_name=userController</node>
+    <node x="520.5" y="1612.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController;bean_name=offerController</node>
+    <node x="508.0" y="1550.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig</node>
+    <node x="816.5" y="1766.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration</node>
+    <node x="1217.5" y="1735.5416666666665">module=ItNews;bean_class=org.springframework.security.context.DelegatingApplicationListener;bean_name=delegatingApplicationListener</node>
+    <node x="1214.5" y="1859.5416666666665">module=ItNews;bean_class=org.springframework.security.access.expression.SecurityExpressionHandler;bean_name=webSecurityExpressionHandler</node>
+    <node x="1235.0" y="1797.5416666666665">module=ItNews;bean_class=javax.servlet.Filter;bean_name=springSecurityFilterChain</node>
+    <node x="1258.5" y="1673.5416666666665">module=ItNews;bean_class=org.springframework.security.web.access.WebInvocationPrivilegeEvaluator;bean_name=privilegeEvaluator</node>
+    <node x="1153.5" y="1921.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents;bean_name=autowiredWebSecurityConfigurersIgnoreParents</node>
+    <node x="1251.0" y="1611.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.ObjectPostProcessor;bean_name=objectPostProcessor</node>
+    <node x="804.0" y="1674.0">module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.SpringWebMvcImportSelector;bean_name=springWebMvcImportSelector</node>
+    <node x="845.0" y="1612.0">module=ItNews;bean_class=org.springframework.security.crypto.password.PasswordEncoder;bean_name=passwordEncoder</node>
+    <node x="807.5" y="1456.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration</node>
+    <node x="793.0" y="1115.5416666666665">module=ItNews;bean_class=org.springframework.web.accept.ContentNegotiationManager;bean_name=mvcContentNegotiationManager</node>
+    <node x="800.5" y="1550.0">module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;bean_name=authenticationManagerBuilder</node>
+    <node x="825.5" y="1282.8679350772563">module=ItNews;bean_class=org.springframework.web.context.WebApplicationContext;bean_name=webApplicationContext</node>
+    <node x="521.5" y="1922.0">module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebMvcConfig;bean_name=webMvcConfig</node>
+    <node x="1202.5" y="1549.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration;bean_name=objectPostProcessorConfiguration</node>
+    <node x="1151.0" y="1363.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.GlobalAuthenticationConfigurerAdapter;bean_name=enableGlobalAuthenticationAutowiredConfigurer</node>
+    <node x="1168.0" y="1487.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer;bean_name=initializeUserDetailsBeanManagerConfigurer</node>
+    <node x="1126.0" y="1425.5416666666665">module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer;bean_name=initializeAuthenticationProviderBeanManagerConfigurer</node>
+    <node x="7.0" y="966.4999999999999">module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration</node>
+    <node x="792.0" y="805.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;bean_name=requestMappingHandlerMapping</node>
+    <node x="514.5" y="1240.0">module=ItNews;bean_class=org.springframework.util.PathMatcher;bean_name=mvcPathMatcher</node>
+    <node x="510.0" y="433.9999999999999">module=ItNews;bean_class=org.springframework.web.util.UrlPathHelper;bean_name=mvcUrlPathHelper</node>
+    <node x="464.0" y="1302.0">module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=viewControllerHandlerMapping</node>
+    <node x="478.0" y="557.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;bean_name=beanNameHandlerMapping</node>
+    <node x="485.0" y="681.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=resourceHandlerMapping</node>
+    <node x="488.0" y="1178.0">module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceUrlProvider;bean_name=mvcResourceUrlProvider</node>
+    <node x="466.0" y="1116.0">module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=defaultServletHandlerMapping</node>
+    <node x="794.5" y="681.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;bean_name=requestMappingHandlerAdapter</node>
+    <node x="829.5" y="887.4897657450075">module=ItNews;bean_class=org.springframework.format.support.FormattingConversionService;bean_name=mvcConversionService</node>
+    <node x="861.0" y="743.9999999999999">module=ItNews;bean_class=org.springframework.validation.Validator;bean_name=mvcValidator</node>
+    <node x="464.0" y="371.9999999999999">module=ItNews;bean_class=org.springframework.web.method.support.CompositeUriComponentsContributor;bean_name=mvcUriComponentsContributor</node>
+    <node x="474.5" y="619.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter;bean_name=httpRequestHandlerAdapter</node>
+    <node x="460.0" y="929.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter;bean_name=simpleControllerHandlerAdapter</node>
+    <node x="482.5" y="743.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.HandlerExceptionResolver;bean_name=handlerExceptionResolver</node>
+    <node x="512.5" y="1054.0">module=ItNews;bean_class=org.springframework.web.servlet.ViewResolver;bean_name=mvcViewResolver</node>
+    <node x="458.0" y="1426.0">module=ItNews;bean_class=org.springframework.web.servlet.handler.HandlerMappingIntrospector;bean_name=mvcHandlerMappingIntrospector</node>
+    <node x="2347.0" y="2273.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;bean_name=messageSourceAutoConfiguration</node>
+    <node x="2689.0" y="2242.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.MessageSourceProperties;bean_name=messageSourceProperties</node>
+    <node x="2725.0" y="2304.0">module=ItNews;bean_class=org.springframework.context.MessageSource;bean_name=messageSource</node>
+    <node x="3296.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.context.properties.EnableConfigurationPropertiesImportSelector;bean_name=enableConfigurationPropertiesImportSelector</node>
+    <node x="0.0" y="2531.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration;bean_name=propertyPlaceholderAutoConfiguration</node>
+    <node x="376.0" y="2531.0">module=ItNews;bean_class=org.springframework.context.support.PropertySourcesPlaceholderConfigurer;bean_name=propertySourcesPlaceholderConfigurer</node>
+    <node x="975.0" y="3134.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration;bean_name=webSocketServletAutoConfiguration</node>
+    <node x="1892.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration;bean_name=tomcatWebSocketConfiguration</node>
+    <node x="2219.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.websocket.servlet.TomcatWebSocketServletWebServerCustomizer;bean_name=websocketContainerCustomizer</node>
+    <node x="0.0" y="2082.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration;bean_name=servletWebServerFactoryAutoConfiguration</node>
+    <node x="457.0" y="1989.0000000000002">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration.BeanPostProcessorsRegistrar;bean_name=beanPostProcessorsRegistrar</node>
+    <node x="496.5" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration.EmbeddedTomcat;bean_name=embeddedTomcat</node>
+    <node x="813.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;bean_name=tomcatServletWebServerFactory</node>
+    <node x="433.0" y="2113.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer;bean_name=servletWebServerFactoryCustomizer</node>
+    <node x="408.0" y="2175.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.TomcatServletWebServerFactoryCustomizer;bean_name=tomcatServletWebServerFactoryCustomizer</node>
+    <node x="2353.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.ServerProperties;bean_name=server-org.springframework.boot.autoconfigure.web.ServerProperties</node>
+    <node x="1942.0" y="3134.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration;bean_name=dispatcherServletAutoConfiguration</node>
+    <node x="0.0" y="2304.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration;bean_name=dispatcherServletRegistrationConfiguration</node>
+    <node x="407.0" y="2273.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletConfiguration;bean_name=dispatcherServletConfiguration</node>
+    <node x="730.5" y="2242.0">module=ItNews;bean_class=org.springframework.web.servlet.DispatcherServlet;bean_name=dispatcherServlet</node>
+    <node x="729.0" y="2304.0">module=ItNews;bean_class=org.springframework.web.multipart.MultipartResolver;bean_name=multipartResolver</node>
+    <node x="413.0" y="2335.0">module=ItNews;bean_class=org.springframework.boot.web.servlet.ServletRegistrationBean;bean_name=dispatcherServletRegistration</node>
+    <node x="0.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties;bean_name=spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties</node>
+    <node x="1817.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration;bean_name=validationAutoConfiguration</node>
+    <node x="2121.0" y="1989.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.PrimaryDefaultValidatorPostProcessor;bean_name=primaryDefaultValidatorPostProcessor</node>
+    <node x="2198.0" y="2051.0">module=ItNews;bean_class=org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;bean_name=defaultValidator</node>
+    <node x="2143.0" y="2113.0">module=ItNews;bean_class=org.springframework.validation.beanvalidation.MethodValidationPostProcessor;bean_name=methodValidationPostProcessor</node>
+    <node x="0.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.PositiveOrZeroValidatorForMonetaryAmount;bean_name=positiveOrZeroValidatorForMonetaryAmount</node>
+    <node x="2465.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.MinValidatorForMonetaryAmount;bean_name=minValidatorForMonetaryAmount</node>
+    <node x="1818.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.DecimalMinValidatorForMonetaryAmount;bean_name=decimalMinValidatorForMonetaryAmount</node>
+    <node x="3077.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.NegativeValidatorForMonetaryAmount;bean_name=negativeValidatorForMonetaryAmount</node>
+    <node x="2908.0" y="2799.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.NegativeOrZeroValidatorForMonetaryAmount;bean_name=negativeOrZeroValidatorForMonetaryAmount</node>
+    <node x="1099.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.DecimalMaxValidatorForMonetaryAmount;bean_name=decimalMaxValidatorForMonetaryAmount</node>
+    <node x="3415.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.CurrencyValidatorForMonetaryAmount;bean_name=currencyValidatorForMonetaryAmount</node>
+    <node x="1675.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.PositiveValidatorForMonetaryAmount;bean_name=positiveValidatorForMonetaryAmount</node>
+    <node x="1547.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.money.MaxValidatorForMonetaryAmount;bean_name=maxValidatorForMonetaryAmount</node>
+    <node x="1541.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForShort;bean_name=negativeValidatorForShort</node>
+    <node x="1298.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForNumber;bean_name=negativeOrZeroValidatorForNumber</node>
+    <node x="2769.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForShort;bean_name=negativeOrZeroValidatorForShort</node>
+    <node x="2525.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForInteger;bean_name=positiveOrZeroValidatorForInteger</node>
+    <node x="2694.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForLong;bean_name=positiveOrZeroValidatorForLong</node>
+    <node x="536.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForDouble;bean_name=negativeValidatorForDouble</node>
+    <node x="952.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForDouble;bean_name=negativeOrZeroValidatorForDouble</node>
+    <node x="2399.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForBigInteger;bean_name=negativeOrZeroValidatorForBigInteger</node>
+    <node x="2387.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForDouble;bean_name=positiveValidatorForDouble</node>
+    <node x="346.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForBigDecimal;bean_name=negativeOrZeroValidatorForBigDecimal</node>
+    <node x="802.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForInteger;bean_name=negativeValidatorForInteger</node>
+    <node x="2301.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForFloat;bean_name=negativeValidatorForFloat</node>
+    <node x="2738.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForBigDecimal;bean_name=positiveOrZeroValidatorForBigDecimal</node>
+    <node x="0.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForByte;bean_name=negativeValidatorForByte</node>
+    <node x="1762.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForByte;bean_name=positiveOrZeroValidatorForByte</node>
+    <node x="741.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForLong;bean_name=positiveValidatorForLong</node>
+    <node x="269.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForNumber;bean_name=positiveValidatorForNumber</node>
+    <node x="2836.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForDouble;bean_name=positiveOrZeroValidatorForDouble</node>
+    <node x="302.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForLong;bean_name=negativeOrZeroValidatorForLong</node>
+    <node x="2990.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForFloat;bean_name=positiveOrZeroValidatorForFloat</node>
+    <node x="3305.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForShort;bean_name=positiveValidatorForShort</node>
+    <node x="1268.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForInteger;bean_name=negativeOrZeroValidatorForInteger</node>
+    <node x="2552.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForLong;bean_name=negativeValidatorForLong</node>
+    <node x="1007.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForBigInteger;bean_name=positiveOrZeroValidatorForBigInteger</node>
+    <node x="2100.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForByte;bean_name=negativeOrZeroValidatorForByte</node>
+    <node x="1649.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForNumber;bean_name=negativeValidatorForNumber</node>
+    <node x="2635.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForBigDecimal;bean_name=positiveValidatorForBigDecimal</node>
+    <node x="2924.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForBigInteger;bean_name=negativeValidatorForBigInteger</node>
+    <node x="987.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForFloat;bean_name=positiveValidatorForFloat</node>
+    <node x="2648.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForInteger;bean_name=positiveValidatorForInteger</node>
+    <node x="3365.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.AbstractEmailValidator;bean_name=abstractEmailValidator</node>
+    <node x="603.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeOrZeroValidatorForFloat;bean_name=negativeOrZeroValidatorForFloat</node>
+    <node x="318.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForNumber;bean_name=positiveOrZeroValidatorForNumber</node>
+    <node x="613.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.NotBlankValidator;bean_name=notBlankValidator</node>
+    <node x="0.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.NegativeValidatorForBigDecimal;bean_name=negativeValidatorForBigDecimal</node>
+    <node x="3037.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;bean_name=emailValidator</node>
+    <node x="1478.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForByte;bean_name=positiveValidatorForByte</node>
+    <node x="2008.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.DecimalMinValidatorForCharSequence;bean_name=decimalMinValidatorForCharSequence</node>
+    <node x="1776.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.PatternValidator;bean_name=patternValidator</node>
+    <node x="1147.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveValidatorForBigInteger;bean_name=positiveValidatorForBigInteger</node>
+    <node x="1961.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator;bean_name=notNullValidator</node>
+    <node x="1205.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.sign.PositiveOrZeroValidatorForShort;bean_name=positiveOrZeroValidatorForShort</node>
+    <node x="2280.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.MinValidatorForCharSequence;bean_name=minValidatorForCharSequence</node>
+    <node x="1961.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForNumber;bean_name=minValidatorForNumber</node>
+    <node x="2836.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.AssertFalseValidator;bean_name=assertFalseValidator</node>
+    <node x="1715.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.MaxValidatorForCharSequence;bean_name=maxValidatorForCharSequence</node>
+    <node x="0.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.DecimalMaxValidatorForCharSequence;bean_name=decimalMaxValidatorForCharSequence</node>
+    <node x="1598.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForBigDecimal;bean_name=maxValidatorForBigDecimal</node>
+    <node x="1176.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForCharSequence;bean_name=digitsValidatorForCharSequence</node>
+    <node x="442.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForLong;bean_name=maxValidatorForLong</node>
+    <node x="2803.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.DigitsValidatorForNumber;bean_name=digitsValidatorForNumber</node>
+    <node x="485.0" y="3938.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.NullValidator;bean_name=nullValidator</node>
+    <node x="2902.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForDouble;bean_name=minValidatorForDouble</node>
+    <node x="776.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForBigInteger;bean_name=minValidatorForBigInteger</node>
+    <node x="1720.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForNumber;bean_name=maxValidatorForNumber</node>
+    <node x="2199.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForDouble;bean_name=maxValidatorForDouble</node>
+    <node x="0.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForBigDecimal;bean_name=minValidatorForBigDecimal</node>
+    <node x="3462.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.AssertTrueValidator;bean_name=assertTrueValidator</node>
+    <node x="662.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForFloat;bean_name=maxValidatorForFloat</node>
+    <node x="260.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForBigInteger;bean_name=maxValidatorForBigInteger</node>
+    <node x="553.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfByte;bean_name=sizeValidatorForArraysOfByte</node>
+    <node x="2624.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForMap;bean_name=sizeValidatorForMap</node>
+    <node x="1757.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForLong;bean_name=minValidatorForLong</node>
+    <node x="1974.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForFloat;bean_name=minValidatorForFloat</node>
+    <node x="882.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArray;bean_name=sizeValidatorForArray</node>
+    <node x="2560.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForCharSequence;bean_name=sizeValidatorForCharSequence</node>
+    <node x="931.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForBigInteger;bean_name=decimalMinValidatorForBigInteger</node>
+    <node x="2054.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForNumber;bean_name=decimalMinValidatorForNumber</node>
+    <node x="904.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfBoolean;bean_name=sizeValidatorForArraysOfBoolean</node>
+    <node x="1998.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfShort;bean_name=sizeValidatorForArraysOfShort</node>
+    <node x="1900.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForBigDecimal;bean_name=decimalMinValidatorForBigDecimal</node>
+    <node x="3054.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForCollection;bean_name=sizeValidatorForCollection</node>
+    <node x="862.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForDouble;bean_name=decimalMinValidatorForDouble</node>
+    <node x="277.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfChar;bean_name=sizeValidatorForArraysOfChar</node>
+    <node x="3147.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForBigInteger;bean_name=decimalMaxValidatorForBigInteger</node>
+    <node x="2840.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfFloat;bean_name=sizeValidatorForArraysOfFloat</node>
+    <node x="3502.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForDouble;bean_name=decimalMaxValidatorForDouble</node>
+    <node x="2465.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForFloat;bean_name=decimalMinValidatorForFloat</node>
+    <node x="294.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfDouble;bean_name=sizeValidatorForArraysOfDouble</node>
+    <node x="2735.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMinValidatorForLong;bean_name=decimalMinValidatorForLong</node>
+    <node x="3119.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfLong;bean_name=sizeValidatorForArraysOfLong</node>
+    <node x="1861.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.size.SizeValidatorForArraysOfInt;bean_name=sizeValidatorForArraysOfInt</node>
+    <node x="1103.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForFloat;bean_name=decimalMaxValidatorForFloat</node>
+    <node x="1584.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForBigDecimal;bean_name=decimalMaxValidatorForBigDecimal</node>
+    <node x="588.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForNumber;bean_name=decimalMaxValidatorForNumber</node>
+    <node x="1376.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.number.bound.decimal.DecimalMaxValidatorForLong;bean_name=decimalMaxValidatorForLong</node>
+    <node x="3046.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.constraintvalidators.RegexpURLValidator;bean_name=regexpURLValidator</node>
+    <node x="3225.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfChar;bean_name=notEmptyValidatorForArraysOfChar</node>
+    <node x="1031.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForLocalDate;bean_name=pastValidatorForLocalDate</node>
+    <node x="2263.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfFloat;bean_name=notEmptyValidatorForArraysOfFloat</node>
+    <node x="1620.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence;bean_name=notEmptyValidatorForCharSequence</node>
+    <node x="2584.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfLong;bean_name=notEmptyValidatorForArraysOfLong</node>
+    <node x="0.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForLocalDateTime;bean_name=pastValidatorForLocalDateTime</node>
+    <node x="1469.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCollection;bean_name=notEmptyValidatorForCollection</node>
+    <node x="651.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfShort;bean_name=notEmptyValidatorForArraysOfShort</node>
+    <node x="1431.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForJapaneseDate;bean_name=pastValidatorForJapaneseDate</node>
+    <node x="2160.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfInt;bean_name=notEmptyValidatorForArraysOfInt</node>
+    <node x="690.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfBoolean;bean_name=notEmptyValidatorForArraysOfBoolean</node>
+    <node x="2909.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArray;bean_name=notEmptyValidatorForArray</node>
+    <node x="1504.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForReadableInstant;bean_name=pastValidatorForReadableInstant</node>
+    <node x="247.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForCalendar;bean_name=pastValidatorForCalendar</node>
+    <node x="336.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfDouble;bean_name=notEmptyValidatorForArraysOfDouble</node>
+    <node x="3458.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForThaiBuddhistDate;bean_name=pastValidatorForThaiBuddhistDate</node>
+    <node x="1795.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForMap;bean_name=notEmptyValidatorForMap</node>
+    <node x="2124.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForYearMonth;bean_name=pastValidatorForYearMonth</node>
+    <node x="635.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForArraysOfByte;bean_name=notEmptyValidatorForArraysOfByte</node>
+    <node x="3170.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForHijrahDate;bean_name=pastValidatorForHijrahDate</node>
+    <node x="1101.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForDate;bean_name=pastValidatorForDate</node>
+    <node x="2191.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForYear;bean_name=pastValidatorForYear</node>
+    <node x="882.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForReadablePartial;bean_name=pastValidatorForReadablePartial</node>
+    <node x="1334.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForOffsetTime;bean_name=pastValidatorForOffsetTime</node>
+    <node x="518.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForMonthDay;bean_name=pastValidatorForMonthDay</node>
+    <node x="1286.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForLocalTime;bean_name=pastValidatorForLocalTime</node>
+    <node x="1921.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForMinguoDate;bean_name=pastValidatorForMinguoDate</node>
+    <node x="2397.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForOffsetDateTime;bean_name=pastValidatorForOffsetDateTime</node>
+    <node x="3286.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForZonedDateTime;bean_name=pastValidatorForZonedDateTime</node>
+    <node x="2434.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.past.PastValidatorForInstant;bean_name=pastValidatorForInstant</node>
+    <node x="326.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForThaiBuddhistDate;bean_name=futureValidatorForThaiBuddhistDate</node>
+    <node x="3377.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForLocalDateTime;bean_name=futureValidatorForLocalDateTime</node>
+    <node x="3431.0" y="3603.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForCalendar;bean_name=futureValidatorForCalendar</node>
+    <node x="311.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForZonedDateTime;bean_name=futureValidatorForZonedDateTime</node>
+    <node x="2193.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForMonthDay;bean_name=futureValidatorForMonthDay</node>
+    <node x="3398.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForOffsetTime;bean_name=futureValidatorForOffsetTime</node>
+    <node x="0.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForOffsetDateTime;bean_name=futureValidatorForOffsetDateTime</node>
+    <node x="3207.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.EmailValidator;bean_name=emailValidator</node>
+    <node x="1802.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForJapaneseDate;bean_name=futureValidatorForJapaneseDate</node>
+    <node x="3005.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForLocalTime;bean_name=futureValidatorForLocalTime</node>
+    <node x="0.0" y="3938.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.EANValidator;bean_name=EANValidator</node>
+    <node x="2213.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForReadableInstant;bean_name=futureValidatorForReadableInstant</node>
+    <node x="576.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForMinguoDate;bean_name=futureValidatorForMinguoDate</node>
+    <node x="0.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForYearMonth;bean_name=futureValidatorForYearMonth</node>
+    <node x="3274.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForLocalDate;bean_name=futureValidatorForLocalDate</node>
+    <node x="2408.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.ScriptAssertValidator;bean_name=scriptAssertValidator</node>
+    <node x="3554.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForInstant;bean_name=futureValidatorForInstant</node>
+    <node x="325.0" y="3938.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.URLValidator;bean_name=URLValidator</node>
+    <node x="828.0" y="3536.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForHijrahDate;bean_name=futureValidatorForHijrahDate</node>
+    <node x="1239.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForReadablePartial;bean_name=futureValidatorForReadablePartial</node>
+    <node x="809.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.SafeHtmlValidator;bean_name=safeHtmlValidator</node>
+    <node x="2669.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForDate;bean_name=futureValidatorForDate</node>
+    <node x="3134.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.future.FutureValidatorForYear;bean_name=futureValidatorForYear</node>
+    <node x="0.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.Mod11CheckValidator;bean_name=mod11CheckValidator</node>
+    <node x="221.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.Mod10CheckValidator;bean_name=mod10CheckValidator</node>
+    <node x="0.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.LuhnCheckValidator;bean_name=luhnCheckValidator</node>
+    <node x="1005.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.NotBlankValidator;bean_name=notBlankValidator</node>
+    <node x="3213.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.ParameterScriptAssertValidator;bean_name=parameterScriptAssertValidator</node>
+    <node x="0.0" y="3201.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForCalendar;bean_name=pastOrPresentValidatorForCalendar</node>
+    <node x="2049.0" y="3670.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.CodePointLengthValidator;bean_name=codePointLengthValidator</node>
+    <node x="1341.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForYearMonth;bean_name=pastOrPresentValidatorForYearMonth</node>
+    <node x="3334.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForLocalDate;bean_name=pastOrPresentValidatorForLocalDate</node>
+    <node x="1233.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.UniqueElementsValidator;bean_name=uniqueElementsValidator</node>
+    <node x="2512.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.LengthValidator;bean_name=lengthValidator</node>
+    <node x="2663.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForReadableInstant;bean_name=pastOrPresentValidatorForReadableInstant</node>
+    <node x="3005.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForMonthDay;bean_name=pastOrPresentValidatorForMonthDay</node>
+    <node x="205.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.ModCheckValidator;bean_name=modCheckValidator</node>
+    <node x="2341.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForHijrahDate;bean_name=pastOrPresentValidatorForHijrahDate</node>
+    <node x="0.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForLocalTime;bean_name=pastOrPresentValidatorForLocalTime</node>
+    <node x="3401.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForOffsetDateTime;bean_name=pastOrPresentValidatorForOffsetDateTime</node>
+    <node x="3547.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.ISBNValidator;bean_name=ISBNValidator</node>
+    <node x="672.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForOffsetTime;bean_name=pastOrPresentValidatorForOffsetTime</node>
+    <node x="3377.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.br.CNPJValidator;bean_name=CNPJValidator</node>
+    <node x="644.0" y="3938.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.br.CPFValidator;bean_name=CPFValidator</node>
+    <node x="961.0" y="3938.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.pl.NIPValidator;bean_name=NIPValidator</node>
+    <node x="2146.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.pl.REGONValidator;bean_name=REGONValidator</node>
+    <node x="0.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForZonedDateTime;bean_name=pastOrPresentValidatorForZonedDateTime</node>
+    <node x="766.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForThaiBuddhistDate;bean_name=pastOrPresentValidatorForThaiBuddhistDate</node>
+    <node x="2690.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.pl.PESELValidator;bean_name=PESELValidator</node>
+    <node x="734.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForReadablePartial;bean_name=pastOrPresentValidatorForReadablePartial</node>
+    <node x="2330.0" y="3871.0">module=ItNews;bean_class=org.hibernate.validator.internal.engine.constraintvalidation.LambdaBasedValidatorDescriptor.LambdaExecutor;bean_name=lambdaExecutor</node>
+    <node x="1854.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForInstant;bean_name=pastOrPresentValidatorForInstant</node>
+    <node x="2345.0" y="3402.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForDate;bean_name=pastOrPresentValidatorForDate</node>
+    <node x="2532.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForJapaneseDate;bean_name=pastOrPresentValidatorForJapaneseDate</node>
+    <node x="1459.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForLocalDateTime;bean_name=pastOrPresentValidatorForLocalDateTime</node>
+    <node x="1033.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForMinguoDate;bean_name=pastOrPresentValidatorForMinguoDate</node>
+    <node x="288.0" y="3469.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.pastorpresent.PastOrPresentValidatorForYear;bean_name=pastOrPresentValidatorForYear</node>
+    <node x="3593.0" y="3737.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.time.DurationMaxValidator;bean_name=durationMaxValidator</node>
+    <node x="383.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForReadableInstant;bean_name=futureOrPresentValidatorForReadableInstant</node>
+    <node x="2905.0" y="3134.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForInstant;bean_name=futureOrPresentValidatorForInstant</node>
+    <node x="1320.0" y="3804.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.hv.time.DurationMinValidator;bean_name=durationMinValidator</node>
+    <node x="1719.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForLocalTime;bean_name=futureOrPresentValidatorForLocalTime</node>
+    <node x="3032.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForJapaneseDate;bean_name=futureOrPresentValidatorForJapaneseDate</node>
+    <node x="0.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForHijrahDate;bean_name=futureOrPresentValidatorForHijrahDate</node>
+    <node x="1530.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForZonedDateTime;bean_name=futureOrPresentValidatorForZonedDateTime</node>
+    <node x="2290.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForLocalDateTime;bean_name=futureOrPresentValidatorForLocalDateTime</node>
+    <node x="2673.0" y="3067.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForCalendar;bean_name=futureOrPresentValidatorForCalendar</node>
+    <node x="1376.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForMonthDay;bean_name=futureOrPresentValidatorForMonthDay</node>
+    <node x="2887.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForOffsetTime;bean_name=futureOrPresentValidatorForOffsetTime</node>
+    <node x="2512.0" y="2799.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForThaiBuddhistDate;bean_name=futureOrPresentValidatorForThaiBuddhistDate</node>
+    <node x="1148.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForOffsetDateTime;bean_name=futureOrPresentValidatorForOffsetDateTime</node>
+    <node x="1911.0" y="2866.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForReadablePartial;bean_name=futureOrPresentValidatorForReadablePartial</node>
+    <node x="2059.0" y="3000.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForLocalDate;bean_name=futureOrPresentValidatorForLocalDate</node>
+    <node x="2175.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForMinguoDate;bean_name=futureOrPresentValidatorForMinguoDate</node>
+    <node x="3236.0" y="2933.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForYearMonth;bean_name=futureOrPresentValidatorForYearMonth</node>
+    <node x="3073.0" y="3268.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForDate;bean_name=futureOrPresentValidatorForDate</node>
+    <node x="0.0" y="3335.0">module=ItNews;bean_class=org.hibernate.validator.internal.constraintvalidators.bv.time.futureorpresent.FutureOrPresentValidatorForYear;bean_name=futureOrPresentValidatorForYear</node>
+    <node x="1105.0" y="2082.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration</node>
+    <node x="1522.5" y="1989.0">module=ItNews;bean_class=org.springframework.boot.web.servlet.error.DefaultErrorAttributes;bean_name=errorAttributes</node>
+    <node x="1505.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;bean_name=basicErrorController</node>
+    <node x="1502.0" y="2113.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.ErrorPageCustomizer;bean_name=errorPageCustomizer</node>
+    <node x="1403.0" y="2175.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.PreserveErrorControllerTargetClassPostProcessor;bean_name=preserveErrorControllerTargetClassPostProcessor</node>
+    <node x="2613.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.ResourceProperties;bean_name=spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties</node>
+    <node x="656.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration;bean_name=defaultErrorViewResolverConfiguration</node>
+    <node x="1036.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.DefaultErrorViewResolver;bean_name=conventionErrorViewResolver</node>
+    <node x="2937.0" y="2273.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;bean_name=webMvcAutoConfiguration</node>
+    <node x="3235.0" y="2242.0">module=ItNews;bean_class=org.springframework.boot.web.servlet.filter.OrderedHiddenHttpMethodFilter;bean_name=hiddenHttpMethodFilter</node>
+    <node x="3229.0" y="2304.0">module=ItNews;bean_class=org.springframework.boot.web.servlet.filter.OrderedHttpPutFormContentFilter;bean_name=httpPutFormContentFilter</node>
+    <node x="472.0" y="805.9999999999999">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration</node>
+    <node x="0.0" y="185.9999999999999">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter</node>
+    <node x="501.5" y="185.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.view.InternalResourceViewResolver;bean_name=defaultViewResolver</node>
+    <node x="489.5" y="0.0">module=ItNews;bean_class=org.springframework.web.servlet.view.BeanNameViewResolver;bean_name=beanNameViewResolver</node>
+    <node x="527.5" y="247.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.view.ContentNegotiatingViewResolver;bean_name=viewResolver</node>
+    <node x="523.5" y="309.9999999999999">module=ItNews;bean_class=org.springframework.web.servlet.LocaleResolver;bean_name=localeResolver</node>
+    <node x="467.5" y="62.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping;bean_name=welcomePageHandlerMapping</node>
+    <node x="501.0" y="124.0">module=ItNews;bean_class=org.springframework.web.filter.RequestContextFilter;bean_name=requestContextFilter</node>
+    <node x="537.0" y="2433.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration;bean_name=faviconConfiguration</node>
+    <node x="789.0" y="2402.0">module=ItNews;bean_class=org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;bean_name=faviconHandlerMapping</node>
+    <node x="791.5" y="2464.0">module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;bean_name=faviconRequestHandler</node>
+    <node x="3077.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration;bean_name=jmxAutoConfiguration</node>
+    <node x="3360.5" y="1989.0">module=ItNews;bean_class=org.springframework.jmx.export.annotation.AnnotationMBeanExporter;bean_name=mbeanExporter</node>
+    <node x="3337.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.ParentAwareNamingStrategy;bean_name=objectNamingStrategy</node>
+    <node x="3369.0" y="2113.0">module=ItNews;bean_class=javax.management.MBeanServer;bean_name=mbeanServer</node>
+    <node x="1587.0" y="93.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration</node>
+    <node x="1908.0" y="0.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheConfigurationImportSelector;bean_name=cacheConfigurationImportSelector</node>
+    <node x="1935.0" y="62.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers;bean_name=cacheManagerCustomizers</node>
+    <node x="1861.0" y="124.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidatorPostProcessor;bean_name=cacheAutoConfigurationValidatorPostProcessor</node>
+    <node x="1910.5" y="186.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidator;bean_name=cacheAutoConfigurationValidator</node>
+    <node x="2298.0" y="186.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheProperties;bean_name=spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties</node>
+    <node x="367.0" y="2933.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration;bean_name=configurationPropertiesAutoConfiguration</node>
+    <node x="536.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;bean_name=jacksonAutoConfiguration</node>
+    <node x="823.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.jackson.JsonComponentModule;bean_name=jsonComponentModule</node>
+    <node x="1513.0" y="2402.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration;bean_name=jackson2ObjectMapperBuilderCustomizerConfiguration</node>
+    <node x="2001.0" y="2402.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer;bean_name=standardJacksonObjectMapperBuilderCustomizer</node>
+    <node x="1964.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonProperties;bean_name=spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties</node>
+    <node x="2801.0" y="2531.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration;bean_name=jacksonObjectMapperBuilderConfiguration</node>
+    <node x="3203.0" y="2531.0">module=ItNews;bean_class=org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;bean_name=jacksonObjectMapperBuilder</node>
+    <node x="3124.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.ParameterNamesModuleConfiguration;bean_name=parameterNamesModuleConfiguration</node>
+    <node x="3496.0" y="2665.0">module=ItNews;bean_class=com.fasterxml.jackson.module.paramnames.ParameterNamesModule;bean_name=parameterNamesModule</node>
+    <node x="1781.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperConfiguration;bean_name=jacksonObjectMapperConfiguration</node>
+    <node x="2133.0" y="2732.0">module=ItNews;bean_class=com.fasterxml.jackson.databind.ObjectMapper;bean_name=jacksonObjectMapper</node>
+    <node x="922.0" y="2273.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;bean_name=httpMessageConvertersAutoConfiguration</node>
+    <node x="1323.0" y="2242.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration;bean_name=jacksonHttpMessageConvertersConfiguration</node>
+    <node x="1413.5" y="2304.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConverters;bean_name=messageConverters</node>
+    <node x="2127.0" y="2531.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration;bean_name=stringHttpMessageConverterConfiguration</node>
+    <node x="2530.0" y="2531.0">module=ItNews;bean_class=org.springframework.http.converter.StringHttpMessageConverter;bean_name=stringHttpMessageConverter</node>
+    <node x="715.0" y="2531.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpEncodingProperties;bean_name=spring.http.encoding-org.springframework.boot.autoconfigure.http.HttpEncodingProperties</node>
+    <node x="494.0" y="3737.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration;bean_name=codecsAutoConfiguration</node>
+    <node x="2910.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration.JacksonCodecConfiguration;bean_name=jacksonCodecConfiguration</node>
+    <node x="3205.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.web.codec.CodecCustomizer;bean_name=jacksonCodecCustomizer</node>
+    <node x="1025.0" y="2433.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration;bean_name=projectInfoAutoConfiguration</node>
+    <node x="1345.0" y="2402.0">module=ItNews;bean_class=org.springframework.boot.info.GitProperties;bean_name=gitProperties</node>
+    <node x="1337.0" y="2464.0">module=ItNews;bean_class=org.springframework.boot.info.BuildProperties;bean_name=buildProperties</node>
+    <node x="1270.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.info.ProjectInfoProperties;bean_name=spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties</node>
+    <node x="621.0" y="3268.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration;bean_name=reactiveSecurityAutoConfiguration</node>
+    <node x="1312.0" y="2598.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.SecurityProperties;bean_name=spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties</node>
+    <node x="2458.0" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;bean_name=securityAutoConfiguration</node>
+    <node x="2747.0" y="1989.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration;bean_name=springBootWebSecurityConfiguration</node>
+    <node x="2760.5" y="2051.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration;bean_name=webSecurityEnablerConfiguration</node>
+    <node x="2774.0" y="2113.0">module=ItNews;bean_class=org.springframework.security.authentication.DefaultAuthenticationEventPublisher;bean_name=authenticationEventPublisher</node>
+    <node x="0.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration;bean_name=securityFilterAutoConfiguration</node>
+    <node x="325.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean;bean_name=securityFilterChainRegistration</node>
+    <node x="0.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;bean_name=userDetailsServiceAutoConfiguration</node>
+    <node x="362.0" y="2665.0">module=ItNews;bean_class=org.springframework.security.provisioning.InMemoryUserDetailsManager;bean_name=inMemoryUserDetailsManager</node>
+    <node x="3543.0" y="3536.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration;bean_name=thymeleafAutoConfiguration</node>
+    <node x="1429.0" y="2531.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties;bean_name=spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties</node>
+    <node x="1555.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafJava8TimeDialect;bean_name=thymeleafJava8TimeDialect</node>
+    <node x="1849.0" y="2799.0">module=ItNews;bean_class=org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;bean_name=java8TimeDialect</node>
+    <node x="1202.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration;bean_name=thymeleafWebMvcConfiguration</node>
+    <node x="1531.0" y="2732.0">module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceUrlEncodingFilter;bean_name=resourceUrlEncodingFilter</node>
+    <node x="608.0" y="2732.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration.ThymeleafViewResolverConfiguration;bean_name=thymeleafViewResolverConfiguration</node>
+    <node x="971.0" y="2732.0">module=ItNews;bean_class=org.thymeleaf.spring5.view.ThymeleafViewResolver;bean_name=thymeleafViewResolver</node>
+    <node x="1054.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafDefaultConfiguration;bean_name=thymeleafDefaultConfiguration</node>
+    <node x="1376.0" y="2799.0">module=ItNews;bean_class=org.thymeleaf.spring5.SpringTemplateEngine;bean_name=templateEngine</node>
+    <node x="2508.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.DefaultTemplateResolverConfiguration;bean_name=defaultTemplateResolverConfiguration</node>
+    <node x="2882.0" y="2665.0">module=ItNews;bean_class=org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;bean_name=defaultTemplateResolver</node>
+    <node x="1539.0" y="3804.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration;bean_name=jtaAutoConfiguration</node>
+    <node x="640.0" y="2665.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.transaction.jta.JtaProperties;bean_name=spring.jta-org.springframework.boot.autoconfigure.transaction.jta.JtaProperties</node>
+    <node x="0.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration;bean_name=restTemplateAutoConfiguration</node>
+    <node x="326.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.web.client.RestTemplateBuilder;bean_name=restTemplateBuilder</node>
+    <node x="2035.0" y="2799.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration;bean_name=embeddedWebServerFactoryCustomizerAutoConfiguration</node>
+    <node x="1709.0" y="2273.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration;bean_name=httpEncodingAutoConfiguration</node>
+    <node x="2075.5" y="2242.0">module=ItNews;bean_class=org.springframework.web.filter.CharacterEncodingFilter;bean_name=characterEncodingFilter</node>
+    <node x="2039.0" y="2304.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration.LocaleCharsetMappingsCustomizer;bean_name=localeCharsetMappingsCustomizer</node>
+    <node x="0.0" y="2433.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration;bean_name=multipartAutoConfiguration</node>
+    <node x="300.0" y="2402.0">module=ItNews;bean_class=javax.servlet.MultipartConfigElement;bean_name=multipartConfigElement</node>
+    <node x="322.0" y="2464.0">module=ItNews;bean_class=org.springframework.web.multipart.support.StandardServletMultipartResolver;bean_name=multipartResolver</node>
+    <node x="2415.0" y="2402.0">module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.MultipartProperties;bean_name=spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties</node>
+    <node x="803.0" y="3938.0">module=ItNews;bean_class=org.springframework.core.env.Environment;bean_name=environment</node>
+    <node x="1588.0" y="3871.0">module=ItNews;bean_class=org.springframework.core.env.PropertyResolver;bean_name=propertyResolver</node>
+    <node x="1201.0" y="3871.0">module=ItNews;bean_class=org.springframework.core.convert.ConversionService;bean_name=conversionService</node>
+    <node x="2866.0" y="3871.0">module=ItNews;bean_class=javax.servlet.ServletContext;bean_name=servletContext</node>
+    <node x="410.0" y="3871.0">module=ItNews;bean_class=javax.servlet.http.HttpServletRequest;bean_name=httpServletRequest</node>
+    <node x="1118.0" y="3938.0">module=ItNews;bean_class=javax.servlet.http.HttpSession;bean_name=httpSession</node>
+    <node x="163.0" y="3938.0">module=ItNews;bean_class=javax.servlet.ServletConfig;bean_name=servletConfig</node>
+    <node x="0.0" y="3603.0">module=ItNews;bean_class=org.springframework.boot.ApplicationArguments;bean_name=springApplicationArguments</node>
+    <node x="1068.0" y="3603.0">module=ItNews;fileset=fileset2;context=/home/prostrmk/Documents/Programs/Java/Java EE/Spring/SpringTutorials/ItNews/src/main/resources/spring.xml;tag=mvc:annotation-driven;offset=881</node>
+    <node x="3254.0" y="3804.0">module=ItNews;fileset=fileset2;context=/home/prostrmk/Documents/Programs/Java/Java EE/Spring/SpringTutorials/ItNews/src/main/resources/spring.xml;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;tag=mvc:resources;offset=911</node>
+    <node x="1395.0" y="3871.0">module=ItNews;fileset=fileset2;context=/home/prostrmk/Documents/Programs/Java/Java EE/Spring/SpringTutorials/ItNews/src/main/resources/spring.xml;bean_class=org.springframework.web.multipart.commons.CommonsMultipartResolver;bean_name=multipartResolver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.validation.Validator;bean_name=mvcValidator">
+      <point x="127.0" y="-7.944444444444457" />
+      <point x="348.0" y="501.4999999999999" />
+      <point x="-58.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.ViewResolver;bean_name=mvcViewResolver">
+      <point x="127.0" y="1.8333333333333712" />
+      <point x="348.0" y="1070.5" />
+      <point x="-72.5" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=defaultServletHandlerMapping">
+      <point x="-113.0" y="6.470588235294144" />
+      <point x="408.0" y="823.470588235294" />
+      <point x="408.0" y="1121.5" />
+      <point x="-119.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebMvcConfig;bean_name=webMvcConfig">
+      <point x="75.5" y="9.428571428571331" />
+      <point x="268.0" y="1756.428571428571" />
+      <point x="348.0" y="1933.0" />
+      <point x="-63.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;bean_name=basicErrorController">
+      <point x="109.0" y="-2.75" />
+      <point x="1403.0" y="2062.0" />
+      <point x="-82.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.accept.ContentNegotiationManager;bean_name=mvcContentNegotiationManager">
+      <point x="127.0" y="10.388888888888914" />
+      <point x="348.0" y="1504.5" />
+      <point x="-126.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.handler.HandlerMappingIntrospector;bean_name=mvcHandlerMappingIntrospector">
+      <point x="-113.0" y="-0.0" />
+      <point x="358.0" y="816.9999999999999" />
+      <point x="358.0" y="1431.5" />
+      <point x="-127.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.web.accept.ContentNegotiationManager;bean_name=mvcContentNegotiationManager">
+      <point x="0.0" y="-11.0" />
+      <point x="0.0" y="11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.web.servlet.view.ContentNegotiatingViewResolver;bean_name=viewResolver">
+      <point x="134.0" y="3.142857142857139" />
+      <point x="348.0" y="258.9999999999999" />
+      <point x="-57.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.web.servlet.LocaleResolver;bean_name=localeResolver">
+      <point x="134.0" y="6.285714285714278" />
+      <point x="348.0" y="320.9999999999999" />
+      <point x="-61.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerExceptionResolver;bean_name=handlerExceptionResolver">
+      <point x="0.0" y="-11.0" />
+      <point x="0.0" y="11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration;bean_name=securityFilterAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean;bean_name=securityFilterChainRegistration">
+      <point x="122.5" y="-0.0" />
+      <point x="-119.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;bean_name=requestMappingHandlerAdapter">
+      <point x="127.0" y="-1.8333333333333712" />
+      <point x="348.0" y="878.9999999999999" />
+      <point x="-124.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;bean_name=securityAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration;bean_name=webSecurityEnablerConfiguration">
+      <point x="104.5" y="-0.0" />
+      <point x="-129.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration;bean_name=thymeleafWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceUrlEncodingFilter;bean_name=resourceUrlEncodingFilter">
+      <point x="124.5" y="-0.0" />
+      <point x="-102.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;bean_name=authenticationManagerBuilder">
+      <point x="77.0" y="-0.0" />
+      <point x="-118.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration;bean_name=httpEncodingAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration.LocaleCharsetMappingsCustomizer;bean_name=localeCharsetMappingsCustomizer">
+      <point x="125.0" y="5.5" />
+      <point x="-131.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.web.context.WebApplicationContext;bean_name=webApplicationContext">
+      <point x="0.0" y="-11.0" />
+      <point x="0.0" y="11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=resourceHandlerMapping">
+      <point x="127.0" y="-4.277777777777828" />
+      <point x="348.0" y="687.4999999999999" />
+      <point x="-100.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration;bean_name=projectInfoAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.info.GitProperties;bean_name=gitProperties">
+      <point x="116.0" y="-5.5" />
+      <point x="-57.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration;bean_name=faviconConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;bean_name=faviconHandlerMapping">
+      <point x="86.0" y="-5.5" />
+      <point x="-95.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig">
+      <point x="75.5" y="-9.428571428571331" />
+      <point x="268.0" y="1737.5714285714284" />
+      <point x="348.0" y="1561.0" />
+      <point x="-77.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.ParameterNamesModuleConfiguration;bean_name=parameterNamesModuleConfiguration" target="module=ItNews;bean_class=com.fasterxml.jackson.module.paramnames.ParameterNamesModule;bean_name=parameterNamesModule">
+      <point x="146.0" y="-0.0" />
+      <point x="-97.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;bean_name=jacksonAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.jackson.JsonComponentModule;bean_name=jsonComponentModule">
+      <point x="103.5" y="-0.0" />
+      <point x="-93.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.method.support.CompositeUriComponentsContributor;bean_name=mvcUriComponentsContributor">
+      <point x="-113.0" y="-3.882352941176464" />
+      <point x="358.0" y="813.1176470588234" />
+      <point x="358.0" y="388.4999999999999" />
+      <point x="-121.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=viewControllerHandlerMapping">
+      <point x="-113.0" y="2.5882352941176805" />
+      <point x="378.0" y="819.5882352941176" />
+      <point x="378.0" y="1307.5" />
+      <point x="-121.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.PreserveErrorControllerTargetClassPostProcessor;bean_name=preserveErrorControllerTargetClassPostProcessor">
+      <point x="109.0" y="8.25" />
+      <point x="-184.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;bean_name=messageSourceAutoConfiguration" target="module=ItNews;bean_class=org.springframework.context.MessageSource;bean_name=messageSource">
+      <point x="131.0" y="5.5" />
+      <point x="2689.0" y="2315.0" />
+      <point x="-65.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter;bean_name=simpleControllerHandlerAdapter">
+      <point x="-113.0" y="10.352941176470608" />
+      <point x="438.0" y="827.3529411764705" />
+      <point x="438.0" y="935.4999999999999" />
+      <point x="-125.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration;bean_name=jmxAutoConfiguration" target="module=ItNews;bean_class=javax.management.MBeanServer;bean_name=mbeanServer">
+      <point x="90.0" y="7.333333333333485" />
+      <point x="3337.0" y="2124.0" />
+      <point x="-57.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration;bean_name=httpEncodingAutoConfiguration" target="module=ItNews;bean_class=org.springframework.web.filter.CharacterEncodingFilter;bean_name=characterEncodingFilter">
+      <point x="125.0" y="-5.5" />
+      <point x="2039.0" y="2253.0" />
+      <point x="-95.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;bean_name=authenticationManagerBuilder">
+      <point x="0.0" y="11.0" />
+      <point x="0.0" y="-11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.ErrorPageCustomizer;bean_name=errorPageCustomizer">
+      <point x="109.0" y="2.75" />
+      <point x="1403.0" y="2124.0" />
+      <point x="-85.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperConfiguration;bean_name=jacksonObjectMapperConfiguration" target="module=ItNews;bean_class=com.fasterxml.jackson.databind.ObjectMapper;bean_name=jacksonObjectMapper">
+      <point x="136.0" y="-0.0" />
+      <point x="-87.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.DefaultTemplateResolverConfiguration;bean_name=defaultTemplateResolverConfiguration" target="module=ItNews;bean_class=org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;bean_name=defaultTemplateResolver">
+      <point x="147.0" y="-0.0" />
+      <point x="-98.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.util.PathMatcher;bean_name=mvcPathMatcher">
+      <point x="127.0" y="5.5" />
+      <point x="348.0" y="1256.5" />
+      <point x="-70.5" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController;bean_name=offerController">
+      <point x="75.5" y="-6.285714285714221" />
+      <point x="268.0" y="1740.7142857142858" />
+      <point x="348.0" y="1623.0" />
+      <point x="-64.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=org.springframework.security.context.DelegatingApplicationListener;bean_name=delegatingApplicationListener">
+      <point x="102.5" y="-1.8333333333332575" />
+      <point x="1046.0" y="1775.7083333333333" />
+      <point x="1126.0" y="1746.5416666666665" />
+      <point x="-116.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafDefaultConfiguration;bean_name=thymeleafDefaultConfiguration" target="module=ItNews;bean_class=org.thymeleaf.spring5.SpringTemplateEngine;bean_name=templateEngine">
+      <point x="121.0" y="-0.0" />
+      <point x="-67.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceUrlProvider;bean_name=mvcResourceUrlProvider">
+      <point x="-113.0" y="5.176470588235247" />
+      <point x="398.0" y="822.1764705882351" />
+      <point x="398.0" y="1183.5" />
+      <point x="-97.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration;bean_name=defaultErrorViewResolverConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.DefaultErrorViewResolver;bean_name=conventionErrorViewResolver">
+      <point x="150.0" y="-0.0" />
+      <point x="-115.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer;bean_name=initializeAuthenticationProviderBeanManagerConfigurer">
+      <point x="111.5" y="-2.75" />
+      <point x="1046.0" y="1464.7916666666665" />
+      <point x="-208.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration;bean_name=restTemplateAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.client.RestTemplateBuilder;bean_name=restTemplateBuilder">
+      <point x="123.0" y="-0.0" />
+      <point x="-82.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration">
+      <point x="77.0" y="9.428571428571331" />
+      <point x="712.0" y="1570.428571428571" />
+      <point x="792.0" y="1777.5416666666665" />
+      <point x="-102.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController;bean_name=mainController">
+      <point x="75.5" y="3.1428571428571104" />
+      <point x="268.0" y="1750.1428571428569" />
+      <point x="348.0" y="1809.0" />
+      <point x="-64.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.format.support.FormattingConversionService;bean_name=mvcConversionService">
+      <point x="127.0" y="0.6111111111110858" />
+      <point x="348.0" y="1008.4999999999999" />
+      <point x="-89.5" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=defaultServletHandlerMapping">
+      <point x="127.0" y="3.055555555555543" />
+      <point x="348.0" y="1132.5" />
+      <point x="-119.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration;bean_name=jacksonObjectMapperBuilderConfiguration" target="module=ItNews;bean_class=org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;bean_name=jacksonObjectMapperBuilder">
+      <point x="161.0" y="-0.0" />
+      <point x="-112.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;bean_name=webMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.servlet.filter.OrderedHiddenHttpMethodFilter;bean_name=hiddenHttpMethodFilter">
+      <point x="106.0" y="-5.5" />
+      <point x="-97.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration;bean_name=tomcatWebSocketConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.websocket.servlet.TomcatWebSocketServletWebServerCustomizer;bean_name=websocketContainerCustomizer">
+      <point x="123.5" y="-0.0" />
+      <point x="-122.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;bean_name=beanNameHandlerMapping">
+      <point x="-113.0" y="-7.764705882352928" />
+      <point x="388.0" y="809.235294117647" />
+      <point x="388.0" y="574.4999999999999" />
+      <point x="-107.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration;bean_name=projectInfoAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.info.BuildProperties;bean_name=buildProperties">
+      <point x="116.0" y="5.5" />
+      <point x="-65.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController;bean_name=typeController">
+      <point x="75.5" y="-0.0" />
+      <point x="-62.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.GlobalAuthenticationConfigurerAdapter;bean_name=enableGlobalAuthenticationAutowiredConfigurer">
+      <point x="111.5" y="-8.25" />
+      <point x="1046.0" y="1459.2916666666665" />
+      <point x="1126.0" y="1374.5416666666665" />
+      <point x="-183.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerExceptionResolver;bean_name=handlerExceptionResolver">
+      <point x="127.0" y="-3.055555555555543" />
+      <point x="348.0" y="754.9999999999999" />
+      <point x="-102.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration.ThymeleafViewResolverConfiguration;bean_name=thymeleafViewResolverConfiguration" target="module=ItNews;bean_class=org.thymeleaf.spring5.view.ThymeleafViewResolver;bean_name=thymeleafViewResolver">
+      <point x="141.5" y="-0.0" />
+      <point x="-93.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;bean_name=securityAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration;bean_name=springBootWebSecurityConfiguration">
+      <point x="104.5" y="-7.333333333333485" />
+      <point x="-142.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=javax.servlet.Filter;bean_name=springSecurityFilterChain">
+      <point x="102.5" y="1.8333333333332575" />
+      <point x="1046.0" y="1779.3749999999998" />
+      <point x="1126.0" y="1808.5416666666665" />
+      <point x="-99.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.accept.ContentNegotiationManager;bean_name=mvcContentNegotiationManager">
+      <point x="-113.0" y="-1.2941176470587834" />
+      <point x="348.0" y="815.7058823529411" />
+      <point x="348.0" y="1493.5" />
+      <point x="-126.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;bean_name=userDetailsServiceAutoConfiguration" target="module=ItNews;bean_class=org.springframework.security.provisioning.InMemoryUserDetailsManager;bean_name=inMemoryUserDetailsManager">
+      <point x="141.0" y="-0.0" />
+      <point x="-116.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.handler.HandlerMappingIntrospector;bean_name=mvcHandlerMappingIntrospector">
+      <point x="127.0" y="9.166666666666629" />
+      <point x="348.0" y="1442.5" />
+      <point x="-127.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.util.UrlPathHelper;bean_name=mvcUrlPathHelper">
+      <point x="127.0" y="-9.166666666666629" />
+      <point x="348.0" y="439.4999999999999" />
+      <point x="-75.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration;bean_name=validationAutoConfiguration" target="module=ItNews;bean_class=org.springframework.validation.beanvalidation.MethodValidationPostProcessor;bean_name=methodValidationPostProcessor">
+      <point x="112.0" y="7.333333333333485" />
+      <point x="2121.0" y="2124.0" />
+      <point x="-124.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidator;bean_name=cacheAutoConfigurationValidator" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheProperties;bean_name=spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties">
+      <point x="129.0" y="-0.0" />
+      <point x="-281.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.web.context.WebApplicationContext;bean_name=webApplicationContext">
+      <point x="77.0" y="-6.285714285714221" />
+      <point x="712.0" y="1554.7142857142858" />
+      <point x="792.0" y="1293.8679350772563" />
+      <point x="-93.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration;bean_name=jmxAutoConfiguration" target="module=ItNews;bean_class=org.springframework.jmx.export.annotation.AnnotationMBeanExporter;bean_name=mbeanExporter">
+      <point x="90.0" y="-7.333333333333485" />
+      <point x="3337.0" y="2000.0" />
+      <point x="-66.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration;bean_name=dispatcherServletRegistrationConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletConfiguration;bean_name=dispatcherServletConfiguration">
+      <point x="163.5" y="-5.5" />
+      <point x="-121.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration.EmbeddedTomcat;bean_name=embeddedTomcat" target="module=ItNews;bean_class=org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;bean_name=tomcatServletWebServerFactory">
+      <point x="74.0" y="-0.0" />
+      <point x="-123.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter;bean_name=httpRequestHandlerAdapter">
+      <point x="127.0" y="-5.5" />
+      <point x="348.0" y="625.4999999999999" />
+      <point x="-110.5" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.AutowiredWebSecurityConfigurersIgnoreParents;bean_name=autowiredWebSecurityConfigurersIgnoreParents">
+      <point x="102.5" y="9.166666666666742" />
+      <point x="1046.0" y="1786.7083333333333" />
+      <point x="1126.0" y="1932.5416666666665" />
+      <point x="-180.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletConfiguration;bean_name=dispatcherServletConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.DispatcherServlet;bean_name=dispatcherServlet">
+      <point x="121.0" y="-5.5" />
+      <point x="-72.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.web.filter.RequestContextFilter;bean_name=requestContextFilter">
+      <point x="134.0" y="-3.142857142857139" />
+      <point x="348.0" y="135.0" />
+      <point x="-84.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration;bean_name=servletWebServerFactoryAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer;bean_name=servletWebServerFactoryCustomizer">
+      <point x="164.0" y="2.75" />
+      <point x="408.0" y="2124.0" />
+      <point x="-137.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration;bean_name=objectPostProcessorConfiguration">
+      <point x="111.5" y="8.25" />
+      <point x="1046.0" y="1475.7916666666665" />
+      <point x="1126.0" y="1560.5416666666665" />
+      <point x="-131.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;bean_name=httpMessageConvertersAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration;bean_name=jacksonHttpMessageConvertersConfiguration">
+      <point x="160.5" y="-5.5" />
+      <point x="-170.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController;bean_name=dataController">
+      <point x="75.5" y="6.285714285714221" />
+      <point x="268.0" y="1753.2857142857142" />
+      <point x="348.0" y="1871.0" />
+      <point x="-62.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration.ThymeleafJava8TimeDialect;bean_name=thymeleafJava8TimeDialect" target="module=ItNews;bean_class=org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;bean_name=java8TimeDialect">
+      <point x="107.0" y="-0.0" />
+      <point x="-70.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration;bean_name=jmxAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jmx.ParentAwareNamingStrategy;bean_name=objectNamingStrategy">
+      <point x="90.0" y="-0.0" />
+      <point x="-89.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.ViewResolver;bean_name=mvcViewResolver">
+      <point x="-113.0" y="7.764705882352928" />
+      <point x="418.0" y="824.7647058823528" />
+      <point x="418.0" y="1059.5" />
+      <point x="-72.5" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration;bean_name=servletWebServerFactoryAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration.BeanPostProcessorsRegistrar;bean_name=beanPostProcessorsRegistrar">
+      <point x="164.0" y="-8.25" />
+      <point x="408.0" y="2000.0000000000002" />
+      <point x="-113.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.validation.Validator;bean_name=mvcValidator">
+      <point x="113.0" y="-4.399999999999977" />
+      <point x="712.0" y="812.5999999999999" />
+      <point x="792.0" y="754.9999999999999" />
+      <point x="-58.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication">
+      <point x="-75.5" y="-0.0" />
+      <point x="38.5" y="1747.0" />
+      <point x="38.5" y="1778.0" />
+      <point x="134.0" y="1778.0" />
+      <point x="0.0" y="11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration;bean_name=validationAutoConfiguration" target="module=ItNews;bean_class=org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;bean_name=defaultValidator">
+      <point x="112.0" y="-0.0" />
+      <point x="-69.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration;bean_name=servletWebServerFactoryAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration.EmbeddedTomcat;bean_name=embeddedTomcat">
+      <point x="164.0" y="-2.75" />
+      <point x="408.0" y="2062.0" />
+      <point x="-74.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration;bean_name=httpMessageConvertersAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConverters;bean_name=messageConverters">
+      <point x="160.5" y="5.5" />
+      <point x="1323.0" y="2315.0" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.util.PathMatcher;bean_name=mvcPathMatcher">
+      <point x="-113.0" y="3.882352941176464" />
+      <point x="388.0" y="820.8823529411764" />
+      <point x="388.0" y="1245.5" />
+      <point x="-70.5" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping;bean_name=beanNameHandlerMapping">
+      <point x="127.0" y="-6.722222222222172" />
+      <point x="348.0" y="563.4999999999999" />
+      <point x="-107.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidatorPostProcessor;bean_name=cacheAutoConfigurationValidatorPostProcessor">
+      <point x="97.0" y="2.75" />
+      <point x="-178.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration">
+      <point x="134.0" y="9.428571428571445" />
+      <point x="348.0" y="814.4117647058822" />
+      <point x="-113.0" y="-2.5882352941176805" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;bean_name=webMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.servlet.filter.OrderedHttpPutFormContentFilter;bean_name=httpPutFormContentFilter">
+      <point x="106.0" y="5.5" />
+      <point x="-103.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.SpringWebMvcImportSelector;bean_name=springWebMvcImportSelector">
+      <point x="77.0" y="6.285714285714221" />
+      <point x="712.0" y="1567.2857142857142" />
+      <point x="-115.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;bean_name=requestMappingHandlerMapping">
+      <point x="-113.0" y="1.2941176470587834" />
+      <point x="368.0" y="818.2941176470587" />
+      <point x="368.0" y="1369.5" />
+      <point x="-127.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.format.support.FormattingConversionService;bean_name=mvcConversionService">
+      <point x="-113.0" y="9.058823529411711" />
+      <point x="428.0" y="826.0588235294116" />
+      <point x="428.0" y="997.4999999999999" />
+      <point x="-89.5" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=org.springframework.security.web.access.WebInvocationPrivilegeEvaluator;bean_name=privilegeEvaluator">
+      <point x="102.5" y="-5.5" />
+      <point x="1046.0" y="1772.0416666666665" />
+      <point x="1126.0" y="1684.5416666666665" />
+      <point x="-75.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration;bean_name=multipartAutoConfiguration" target="module=ItNews;bean_class=org.springframework.web.multipart.support.StandardServletMultipartResolver;bean_name=multipartResolver">
+      <point x="110.0" y="5.5" />
+      <point x="300.0" y="2475.0" />
+      <point x="-74.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration;bean_name=validationAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.validation.PrimaryDefaultValidatorPostProcessor;bean_name=primaryDefaultValidatorPostProcessor">
+      <point x="112.0" y="-7.333333333333485" />
+      <point x="-146.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;bean_name=requestMappingHandlerMapping">
+      <point x="127.0" y="7.944444444444457" />
+      <point x="348.0" y="1380.5" />
+      <point x="-127.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration">
+      <point x="77.0" y="-3.1428571428571104" />
+      <point x="712.0" y="1557.8571428571427" />
+      <point x="792.0" y="1467.5416666666665" />
+      <point x="-111.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;bean_name=authenticationConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer;bean_name=initializeUserDetailsBeanManagerConfigurer">
+      <point x="111.5" y="2.75" />
+      <point x="1046.0" y="1470.2916666666665" />
+      <point x="1126.0" y="1498.5416666666665" />
+      <point x="-166.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.web.servlet.view.BeanNameViewResolver;bean_name=beanNameViewResolver">
+      <point x="134.0" y="-9.428571428571416" />
+      <point x="348.0" y="11.0" />
+      <point x="-95.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers;bean_name=cacheManagerCustomizers">
+      <point x="97.0" y="-2.75" />
+      <point x="1861.0" y="73.0" />
+      <point x="-104.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.web.servlet.view.InternalResourceViewResolver;bean_name=defaultViewResolver">
+      <point x="134.0" y="-0.0" />
+      <point x="-83.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceUrlProvider;bean_name=mvcResourceUrlProvider">
+      <point x="127.0" y="4.277777777777828" />
+      <point x="348.0" y="1194.5" />
+      <point x="-97.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter;bean_name=httpRequestHandlerAdapter">
+      <point x="-113.0" y="-9.058823529411711" />
+      <point x="398.0" y="807.9411764705882" />
+      <point x="398.0" y="636.4999999999999" />
+      <point x="-110.5" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;bean_name=itNewsApplication" target="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController;bean_name=userController">
+      <point x="75.5" y="-3.1428571428571104" />
+      <point x="268.0" y="1743.8571428571427" />
+      <point x="348.0" y="1685.0" />
+      <point x="-62.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;bean_name=errorMvcAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.servlet.error.DefaultErrorAttributes;bean_name=errorAttributes">
+      <point x="109.0" y="-8.25" />
+      <point x="1403.0" y="2000.0" />
+      <point x="-65.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration.JacksonCodecConfiguration;bean_name=jacksonCodecConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.codec.CodecCustomizer;bean_name=jacksonCodecCustomizer">
+      <point x="107.5" y="-0.0" />
+      <point x="-98.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter;bean_name=webMvcAutoConfigurationAdapter" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping;bean_name=welcomePageHandlerMapping">
+      <point x="134.0" y="-6.285714285714278" />
+      <point x="348.0" y="73.0" />
+      <point x="-117.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletConfiguration;bean_name=dispatcherServletConfiguration" target="module=ItNews;bean_class=org.springframework.web.multipart.MultipartResolver;bean_name=multipartResolver">
+      <point x="121.0" y="5.5" />
+      <point x="-74.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration;bean_name=multipartAutoConfiguration" target="module=ItNews;bean_class=javax.servlet.MultipartConfigElement;bean_name=multipartConfigElement">
+      <point x="110.0" y="-5.5" />
+      <point x="-96.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=org.springframework.security.access.expression.SecurityExpressionHandler;bean_name=webSecurityExpressionHandler">
+      <point x="102.5" y="5.5" />
+      <point x="1046.0" y="1783.0416666666665" />
+      <point x="1126.0" y="1870.5416666666665" />
+      <point x="-119.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration;bean_name=propertyPlaceholderAutoConfiguration" target="module=ItNews;bean_class=org.springframework.context.support.PropertySourcesPlaceholderConfigurer;bean_name=propertySourcesPlaceholderConfigurer">
+      <point x="148.0" y="-0.0" />
+      <point x="-147.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;bean_name=messageSourceAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.context.MessageSourceProperties;bean_name=messageSourceProperties">
+      <point x="131.0" y="-5.5" />
+      <point x="-101.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerValidator;bean_name=cacheAutoConfigurationValidator">
+      <point x="97.0" y="8.25" />
+      <point x="1861.0" y="197.0" />
+      <point x="-129.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration;bean_name=servletWebServerFactoryAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.TomcatServletWebServerFactoryCustomizer;bean_name=tomcatServletWebServerFactoryCustomizer">
+      <point x="164.0" y="8.25" />
+      <point x="-162.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration;bean_name=cacheAutoConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheConfigurationImportSelector;bean_name=cacheConfigurationImportSelector">
+      <point x="97.0" y="-8.25" />
+      <point x="1861.0" y="11.0" />
+      <point x="-131.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.util.UrlPathHelper;bean_name=mvcUrlPathHelper">
+      <point x="-113.0" y="-5.176470588235247" />
+      <point x="368.0" y="811.8235294117646" />
+      <point x="368.0" y="450.4999999999999" />
+      <point x="-75.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;bean_name=webSecurityConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.ObjectPostProcessor;bean_name=objectPostProcessor">
+      <point x="102.5" y="-9.166666666666742" />
+      <point x="1046.0" y="1768.3749999999998" />
+      <point x="1126.0" y="1622.5416666666665" />
+      <point x="-83.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig;bean_name=webSecurityConfig" target="module=ItNews;bean_class=org.springframework.security.crypto.password.PasswordEncoder;bean_name=passwordEncoder">
+      <point x="77.0" y="3.1428571428571104" />
+      <point x="712.0" y="1564.1428571428569" />
+      <point x="792.0" y="1623.0" />
+      <point x="-74.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=viewControllerHandlerMapping">
+      <point x="127.0" y="6.722222222222172" />
+      <point x="348.0" y="1318.5" />
+      <point x="-121.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration;bean_name=jackson2ObjectMapperBuilderCustomizerConfiguration" target="module=ItNews;bean_class=org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer;bean_name=standardJacksonObjectMapperBuilderCustomizer">
+      <point x="204.0" y="-0.0" />
+      <point x="-184.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter;bean_name=simpleControllerHandlerAdapter">
+      <point x="127.0" y="-0.6111111111110858" />
+      <point x="348.0" y="946.4999999999999" />
+      <point x="-125.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration;bean_name=delegatingWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.method.support.CompositeUriComponentsContributor;bean_name=mvcUriComponentsContributor">
+      <point x="127.0" y="-10.388888888888914" />
+      <point x="348.0" y="377.4999999999999" />
+      <point x="-121.0" y="-5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration;bean_name=dispatcherServletRegistrationConfiguration" target="module=ItNews;bean_class=org.springframework.boot.web.servlet.ServletRegistrationBean;bean_name=dispatcherServletRegistration">
+      <point x="163.5" y="5.5" />
+      <point x="-115.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.HandlerMapping;bean_name=resourceHandlerMapping">
+      <point x="-113.0" y="-10.352941176470608" />
+      <point x="408.0" y="806.6470588235293" />
+      <point x="408.0" y="698.4999999999999" />
+      <point x="-100.0" y="5.5" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration;bean_name=faviconConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.resource.ResourceHttpRequestHandler;bean_name=faviconRequestHandler">
+      <point x="86.0" y="5.5" />
+      <point x="-93.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration;bean_name=stringHttpMessageConverterConfiguration" target="module=ItNews;bean_class=org.springframework.http.converter.StringHttpMessageConverter;bean_name=stringHttpMessageConverter">
+      <point x="161.5" y="-0.0" />
+      <point x="-113.0" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration;bean_name=objectPostProcessorConfiguration" target="module=ItNews;bean_class=org.springframework.security.config.annotation.ObjectPostProcessor;bean_name=objectPostProcessor">
+      <point x="0.0" y="11.0" />
+      <point x="0.0" y="-11.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;bean_name=securityAutoConfiguration" target="module=ItNews;bean_class=org.springframework.security.authentication.DefaultAuthenticationEventPublisher;bean_name=authenticationEventPublisher">
+      <point x="104.5" y="7.333333333333485" />
+      <point x="2747.0" y="2124.0" />
+      <point x="-115.5" y="-0.0" />
+    </edge>
+    <edge source="module=ItNews;bean_class=org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration;bean_name=enableWebMvcConfiguration" target="module=ItNews;bean_class=org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;bean_name=requestMappingHandlerAdapter">
+      <point x="113.0" y="-8.799999999999955" />
+      <point x="712.0" y="808.1999999999999" />
+      <point x="-124.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.851256281407035" x="1930.132821723731" y="3241.595041322314" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Local context</Category>
+    <Category>Properties</Category>
+  </Categories>
+</Diagram>
+

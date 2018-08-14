@@ -1,0 +1,870 @@
+2018-05-02 19:43:54 INFO  MainController:55 - Visit main page
+2018-05-02 19:44:01 INFO  UserController:49 - Someone Signed In
+2018-05-02 19:44:01 INFO  MainController:55 - Visit main page
+2018-05-02 20:27:47 INFO  MainController:55 - Visit main page
+2018-05-02 22:26:05 INFO  MainController:55 - Visit main page
+2018-05-02 22:31:24 INFO  MainController:55 - Visit main page
+2018-05-02 22:31:31 INFO  MainController:55 - Visit main page
+2018-05-02 22:38:36 INFO  MainController:55 - Visit main page
+2018-05-02 22:39:54 INFO  MainController:55 - Visit main page
+2018-05-02 22:44:52 INFO  MainController:55 - Visit main page
+2018-05-02 22:46:06 INFO  MainController:55 - Visit main page
+2018-05-02 22:47:36 INFO  MainController:55 - Visit main page
+2018-05-02 22:48:10 INFO  MainController:55 - Visit main page
+2018-05-02 22:51:29 INFO  MainController:55 - Visit main page
+2018-05-02 22:55:45 INFO  MainController:55 - Visit main page
+2018-05-02 22:57:45 INFO  MainController:55 - Visit main page
+2018-05-02 22:58:17 INFO  MainController:55 - Visit main page
+2018-05-02 22:58:40 INFO  MainController:55 - Visit main page
+2018-05-02 22:59:43 INFO  MainController:55 - Visit main page
+2018-05-02 23:00:28 INFO  MainController:55 - Visit main page
+2018-05-04 18:31:32 INFO  MainController:55 - Visit main page
+2018-05-04 18:37:57 INFO  MainController:55 - Visit main page
+2018-05-04 18:38:17 INFO  MainController:55 - Visit main page
+2018-05-04 18:39:18 INFO  MainController:55 - Visit main page
+2018-05-04 18:39:18 INFO  MainController:55 - Visit main page
+2018-05-04 18:39:20 INFO  MainController:55 - Visit main page
+2018-05-04 18:39:22 INFO  MainController:55 - Visit main page
+2018-05-04 18:45:05 INFO  MainController:55 - Visit main page
+2018-05-04 18:45:06 INFO  MainController:55 - Visit main page
+2018-05-04 18:45:11 INFO  MainController:55 - Visit main page
+2018-05-04 18:45:13 INFO  MainController:55 - Visit main page
+2018-05-05 15:22:39 INFO  MainController:55 - Visit main page
+2018-05-05 15:23:05 INFO  MainController:55 - Visit main page
+2018-05-05 15:23:16 INFO  MainController:55 - Visit main page
+2018-05-05 15:23:23 INFO  MainController:55 - Visit main page
+2018-05-05 15:29:14 INFO  MainController:55 - Visit main page
+2018-05-05 15:29:36 INFO  MainController:55 - Visit main page
+2018-05-05 15:29:50 INFO  MainController:55 - Visit main page
+2018-05-05 15:48:22 INFO  MainController:55 - Visit main page
+2018-05-05 15:48:57 INFO  MainController:55 - Visit main page
+2018-05-05 15:49:45 INFO  MainController:55 - Visit main page
+2018-05-09 12:35:23 INFO  MainController:55 - Visit main page
+2018-05-09 12:53:00 INFO  MainController:55 - Visit main page
+2018-05-09 12:53:22 INFO  MainController:55 - Visit main page
+2018-05-09 12:54:51 INFO  MainController:55 - Visit main page
+2018-05-09 12:57:02 INFO  MainController:55 - Visit main page
+2018-05-09 12:58:03 INFO  MainController:55 - Visit main page
+2018-05-09 12:58:28 INFO  MainController:55 - Visit main page
+2018-05-09 14:28:33 INFO  MainController:58 - Visit main page
+2018-05-09 14:38:07 INFO  MainController:79 - New Article Added
+2018-05-09 14:38:12 INFO  MainController:58 - Visit main page
+2018-05-09 14:40:40 INFO  MainController:58 - Visit main page
+2018-05-09 14:41:16 INFO  MainController:58 - Visit main page
+2018-05-09 14:52:42 INFO  MainController:58 - Visit main page
+2018-05-09 14:54:50 INFO  MainController:58 - Visit main page
+2018-05-09 14:56:21 INFO  MainController:58 - Visit main page
+2018-05-09 14:59:08 INFO  MainController:58 - Visit main page
+2018-05-09 15:01:46 INFO  MainController:58 - Visit main page
+2018-05-09 15:02:45 INFO  MainController:58 - Visit main page
+2018-05-09 15:03:18 INFO  MainController:58 - Visit main page
+2018-05-09 15:03:21 INFO  MainController:58 - Visit main page
+2018-05-09 15:03:25 INFO  MainController:58 - Visit main page
+2018-05-09 15:04:15 INFO  MainController:58 - Visit main page
+2018-05-09 15:06:36 INFO  MainController:58 - Visit main page
+2018-05-09 15:08:38 INFO  MainController:58 - Visit main page
+2018-05-09 15:09:16 INFO  MainController:58 - Visit main page
+2018-05-09 15:09:21 INFO  MainController:58 - Visit main page
+2018-05-09 15:09:24 INFO  MainController:58 - Visit main page
+2018-05-09 15:09:27 INFO  MainController:58 - Visit main page
+2018-05-09 16:01:54 INFO  MainController:58 - Visit main page
+2018-05-09 16:01:56 INFO  MainController:58 - Visit main page
+2018-05-09 16:02:30 INFO  MainController:58 - Visit main page
+2018-05-09 16:04:25 INFO  MainController:58 - Visit main page
+2018-05-09 16:11:20 INFO  MainController:58 - Visit main page
+2018-05-09 16:11:25 INFO  MainController:58 - Visit main page
+2018-05-09 16:11:51 INFO  MainController:58 - Visit main page
+2018-05-09 16:11:54 INFO  MainController:58 - Visit main page
+2018-05-09 16:11:58 INFO  MainController:58 - Visit main page
+2018-05-09 16:12:54 INFO  MainController:58 - Visit main page
+2018-05-09 16:13:42 INFO  MainController:58 - Visit main page
+2018-05-09 16:23:08 INFO  MainController:58 - Visit main page
+2018-05-09 16:23:13 INFO  MainController:58 - Visit main page
+2018-05-09 16:23:46 INFO  MainController:58 - Visit main page
+2018-05-09 16:24:04 INFO  MainController:58 - Visit main page
+2018-05-09 16:24:15 INFO  MainController:58 - Visit main page
+2018-05-09 16:24:17 INFO  MainController:58 - Visit main page
+2018-05-09 16:25:27 INFO  MainController:58 - Visit main page
+2018-05-09 16:30:25 INFO  MainController:58 - Visit main page
+2018-05-09 16:30:43 INFO  MainController:58 - Visit main page
+2018-05-09 16:30:46 INFO  MainController:58 - Visit main page
+2018-05-09 16:34:54 INFO  MainController:58 - Visit main page
+2018-05-09 16:34:55 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:10 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:12 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:16 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:32 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:35 INFO  MainController:58 - Visit main page
+2018-05-09 16:35:38 INFO  MainController:58 - Visit main page
+2018-05-09 16:36:43 INFO  MainController:58 - Visit main page
+2018-05-09 16:37:07 INFO  MainController:58 - Visit main page
+2018-05-09 16:39:02 INFO  MainController:58 - Visit main page
+2018-05-09 16:39:05 INFO  MainController:58 - Visit main page
+2018-05-09 17:42:48 INFO  MainController:58 - Visit main page
+2018-05-09 17:52:44 INFO  MainController:58 - Visit main page
+2018-05-09 17:53:02 INFO  MainController:58 - Visit main page
+2018-05-09 17:53:24 INFO  MainController:58 - Visit main page
+2018-05-09 18:01:39 INFO  MainController:58 - Visit main page
+2018-05-09 18:07:24 INFO  MainController:58 - Visit main page
+2018-05-09 18:09:47 INFO  MainController:58 - Visit main page
+2018-05-09 18:14:59 INFO  MainController:58 - Visit main page
+2018-05-09 18:15:24 INFO  MainController:58 - Visit main page
+2018-05-09 18:21:51 INFO  MainController:58 - Visit main page
+2018-05-09 18:22:28 INFO  MainController:58 - Visit main page
+2018-05-09 18:22:31 INFO  MainController:58 - Visit main page
+2018-05-09 18:23:45 INFO  MainController:58 - Visit main page
+2018-05-09 18:24:04 INFO  MainController:58 - Visit main page
+2018-05-09 18:24:44 INFO  MainController:58 - Visit main page
+2018-05-09 18:24:56 INFO  MainController:58 - Visit main page
+2018-05-09 18:25:18 INFO  MainController:58 - Visit main page
+2018-05-10 14:07:18 INFO  MainController:58 - Visit main page
+2018-05-10 14:08:31 INFO  MainController:58 - Visit main page
+2018-05-10 14:10:40 INFO  MainController:58 - Visit main page
+2018-05-10 14:10:58 INFO  MainController:58 - Visit main page
+2018-05-10 14:11:22 INFO  MainController:58 - Visit main page
+2018-05-10 14:11:30 INFO  MainController:58 - Visit main page
+2018-05-10 15:09:43 INFO  MainController:58 - Visit main page
+2018-05-10 15:09:43 INFO  MainController:58 - Visit main page
+2018-05-10 15:10:23 INFO  MainController:58 - Visit main page
+2018-05-10 15:10:40 INFO  MainController:58 - Visit main page
+2018-05-10 15:10:49 INFO  MainController:58 - Visit main page
+2018-05-10 15:13:33 INFO  MainController:58 - Visit main page
+2018-05-10 15:25:03 INFO  MainController:58 - Visit main page
+2018-05-10 15:25:04 INFO  MainController:58 - Visit main page
+2018-05-11 16:44:53 INFO  MainController:58 - Visit main page
+2018-05-11 16:44:53 INFO  MainController:58 - Visit main page
+2018-05-11 16:45:27 INFO  MainController:58 - Visit main page
+2018-05-11 18:27:09 INFO  MainController:58 - Visit main page
+2018-05-11 18:27:09 INFO  MainController:58 - Visit main page
+2018-05-11 18:27:19 INFO  MainController:58 - Visit main page
+2018-05-11 18:27:26 INFO  MainController:58 - Visit main page
+2018-05-11 18:28:51 INFO  MainController:58 - Visit main page
+2018-05-11 18:30:46 INFO  MainController:58 - Visit main page
+2018-05-11 18:33:23 INFO  MainController:58 - Visit main page
+2018-05-11 19:33:06 INFO  MainController:58 - Visit main page
+2018-05-11 20:11:11 INFO  MainController:58 - Visit main page
+2018-05-11 20:14:07 INFO  MainController:79 - New Article Added
+2018-05-11 20:17:23 INFO  MainController:79 - New Article Added
+2018-05-11 20:18:25 INFO  MainController:79 - New Article Added
+2018-05-11 20:20:32 INFO  MainController:79 - New Article Added
+2018-05-11 20:20:36 INFO  MainController:58 - Visit main page
+2018-05-11 20:22:45 INFO  MainController:58 - Visit main page
+2018-05-11 20:24:15 INFO  MainController:79 - New Article Added
+2018-05-11 20:24:18 INFO  MainController:58 - Visit main page
+2018-05-11 20:24:45 INFO  MainController:58 - Visit main page
+2018-05-11 20:28:34 INFO  MainController:58 - Visit main page
+2018-05-11 20:31:57 INFO  MainController:58 - Visit main page
+2018-05-11 20:32:13 INFO  MainController:58 - Visit main page
+2018-05-11 20:32:18 INFO  MainController:58 - Visit main page
+2018-05-11 20:44:09 INFO  MainController:58 - Visit main page
+2018-05-11 20:44:25 INFO  MainController:58 - Visit main page
+2018-05-11 21:17:56 INFO  MainController:79 - New Article Added
+2018-05-11 21:18:00 INFO  MainController:58 - Visit main page
+2018-05-11 21:18:16 INFO  MainController:58 - Visit main page
+2018-05-11 21:21:34 INFO  MainController:58 - Visit main page
+2018-05-11 21:24:39 INFO  MainController:58 - Visit main page
+2018-05-11 21:28:08 INFO  MainController:58 - Visit main page
+2018-05-11 21:28:11 INFO  MainController:58 - Visit main page
+2018-05-11 21:29:46 INFO  MainController:58 - Visit main page
+2018-05-11 21:31:09 INFO  MainController:58 - Visit main page
+2018-05-11 21:35:32 INFO  MainController:58 - Visit main page
+2018-05-11 21:41:55 INFO  MainController:58 - Visit main page
+2018-05-11 21:42:41 INFO  MainController:58 - Visit main page
+2018-05-11 21:46:14 INFO  MainController:58 - Visit main page
+2018-05-11 21:46:40 INFO  MainController:58 - Visit main page
+2018-05-11 21:47:56 INFO  MainController:58 - Visit main page
+2018-05-11 21:49:02 INFO  MainController:58 - Visit main page
+2018-05-11 21:50:19 INFO  MainController:58 - Visit main page
+2018-05-11 21:51:20 INFO  MainController:58 - Visit main page
+2018-05-11 21:51:46 INFO  MainController:58 - Visit main page
+2018-05-11 21:52:16 INFO  MainController:58 - Visit main page
+2018-05-11 21:52:38 INFO  MainController:58 - Visit main page
+2018-05-12 11:01:31 INFO  MainController:67 - Visit main page
+2018-05-12 11:01:45 INFO  MainController:67 - Visit main page
+2018-05-12 11:01:51 INFO  MainController:67 - Visit main page
+2018-05-12 11:02:29 INFO  MainController:67 - Visit main page
+2018-05-12 11:02:39 INFO  MainController:67 - Visit main page
+2018-05-12 11:02:48 INFO  MainController:67 - Visit main page
+2018-05-13 19:27:33 INFO  MainController:67 - Visit main page
+2018-05-13 19:27:56 INFO  MainController:67 - Visit main page
+2018-05-13 19:28:17 INFO  MainController:67 - Visit main page
+2018-05-13 19:28:27 INFO  MainController:67 - Visit main page
+2018-05-13 19:32:59 INFO  MainController:67 - Visit main page
+2018-05-13 19:37:31 INFO  MainController:67 - Visit main page
+2018-05-14 11:21:16 INFO  MainController:67 - Visit main page
+2018-05-14 11:21:16 INFO  MainController:67 - Visit main page
+2018-05-14 11:25:15 INFO  MainController:67 - Visit main page
+2018-05-14 16:13:31 INFO  MainController:67 - Visit main page
+2018-05-14 16:13:31 INFO  MainController:67 - Visit main page
+2018-05-14 18:24:30 INFO  MainController:67 - Visit main page
+2018-05-14 18:27:14 ERROR DataBaseWork:26 - Hibernate Connection Error
+2018-05-14 18:27:14 INFO  UserController:63 - New Article Offered
+2018-05-14 18:27:21 INFO  MainController:67 - Visit main page
+2018-05-14 18:28:19 INFO  MainController:67 - Visit main page
+2018-05-14 18:29:10 INFO  UserController:63 - New Article Offered
+2018-05-14 18:41:01 INFO  MainController:67 - Visit main page
+2018-05-14 18:41:05 INFO  UserController:101 - Someone Offered New Article
+2018-05-14 19:07:42 INFO  OfferController:72 - Someone Offered New Article
+2018-05-14 19:08:47 INFO  OfferController:72 - Someone Offered New Article
+2018-05-14 19:10:03 INFO  OfferController:72 - Someone Offered New Article
+2018-05-14 19:11:45 INFO  OfferController:72 - Someone Offered New Article
+2018-05-14 19:13:19 INFO  OfferController:69 - Someone Offered New Article
+2018-05-14 19:14:31 INFO  OfferController:69 - Someone Offered New Article
+2018-05-14 19:22:13 INFO  OfferController:69 - Someone Offered New Article
+2018-05-14 19:22:31 INFO  MainController:67 - Visit main page
+2018-05-14 19:23:41 INFO  OfferController:69 - Someone Offered New Article
+2018-05-14 19:23:48 INFO  MainController:67 - Visit main page
+2018-05-14 19:23:50 INFO  MainController:67 - Visit main page
+2018-05-14 19:24:18 INFO  MainController:67 - Visit main page
+2018-05-14 19:24:22 INFO  OfferController:69 - Someone Offered New Article
+2018-05-14 19:24:27 INFO  MainController:67 - Visit main page
+2018-05-14 19:30:08 INFO  MainController:67 - Visit main page
+2018-05-14 19:31:16 INFO  MainController:67 - Visit main page
+2018-05-14 19:32:20 INFO  MainController:67 - Visit main page
+2018-05-14 19:33:30 INFO  MainController:67 - Visit main page
+2018-05-14 19:34:20 INFO  MainController:67 - Visit main page
+2018-05-14 19:38:22 INFO  MainController:67 - Visit main page
+2018-05-14 19:40:24 INFO  MainController:67 - Visit main page
+2018-05-14 19:49:13 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 19:49:59 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 19:55:27 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 20:05:24 INFO  MainController:67 - Visit main page
+2018-05-14 20:06:09 INFO  MainController:67 - Visit main page
+2018-05-14 20:06:16 INFO  MainController:67 - Visit main page
+2018-05-14 20:06:23 INFO  MainController:67 - Visit main page
+2018-05-14 20:06:27 INFO  MainController:67 - Visit main page
+2018-05-14 21:17:05 INFO  MainController:88 - New Article Added
+2018-05-14 21:17:11 INFO  MainController:67 - Visit main page
+2018-05-14 21:18:47 INFO  OfferController:33 - Someone want to offer new articleId
+2018-05-14 21:19:44 INFO  OfferController:47 - New Article Offered
+2018-05-14 21:19:57 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 21:20:01 INFO  MainController:67 - Visit main page
+2018-05-14 21:21:13 INFO  OfferController:33 - Someone want to offer new articleId
+2018-05-14 21:21:52 INFO  OfferController:47 - New Article Offered
+2018-05-14 21:31:57 INFO  MainController:67 - Visit main page
+2018-05-14 21:32:01 INFO  OfferController:34 - Someone want to offer new articleId
+2018-05-14 21:32:14 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 21:32:18 INFO  MainController:67 - Visit main page
+2018-05-14 21:47:39 INFO  MainController:67 - Visit main page
+2018-05-14 21:47:43 INFO  OfferController:34 - Someone want to offer new articleId
+2018-05-14 21:49:30 INFO  OfferController:49 - New Article Offered
+2018-05-14 21:50:38 INFO  OfferController:34 - Someone want to offer new articleId
+2018-05-14 21:50:43 INFO  OfferController:50 - New Article Offered
+2018-05-14 21:51:47 INFO  OfferController:34 - Someone want to offer new articleId
+2018-05-14 21:51:50 INFO  OfferController:51 - New Article Offered
+2018-05-14 21:51:59 INFO  MainController:67 - Visit main page
+2018-05-14 21:52:08 INFO  OfferController:75 - Load Offered Articles: 3
+2018-05-14 21:52:34 INFO  OfferController:75 - Load Offered Articles: 3
+2018-05-14 21:52:38 INFO  OfferController:75 - Load Offered Articles: 3
+2018-05-14 21:52:44 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 21:52:44 INFO  OfferController:106 - Admin Denied Article
+2018-05-14 21:52:44 INFO  OfferController:75 - Load Offered Articles: 2
+2018-05-14 21:52:49 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-14 21:52:49 INFO  OfferController:106 - Admin Denied Article
+2018-05-14 21:52:49 INFO  OfferController:75 - Load Offered Articles: 1
+2018-05-14 21:52:55 INFO  OfferController:75 - Load Offered Articles: 1
+2018-05-14 21:52:59 INFO  MainController:67 - Visit main page
+2018-05-14 21:53:31 INFO  OfferController:75 - Load Offered Articles: 1
+2018-05-15 18:18:43 INFO  MainController:67 - Visit main page
+2018-05-15 18:18:44 INFO  MainController:67 - Visit main page
+2018-05-15 18:18:53 INFO  MainController:67 - Visit main page
+2018-05-15 18:23:32 INFO  MainController:67 - Visit main page
+2018-05-15 18:24:04 INFO  OfferController:34 - Someone want to offer new articleId
+2018-05-15 18:24:56 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-15 18:27:44 INFO  MainController:67 - Visit main page
+2018-05-15 18:27:54 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-16 09:31:08 INFO  MainController:67 - Visit main page
+2018-05-16 09:31:58 INFO  MainController:67 - Visit main page
+2018-05-16 09:33:24 INFO  MainController:67 - Visit main page
+2018-05-16 09:33:43 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-16 09:35:17 INFO  MainController:67 - Visit main page
+2018-05-16 09:35:26 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-16 09:35:32 INFO  MainController:67 - Visit main page
+2018-05-16 09:35:36 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-16 09:36:44 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-16 09:36:49 WARN  DataBaseWork:42 - Something Was Deleted From Database.
+2018-05-16 09:36:49 INFO  OfferController:108 - Admin Denied Article
+2018-05-16 09:36:49 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-16 09:36:53 INFO  MainController:67 - Visit main page
+2018-05-16 12:01:16 INFO  MainController:67 - Visit main page
+2018-05-16 12:01:18 INFO  MainController:67 - Visit main page
+2018-05-16 12:01:47 INFO  MainController:67 - Visit main page
+2018-05-16 12:04:44 INFO  MainController:67 - Visit main page
+2018-05-16 12:04:51 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-16 12:05:06 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-16 12:06:22 INFO  MainController:67 - Visit main page
+2018-05-16 12:06:38 INFO  MainController:67 - Visit main page
+2018-05-16 12:08:26 INFO  MainController:67 - Visit main page
+2018-05-16 12:08:33 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-16 12:11:36 INFO  MainController:67 - Visit main page
+2018-05-16 12:11:51 INFO  MainController:67 - Visit main page
+2018-05-16 12:17:58 INFO  MainController:67 - Visit main page
+2018-05-16 12:18:11 INFO  MainController:67 - Visit main page
+2018-05-16 12:38:31 INFO  MainController:67 - Visit main page
+2018-05-18 22:13:45 INFO  MainController:63 - Visit main page
+2018-05-18 22:13:46 INFO  MainController:63 - Visit main page
+2018-05-18 22:14:04 INFO  MainController:63 - Visit main page
+2018-05-18 22:14:07 INFO  MainController:63 - Visit main page
+2018-05-18 22:14:59 INFO  MainController:63 - Visit main page
+2018-05-19 15:24:18 INFO  MainController:63 - Visit main page
+2018-05-19 15:24:19 INFO  MainController:63 - Visit main page
+2018-05-19 15:24:40 INFO  MainController:63 - Visit main page
+2018-05-20 15:47:47 INFO  MainController:59 - Visit main page
+2018-05-20 15:47:48 INFO  MainController:59 - Visit main page
+2018-05-20 17:18:51 INFO  MainController:59 - Visit main page
+2018-05-20 17:20:23 INFO  MainController:59 - Visit main page
+2018-05-20 17:21:22 INFO  MainController:59 - Visit main page
+2018-05-20 17:49:16 INFO  MainController:59 - Visit main page
+2018-05-20 17:54:07 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-20 17:55:35 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-20 17:56:01 INFO  MainController:59 - Visit main page
+2018-05-20 18:05:01 INFO  MainController:59 - Visit main page
+2018-05-20 18:30:09 INFO  MainController:59 - Visit main page
+2018-05-20 18:30:26 ERROR DataBaseWork:26 - Hibernate Connection Error
+2018-05-20 18:32:32 INFO  MainController:59 - Visit main page
+2018-05-20 18:51:36 INFO  MainController:59 - Visit main page
+2018-05-22 18:40:30 INFO  MainController:59 - Visit main page
+2018-05-22 18:41:37 INFO  MainController:59 - Visit main page
+2018-05-22 18:53:01 INFO  MainController:59 - Visit main page
+2018-05-22 18:53:13 INFO  MainController:59 - Visit main page
+2018-05-22 18:53:22 INFO  MainController:59 - Visit main page
+2018-05-22 19:00:32 INFO  MainController:59 - Visit main page
+2018-05-22 19:08:17 INFO  MainController:59 - Visit main page
+2018-05-22 19:11:26 INFO  MainController:59 - Visit main page
+2018-05-22 20:09:08 INFO  MainController:59 - Visit main page
+2018-05-22 20:10:50 INFO  MainController:59 - Visit main page
+2018-05-22 20:11:29 INFO  MainController:59 - Visit main page
+2018-05-23 12:28:51 INFO  MainController:59 - Visit main page
+2018-05-23 12:30:42 INFO  MainController:59 - Visit main page
+2018-05-23 12:31:12 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-23 12:31:16 INFO  MainController:59 - Visit main page
+2018-05-23 12:31:22 INFO  MainController:59 - Visit main page
+2018-05-23 12:33:16 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:33:55 INFO  MainController:59 - Visit main page
+2018-05-23 12:33:58 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:09 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:11 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:12 INFO  MainController:59 - Visit main page
+2018-05-23 12:34:13 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:15 INFO  MainController:59 - Visit main page
+2018-05-23 12:34:16 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:25 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:34:55 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:35:00 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:35:06 INFO  MainController:59 - Visit main page
+2018-05-23 12:35:08 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:35:40 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 12:35:45 INFO  MainController:59 - Visit main page
+2018-05-23 12:40:12 INFO  MainController:59 - Visit main page
+2018-05-23 12:40:39 INFO  MainController:59 - Visit main page
+2018-05-23 12:45:33 INFO  MainController:59 - Visit main page
+2018-05-23 12:47:59 INFO  MainController:59 - Visit main page
+2018-05-23 12:57:58 INFO  MainController:59 - Visit main page
+2018-05-23 12:58:44 INFO  MainController:59 - Visit main page
+2018-05-23 12:58:46 INFO  MainController:59 - Visit main page
+2018-05-23 13:00:42 INFO  MainController:59 - Visit main page
+2018-05-23 13:03:52 INFO  MainController:59 - Visit main page
+2018-05-23 13:06:14 INFO  MainController:59 - Visit main page
+2018-05-23 13:07:17 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-23 13:13:51 INFO  OfferController:52 - New Article Offered
+2018-05-23 13:13:59 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-25 22:58:48 INFO  MainController:59 - Visit main page
+2018-05-25 22:59:27 INFO  MainController:59 - Visit main page
+2018-05-25 23:00:16 INFO  MainController:59 - Visit main page
+2018-05-25 23:23:51 INFO  MainController:59 - Visit main page
+2018-05-25 23:25:02 INFO  MainController:59 - Visit main page
+2018-05-25 23:29:25 INFO  MainController:59 - Visit main page
+2018-05-25 23:30:12 INFO  MainController:59 - Visit main page
+2018-05-25 23:37:22 INFO  MainController:59 - Visit main page
+2018-05-25 23:37:43 INFO  MainController:59 - Visit main page
+2018-05-25 23:38:06 INFO  MainController:59 - Visit main page
+2018-05-25 23:48:31 INFO  MainController:59 - Visit main page
+2018-05-25 23:49:13 INFO  MainController:77 - Visit main page
+2018-05-25 23:49:17 INFO  MainController:59 - Visit main page
+2018-05-25 23:49:18 INFO  MainController:59 - Visit main page
+2018-05-25 23:49:21 INFO  MainController:59 - Visit main page
+2018-05-25 23:49:25 INFO  MainController:59 - Visit main page
+2018-05-26 00:03:57 INFO  MainController:59 - Visit main page
+2018-05-26 00:04:40 INFO  MainController:59 - Visit main page
+2018-05-26 00:04:51 INFO  MainController:59 - Visit main page
+2018-05-26 00:04:54 INFO  MainController:59 - Visit main page
+2018-05-26 00:04:55 INFO  MainController:59 - Visit main page
+2018-05-26 00:05:03 INFO  MainController:59 - Visit main page
+2018-05-26 00:05:17 INFO  MainController:77 - Visit main page
+2018-05-26 00:05:19 INFO  MainController:77 - Visit main page
+2018-05-26 00:05:57 INFO  MainController:59 - Visit main page
+2018-05-26 00:05:58 INFO  MainController:59 - Visit main page
+2018-05-26 00:06:00 INFO  MainController:59 - Visit main page
+2018-05-26 00:06:01 INFO  MainController:59 - Visit main page
+2018-05-26 00:06:02 INFO  MainController:59 - Visit main page
+2018-05-26 00:09:36 INFO  MainController:59 - Visit main page
+2018-05-26 00:09:39 INFO  MainController:59 - Visit main page
+2018-05-26 00:10:02 INFO  MainController:59 - Visit main page
+2018-05-26 00:10:06 INFO  MainController:59 - Visit main page
+2018-05-26 00:10:10 INFO  MainController:59 - Visit main page
+2018-05-26 11:24:25 INFO  MainController:59 - Visit main page
+2018-05-26 11:25:08 INFO  MainController:77 - Visit main page
+2018-05-26 11:25:10 INFO  MainController:59 - Visit main page
+2018-05-26 11:57:04 INFO  MainController:61 - Visit main page
+2018-05-26 11:57:14 INFO  MainController:61 - Visit main page
+2018-05-26 12:02:45 INFO  MainController:61 - Visit main page
+2018-05-26 12:04:46 INFO  MainController:61 - Visit main page
+2018-05-26 12:05:41 INFO  MainController:61 - Visit main page
+2018-05-26 12:07:40 INFO  MainController:61 - Visit main page
+2018-05-26 12:08:23 INFO  MainController:61 - Visit main page
+2018-05-26 12:14:32 INFO  MainController:61 - Visit main page
+2018-05-26 12:14:51 INFO  MainController:61 - Visit main page
+2018-05-26 12:16:50 INFO  MainController:61 - Visit main page
+2018-05-26 12:17:04 INFO  MainController:61 - Visit main page
+2018-05-26 12:22:31 INFO  MainController:61 - Visit main page
+2018-05-26 12:32:35 INFO  MainController:61 - Visit main page
+2018-05-26 12:33:59 INFO  MainController:61 - Visit main page
+2018-05-26 12:34:05 INFO  MainController:61 - Visit main page
+2018-05-26 12:35:37 INFO  MainController:61 - Visit main page
+2018-05-26 12:36:11 INFO  MainController:61 - Visit main page
+2018-05-26 12:36:17 INFO  MainController:61 - Visit main page
+2018-05-26 12:36:48 INFO  MainController:61 - Visit main page
+2018-05-26 12:36:53 INFO  MainController:61 - Visit main page
+2018-05-26 12:38:11 INFO  MainController:61 - Visit main page
+2018-05-26 13:14:51 INFO  MainController:61 - Visit main page
+2018-05-26 13:16:45 INFO  MainController:61 - Visit main page
+2018-05-26 13:17:02 INFO  MainController:61 - Visit main page
+2018-05-26 13:17:59 INFO  MainController:61 - Visit main page
+2018-05-26 13:18:34 INFO  MainController:61 - Visit main page
+2018-05-26 13:19:59 INFO  MainController:79 - Visit main page
+2018-05-26 13:20:00 INFO  MainController:79 - Visit main page
+2018-05-26 13:20:07 INFO  MainController:61 - Visit main page
+2018-05-26 13:20:08 INFO  MainController:61 - Visit main page
+2018-05-26 13:20:09 INFO  MainController:79 - Visit main page
+2018-05-26 13:20:49 INFO  MainController:79 - Visit main page
+2018-05-26 13:20:58 INFO  MainController:61 - Visit main page
+2018-05-26 13:20:59 INFO  MainController:61 - Visit main page
+2018-05-26 13:21:11 INFO  MainController:79 - Visit main page
+2018-05-26 13:22:20 INFO  MainController:79 - Visit main page
+2018-05-26 13:22:34 INFO  MainController:79 - Visit main page
+2018-05-26 13:22:48 INFO  MainController:61 - Visit main page
+2018-05-26 13:22:48 INFO  MainController:61 - Visit main page
+2018-05-26 13:32:05 INFO  MainController:79 - Visit main page
+2018-05-26 13:37:53 INFO  MainController:61 - Visit main page
+2018-05-26 13:37:53 INFO  MainController:61 - Visit main page
+2018-05-26 13:53:00 INFO  MainController:61 - Visit main page
+2018-05-26 14:01:38 INFO  MainController:79 - Visit main page
+2018-05-26 14:01:47 INFO  MainController:61 - Visit main page
+2018-05-26 14:02:56 INFO  MainController:61 - Visit main page
+2018-05-26 14:03:31 INFO  MainController:79 - Visit main page
+2018-05-26 14:03:31 INFO  MainController:79 - Visit main page
+2018-05-26 14:25:22 INFO  MainController:79 - Visit main page
+2018-05-26 14:25:23 INFO  MainController:61 - Visit main page
+2018-05-26 14:25:26 INFO  MainController:61 - Visit main page
+2018-05-26 14:25:26 INFO  MainController:61 - Visit main page
+2018-05-26 14:25:50 INFO  MainController:61 - Visit main page
+2018-05-26 14:25:56 INFO  MainController:61 - Visit main page
+2018-05-26 14:27:36 INFO  MainController:61 - Visit main page
+2018-05-26 14:28:01 INFO  MainController:61 - Visit main page
+2018-05-26 14:28:05 INFO  MainController:61 - Visit main page
+2018-05-26 14:28:23 INFO  MainController:79 - Visit main page
+2018-05-26 14:31:11 INFO  MainController:79 - Visit main page
+2018-05-26 14:31:14 INFO  MainController:61 - Visit main page
+2018-05-26 14:31:15 INFO  MainController:61 - Visit main page
+2018-05-26 14:31:23 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:19 INFO  MainController:79 - Visit main page
+2018-05-26 14:33:23 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:23 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:35 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:45 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:46 INFO  MainController:61 - Visit main page
+2018-05-26 14:33:51 INFO  MainController:61 - Visit main page
+2018-05-27 11:27:09 INFO  MainController:79 - Visit main page
+2018-05-27 11:27:17 INFO  MainController:61 - Visit main page
+2018-05-27 11:27:17 INFO  MainController:61 - Visit main page
+2018-05-27 11:28:54 INFO  MainController:79 - Visit main page
+2018-05-27 14:32:06 INFO  MainController:79 - Visit main page
+2018-05-27 14:32:07 INFO  MainController:79 - Visit main page
+2018-05-27 14:32:11 INFO  MainController:61 - Visit main page
+2018-05-27 14:32:12 INFO  MainController:61 - Visit main page
+2018-05-27 14:33:45 INFO  MainController:61 - Visit main page
+2018-05-27 14:35:45 INFO  MainController:61 - Visit main page
+2018-05-27 14:35:52 INFO  MainController:61 - Visit main page
+2018-05-27 14:36:01 INFO  MainController:61 - Visit main page
+2018-05-27 14:36:18 INFO  MainController:79 - Visit main page
+2018-05-27 14:36:39 INFO  MainController:79 - Visit main page
+2018-05-27 14:37:02 INFO  MainController:79 - Visit main page
+2018-05-27 14:37:09 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-27 14:38:07 INFO  MainController:79 - Visit main page
+2018-05-27 14:38:10 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-27 14:38:38 INFO  OfferController:52 - New Article Offered
+2018-05-27 14:38:49 INFO  OfferController:76 - Load Offered Articles: 2
+2018-05-27 14:39:03 INFO  OfferController:108 - Admin Denied Article
+2018-05-27 14:39:03 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-27 14:39:18 INFO  OfferController:98 - Admin Accepted Article
+2018-05-27 14:39:18 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-27 14:39:22 INFO  MainController:79 - Visit main page
+2018-05-27 16:06:09 INFO  MainController:79 - Visit main page
+2018-05-27 16:06:20 INFO  MainController:79 - Visit main page
+2018-05-27 16:06:23 INFO  MainController:61 - Visit main page
+2018-05-27 16:06:24 INFO  MainController:61 - Visit main page
+2018-05-27 16:23:43 INFO  MainController:61 - Visit main page
+2018-05-27 16:23:43 INFO  MainController:61 - Visit main page
+2018-05-27 16:23:56 INFO  MainController:61 - Visit main page
+2018-05-27 16:23:58 INFO  MainController:61 - Visit main page
+2018-05-27 16:24:05 INFO  MainController:61 - Visit main page
+2018-05-27 16:25:53 INFO  MainController:61 - Visit main page
+2018-05-27 16:25:54 INFO  MainController:61 - Visit main page
+2018-05-27 16:58:59 INFO  MainController:61 - Visit main page
+2018-05-27 16:59:00 INFO  MainController:61 - Visit main page
+2018-05-27 16:59:08 INFO  MainController:61 - Visit main page
+2018-05-29 17:55:51 INFO  MainController:61 - Visit main page
+2018-05-29 17:56:56 INFO  MainController:79 - Visit main page
+2018-05-29 17:57:03 INFO  MainController:79 - Visit main page
+2018-05-29 17:57:11 INFO  MainController:79 - Visit main page
+2018-05-29 17:59:29 INFO  MainController:79 - Visit main page
+2018-05-29 18:00:20 INFO  MainController:80 - Visit main page
+2018-05-29 18:00:31 INFO  MainController:80 - Visit main page
+2018-05-29 18:00:32 INFO  MainController:80 - Visit main page
+2018-05-29 18:01:27 INFO  MainController:80 - Visit main page
+2018-05-29 18:02:33 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 18:03:19 INFO  MainController:64 - Visit main page
+2018-05-29 18:40:49 INFO  MainController:64 - Visit main page
+2018-05-29 18:40:56 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:15:35 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:15:58 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:15:59 INFO  MainController:64 - Visit main page
+2018-05-29 19:21:30 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:22:04 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:22:56 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:22:58 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:23:30 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:23:35 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:24:16 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:28:41 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:29:17 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:30:56 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:32:33 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:32:39 INFO  MainController:64 - Visit main page
+2018-05-29 19:32:40 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:33:13 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:46:43 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:47:02 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:47:17 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:47:58 INFO  MainController:64 - Visit main page
+2018-05-29 19:48:03 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:49:43 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:49:57 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:50:10 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:50:11 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:51:05 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:51:06 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:53:58 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:56:07 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:56:22 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:56:47 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:58:10 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 19:58:30 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:00:30 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:01:46 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:03:17 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:03:51 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:04:47 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:06:18 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:06:29 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:08:39 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:09:52 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:10:17 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:10:36 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:11:01 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:11:07 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:13:27 INFO  OfferController:52 - New Article Offered
+2018-05-29 20:13:37 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:20:14 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:22:20 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:30:00 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:32:01 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:33:41 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:34:46 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:37:14 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:38:31 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:38:56 INFO  MainController:64 - Visit main page
+2018-05-29 20:39:02 INFO  MainController:64 - Visit main page
+2018-05-29 20:39:10 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 20:39:14 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:39:14 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:40:22 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:41:04 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 20:41:10 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:15:25 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:16:41 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:17:52 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:18:38 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:19:17 INFO  OfferController:76 - Load Offered Articles: 1
+2018-05-29 21:19:47 INFO  OfferController:98 - Admin Accepted Article
+2018-05-29 21:19:47 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-29 21:20:06 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 21:20:11 INFO  MainController:64 - Visit main page
+2018-05-29 21:20:23 INFO  MainController:64 - Visit main page
+2018-05-29 21:25:03 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-29 21:26:10 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-29 21:26:16 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-29 21:35:43 INFO  OfferController:35 - Someone want to offer new articleId
+2018-05-29 21:42:30 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-29 22:10:51 INFO  MainController:64 - Visit main page
+2018-05-29 22:32:38 INFO  UserController:40 - New User Registered: SomeKindPerson
+2018-05-29 22:32:38 INFO  MainController:64 - Visit main page
+2018-05-29 22:33:02 INFO  MainController:64 - Visit main page
+2018-05-29 22:35:31 INFO  UserController:40 - New User Registered: AndreyFromCanada
+2018-05-29 22:35:31 INFO  MainController:64 - Visit main page
+2018-05-30 12:09:09 INFO  MainController:64 - Visit main page
+2018-05-30 12:16:34 INFO  UserController:40 - New User Registered: assanoooo4k
+2018-05-30 12:16:34 INFO  MainController:64 - Visit main page
+2018-05-30 12:17:24 INFO  MainController:64 - Visit main page
+2018-05-30 12:17:31 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-30 12:17:31 INFO  OfferController:76 - Load Offered Articles: 0
+2018-05-30 12:17:36 INFO  MainController:64 - Visit main page
+2018-05-30 12:21:35 INFO  MainController:64 - Visit main page
+2018-05-30 12:25:33 INFO  MainController:64 - Visit main page
+2018-05-30 12:33:00 INFO  MainController:64 - Visit main page
+2018-05-30 12:33:56 INFO  MainController:64 - Visit main page
+2018-05-30 13:00:12 INFO  MainController:64 - Visit main page
+2018-06-01 21:41:19 INFO  MainController:64 - Visit main page
+2018-06-01 21:41:19 INFO  MainController:64 - Visit main page
+2018-06-01 22:37:49 INFO  MainController:64 - Visit main page
+2018-06-01 22:37:49 INFO  MainController:64 - Visit main page
+2018-06-01 22:38:54 INFO  MainController:64 - Visit main page
+2018-06-01 22:46:30 INFO  MainController:64 - Visit main page
+2018-06-01 23:00:54 INFO  MainController:64 - Visit main page
+2018-06-01 23:02:34 INFO  MainController:64 - Visit main page
+2018-06-01 23:12:24 INFO  MainController:64 - Visit main page
+2018-06-01 23:14:07 INFO  MainController:64 - Visit main page
+2018-06-01 23:15:15 INFO  MainController:64 - Visit main page
+2018-06-01 23:17:51 INFO  MainController:64 - Visit main page
+2018-06-01 23:19:40 INFO  MainController:64 - Visit main page
+2018-06-01 23:19:47 INFO  MainController:64 - Visit main page
+2018-06-01 23:20:09 INFO  MainController:64 - Visit main page
+2018-06-01 23:23:16 INFO  MainController:64 - Visit main page
+2018-06-01 23:24:20 INFO  MainController:64 - Visit main page
+2018-06-01 23:24:57 INFO  MainController:64 - Visit main page
+2018-06-01 23:25:11 INFO  MainController:64 - Visit main page
+2018-06-01 23:26:47 INFO  MainController:64 - Visit main page
+2018-06-01 23:27:31 INFO  MainController:64 - Visit main page
+2018-06-01 23:28:04 INFO  MainController:64 - Visit main page
+2018-06-01 23:28:44 INFO  MainController:64 - Visit main page
+2018-06-01 23:29:38 INFO  MainController:64 - Visit main page
+2018-06-01 23:33:21 INFO  MainController:64 - Visit main page
+2018-06-01 23:34:07 INFO  MainController:64 - Visit main page
+2018-06-01 23:35:28 INFO  MainController:64 - Visit main page
+2018-06-01 23:37:02 INFO  MainController:64 - Visit main page
+2018-06-01 23:37:54 INFO  MainController:64 - Visit main page
+2018-06-01 23:38:17 INFO  MainController:64 - Visit main page
+2018-06-01 23:38:39 INFO  MainController:64 - Visit main page
+2018-06-02 10:38:59 INFO  MainController:67 - Visit main page
+2018-06-02 10:39:30 INFO  MainController:67 - Visit main page
+2018-06-02 10:39:45 INFO  MainController:67 - Visit main page
+2018-06-02 10:39:52 INFO  MainController:67 - Visit main page
+2018-06-02 10:41:50 INFO  UserController:41 - New User Registered: Jspmaster
+2018-06-02 10:41:50 INFO  MainController:67 - Visit main page
+2018-06-02 10:42:03 INFO  MainController:67 - Visit main page
+2018-06-02 10:45:10 INFO  MainController:67 - Visit main page
+2018-06-02 10:48:37 INFO  MainController:67 - Visit main page
+2018-06-02 10:48:56 INFO  MainController:67 - Visit main page
+2018-06-02 10:54:38 INFO  MainController:67 - Visit main page
+2018-06-02 10:55:22 INFO  MainController:67 - Visit main page
+2018-06-02 10:55:34 INFO  UserController:61 - Someone Signed In
+2018-06-02 10:55:34 INFO  MainController:67 - Visit main page
+2018-06-02 10:59:39 INFO  MainController:67 - Visit main page
+2018-06-02 10:59:47 INFO  UserController:61 - Someone Signed In
+2018-06-02 10:59:47 INFO  MainController:67 - Visit main page
+2018-06-02 11:03:01 INFO  UserController:61 - Someone Signed In
+2018-06-02 11:03:01 INFO  MainController:67 - Visit main page
+2018-06-02 11:06:37 INFO  UserController:61 - Someone Signed In
+2018-06-02 11:06:37 INFO  MainController:67 - Visit main page
+2018-06-02 11:06:52 ERROR DataBaseWork:26 - Hibernate Connection Error
+2018-06-02 11:09:04 INFO  UserController:61 - Someone Signed In
+2018-06-02 11:09:04 INFO  MainController:67 - Visit main page
+2018-06-02 12:13:03 INFO  UserController:61 - Someone Signed In
+2018-06-02 12:13:03 INFO  MainController:67 - Visit main page
+2018-06-02 12:18:21 INFO  MainController:67 - Visit main page
+2018-06-02 12:18:31 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:19:50 INFO  MainController:67 - Visit main page
+2018-06-02 12:19:59 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:23:22 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:24:25 INFO  MainController:67 - Visit main page
+2018-06-02 12:24:33 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:25:28 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:25:38 INFO  MainController:67 - Visit main page
+2018-06-02 12:25:55 INFO  UserController:62 - Someone Signed In
+2018-06-02 12:25:55 INFO  MainController:67 - Visit main page
+2018-06-02 13:17:16 INFO  MainController:67 - Visit main page
+2018-06-02 13:25:30 INFO  UserController:62 - Someone Signed In
+2018-06-02 13:25:30 INFO  MainController:67 - Visit main page
+2018-06-02 13:25:44 INFO  MainController:67 - Visit main page
+2018-06-02 13:38:20 INFO  MainController:67 - Visit main page
+2018-06-02 13:38:49 INFO  MainController:67 - Visit main page
+2018-06-02 13:40:20 INFO  MainController:67 - Visit main page
+2018-06-02 13:41:22 INFO  MainController:67 - Visit main page
+2018-06-02 13:43:02 INFO  MainController:67 - Visit main page
+2018-06-02 13:43:14 INFO  MainController:67 - Visit main page
+2018-06-02 13:43:36 INFO  MainController:67 - Visit main page
+2018-06-02 13:52:40 INFO  MainController:67 - Visit main page
+2018-06-02 13:53:15 INFO  MainController:67 - Visit main page
+2018-06-02 13:54:11 INFO  MainController:67 - Visit main page
+2018-06-02 13:56:19 INFO  MainController:67 - Visit main page
+2018-06-02 13:56:32 INFO  MainController:67 - Visit main page
+2018-06-02 13:57:51 INFO  MainController:67 - Visit main page
+2018-06-02 13:58:02 INFO  MainController:67 - Visit main page
+2018-06-02 14:00:36 INFO  MainController:67 - Visit main page
+2018-06-02 14:01:44 INFO  MainController:67 - Visit main page
+2018-06-02 14:02:27 INFO  MainController:67 - Visit main page
+2018-06-02 14:04:16 INFO  MainController:67 - Visit main page
+2018-06-02 14:04:32 INFO  MainController:67 - Visit main page
+2018-06-02 14:05:02 INFO  MainController:67 - Visit main page
+2018-06-02 14:05:41 INFO  MainController:67 - Visit main page
+2018-06-02 14:10:35 INFO  MainController:67 - Visit main page
+2018-06-02 14:10:59 INFO  MainController:67 - Visit main page
+2018-06-02 14:12:50 INFO  MainController:67 - Visit main page
+2018-06-02 14:13:28 INFO  MainController:67 - Visit main page
+2018-06-02 14:14:17 INFO  MainController:67 - Visit main page
+2018-06-02 14:14:21 INFO  MainController:67 - Visit main page
+2018-06-02 14:15:01 INFO  MainController:67 - Visit main page
+2018-06-03 18:02:59 INFO  MainController:67 - Visit main page
+2018-06-03 18:03:17 INFO  MainController:67 - Visit main page
+2018-06-03 18:04:32 INFO  UserController:62 - Someone Signed In
+2018-06-03 18:04:32 INFO  MainController:67 - Visit main page
+2018-06-03 18:04:54 INFO  MainController:67 - Visit main page
+2018-06-03 18:04:55 INFO  MainController:67 - Visit main page
+2018-06-03 18:05:05 INFO  UserController:62 - Someone Signed In
+2018-06-03 18:05:05 INFO  MainController:67 - Visit main page
+2018-06-03 18:06:04 INFO  MainController:67 - Visit main page
+2018-06-03 18:06:14 INFO  MainController:67 - Visit main page
+2018-06-03 18:06:19 INFO  MainController:67 - Visit main page
+2018-06-03 18:06:37 INFO  UserController:62 - Someone Signed In
+2018-06-03 18:06:37 INFO  MainController:67 - Visit main page
+2018-06-03 18:08:19 INFO  MainController:67 - Visit main page
+2018-06-03 18:08:47 INFO  MainController:67 - Visit main page
+2018-06-03 18:11:05 INFO  MainController:67 - Visit main page
+2018-06-03 18:11:15 INFO  MainController:67 - Visit main page
+2018-06-03 18:12:09 INFO  MainController:67 - Visit main page
+2018-06-03 18:12:39 INFO  MainController:67 - Visit main page
+2018-06-03 18:13:16 INFO  MainController:67 - Visit main page
+2018-06-03 18:13:42 INFO  OfferController:76 - Load Offered Articles: 0
+2018-06-03 18:13:43 INFO  OfferController:76 - Load Offered Articles: 0
+2018-06-03 18:13:45 INFO  OfferController:35 - Someone want to offer new articleId
+2018-06-03 18:20:27 INFO  MainController:67 - Visit main page
+2018-06-03 18:20:43 INFO  UserController:62 - Someone Signed In
+2018-06-03 18:20:43 INFO  MainController:67 - Visit main page
+2018-06-03 18:20:48 INFO  OfferController:42 - Someone want to offer new articleId
+2018-06-03 18:33:53 INFO  MainController:67 - Visit main page
+2018-06-03 18:34:05 INFO  UserController:62 - Someone Signed In
+2018-06-03 18:34:54 INFO  MainController:67 - Visit main page
+2018-06-03 18:34:54 INFO  MainController:67 - Visit main page
+2018-06-03 18:35:02 INFO  UserController:62 - Someone Signed In
+2018-06-03 19:04:23 INFO  MainController:67 - Visit main page
+2018-06-03 19:04:34 INFO  UserController:62 - Someone Signed In
+2018-06-03 19:04:41 INFO  OfferController:42 - Someone want to offer new articleId
+2018-06-03 19:08:52 INFO  UserController:64 - Someone Signed In
+2018-06-03 19:09:20 INFO  UserController:64 - Someone Signed In
+2018-06-03 19:14:14 INFO  MainController:67 - Visit main page
+2018-06-03 19:14:21 INFO  UserController:64 - Someone Signed In
+2018-06-03 19:16:11 INFO  MainController:67 - Visit main page
+2018-06-03 19:16:15 INFO  MainController:67 - Visit main page
+2018-06-03 19:49:34 INFO  UserController:66 - Someone Signed In
+2018-06-03 19:49:34 INFO  MainController:67 - Visit main page
+2018-06-03 19:51:10 INFO  MainController:67 - Visit main page
+2018-06-03 19:51:19 INFO  UserController:66 - Someone Signed In
+2018-06-03 19:51:19 INFO  MainController:67 - Visit main page
+2018-06-03 22:25:20 INFO  MainController:67 - Visit main page
+2018-06-03 22:25:21 INFO  MainController:67 - Visit main page
+2018-06-03 22:26:16 INFO  MainController:67 - Visit main page
+2018-06-03 22:26:22 INFO  MainController:67 - Visit main page
+2018-06-03 22:26:58 INFO  MainController:67 - Visit main page
+2018-06-03 22:27:00 INFO  MainController:67 - Visit main page
+2018-06-03 22:27:04 INFO  MainController:67 - Visit main page
+2018-06-03 22:29:49 INFO  MainController:67 - Visit main page
+2018-06-03 22:30:26 INFO  MainController:67 - Visit main page
+2018-06-03 22:48:15 INFO  UserController:42 - New User Registered: roman123
+2018-06-03 22:48:15 INFO  MainController:67 - Visit main page
+2018-06-03 23:22:59 INFO  MainController:67 - Visit main page
+2018-06-03 23:27:49 INFO  UserController:71 - Someone Signed In
+2018-06-03 23:27:49 INFO  MainController:67 - Visit main page
+2018-06-03 23:29:08 INFO  MainController:67 - Visit main page
+2018-06-03 23:29:22 INFO  UserController:71 - Someone Signed In
+2018-06-03 23:29:22 INFO  MainController:67 - Visit main page
+2018-06-03 23:29:30 INFO  MainController:67 - Visit main page
+2018-06-03 23:31:04 INFO  UserController:74 - Someone Signed In
+2018-06-03 23:31:04 INFO  MainController:67 - Visit main page
+2018-06-03 23:34:48 INFO  UserController:74 - Someone Signed In
+2018-06-03 23:34:48 INFO  MainController:67 - Visit main page
+2018-06-03 23:35:12 INFO  OfferController:44 - Someone want to offer new articleId
+2018-06-03 23:35:32 INFO  UserController:74 - Someone Signed In
+2018-06-03 23:35:32 INFO  MainController:67 - Visit main page
+2018-06-03 23:40:05 INFO  MainController:67 - Visit main page
+2018-06-03 23:40:16 INFO  MainController:67 - Visit main page
+2018-06-03 23:40:35 INFO  MainController:67 - Visit main page
+2018-06-03 23:40:45 INFO  UserController:71 - Someone Signed In
+2018-06-03 23:40:45 INFO  MainController:67 - Visit main page
+2018-06-03 23:42:00 INFO  MainController:67 - Visit main page
+2018-06-03 23:42:13 INFO  MainController:67 - Visit main page
+2018-06-03 23:42:20 INFO  MainController:67 - Visit main page
+2018-06-03 23:42:22 INFO  MainController:67 - Visit main page
+2018-06-04 12:14:13 INFO  UserController:71 - Someone Signed In
+2018-06-04 12:16:35 INFO  OfferController:62 - New Article Offered By roman123
+2018-06-04 12:16:48 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 12:20:28 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 12:20:29 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 12:27:15 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 12:27:52 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 12:29:47 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 23:40:42 INFO  UserController:45 - New User Registered: roma123
+2018-06-04 23:42:19 INFO  UserController:72 - Someone Signed In
+2018-06-04 23:47:25 INFO  UserController:69 - Someone Signed In
+2018-06-04 23:49:30 INFO  OfferController:62 - New Article Offered By roma123
+2018-06-04 23:49:36 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-04 23:49:46 INFO  OfferController:108 - Admin Accepted Article
+2018-06-04 23:49:46 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-04 23:51:13 INFO  OfferController:62 - New Article Offered By roma123
+2018-06-04 23:51:20 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-04 23:51:20 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-04 23:51:26 INFO  OfferController:118 - Admin Denied Article
+2018-06-04 23:51:26 INFO  OfferController:86 - Load Offered Articles: 1
+2018-06-05 00:02:49 INFO  UserController:69 - Someone Signed In
+2018-06-05 00:06:28 INFO  OfferController:62 - New Article Offered By Jspmaster
+2018-06-05 00:06:37 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-05 00:06:52 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-05 00:06:57 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-05 13:31:51 INFO  UserController:69 - Someone Signed In
+2018-06-06 11:57:38 INFO  OfferController:86 - Load Offered Articles: 2
+2018-06-06 11:58:30 INFO  UserController:69 - Someone Signed In
+2018-06-06 12:03:52 INFO  UserController:69 - Someone Signed In
+2018-06-06 14:46:49 INFO  UserController:69 - Someone Signed In
+2018-06-07 17:05:52 INFO  UserController:69 - Someone Signed In
+2018-06-07 17:06:44 INFO  OfferController:62 - New Article Offered By roman123
+2018-06-07 17:06:50 INFO  OfferController:91 - Load Offered Articles: 3
+2018-06-07 17:06:53 INFO  OfferController:91 - Load Offered Articles: 3
+2018-06-07 17:07:00 INFO  OfferController:123 - Admin Denied Article
+2018-06-07 17:07:00 INFO  OfferController:91 - Load Offered Articles: 2
+2018-06-07 17:07:06 INFO  OfferController:113 - Admin Accepted Article
+2018-06-07 17:07:06 INFO  OfferController:91 - Load Offered Articles: 1
+2018-08-09 21:06:56 INFO  UserController:45 - New User Registered: roman
+2018-08-09 21:13:44 ERROR DataBaseWork:24 - Hibernate Connection Error
+2018-08-10 00:01:40 INFO  UserController:69 - Someone Signed In
+2018-08-10 12:51:02 ERROR DataBaseWork:24 - Hibernate Connection Error
+2018-08-10 13:08:01 ERROR DataBaseWork:24 - Hibernate Connection Error
+2018-08-10 13:58:36 INFO  UserController:45 - New User Registered: roman
+2018-08-10 20:18:35 ERROR DataBaseWork:24 - Hibernate Connection Error
+2018-08-11 23:09:01 INFO  UserController:45 - New User Registered: roman
+2018-08-12 13:09:21 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:10:24 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:12:14 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:16:48 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:28:20 INFO  UserController:45 - New User Registered: roman
+2018-08-12 13:31:04 INFO  UserController:45 - New User Registered: roman
+2018-08-12 13:35:07 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:36:38 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:44:08 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:44:59 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:47:34 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:49:46 INFO  UserController:69 - Someone Signed In
+2018-08-12 13:50:18 INFO  UserController:69 - Someone Signed In
+2018-08-12 14:34:53 WARN  DaoComponent:29 - db.properties (No such file or directory)
+2018-08-12 14:39:21 WARN  DaoComponent:29 - The url cannot be null
+2018-08-12 14:39:58 WARN  DaoComponent:29 - application.properties (No such file or directory)
+2018-08-12 14:40:52 WARN  DaoComponent:29 - ../resources/db.properties (No such file or directory)
+2018-08-12 14:41:40 WARN  DaoComponent:29 - ../../main/resources/db.properties (No such file or directory)

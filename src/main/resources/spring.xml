@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:security="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/beans ">
+
+
+    <!--<security:global-method-security pre-post-annotations= "enabled" secured-annotations= "enabled" jsr250-annotations= "enabled"/>-->
+    <mvc:annotation-driven />
+    <mvc:resources mapping="/resources/" location="/resources/"/>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10000"/>
+    </bean>
+
+    <bean id="userDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao"/>
+    <bean id="articleDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao"/>
+    <bean id="commentDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao"/>
+
+
+</beans>

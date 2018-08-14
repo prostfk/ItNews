@@ -1,0 +1,17 @@
+IIIIIIIIII         tttt               NNNNNNNN        NNNNNNNN
+I::::::::I      ttt:::t               N:::::::N       N::::::N
+I::::::::I      t:::::t               N::::::::N      N::::::N
+II::::::II      t:::::t               N:::::::::N     N::::::N
+  I::::I  ttttttt:::::ttttttt         N::::::::::N    N::::::N    eeeeeeeeeeee    wwwwwww           wwwww           wwwwwww    ssssssssss
+  I::::I  t:::::::::::::::::t         N:::::::::::N   N::::::N  ee::::::::::::ee   w:::::w         w:::::w         w:::::w   ss::::::::::s
+  I::::I  t:::::::::::::::::t         N:::::::N::::N  N::::::N e::::::eeeee:::::ee  w:::::w       w:::::::w       w:::::w  ss:::::::::::::s
+  I::::I  tttttt:::::::tttttt         N::::::N N::::N N::::::Ne::::::e     e:::::e   w:::::w     w:::::::::w     w:::::w   s::::::ssss:::::s
+  I::::I        t:::::t               N::::::N  N::::N:::::::Ne:::::::eeeee::::::e    w:::::w   w:::::w:::::w   w:::::w     s:::::s  ssssss
+  I::::I        t:::::t               N::::::N   N:::::::::::Ne:::::::::::::::::e      w:::::w w:::::w w:::::w w:::::w        s::::::s
+  I::::I        t:::::t               N::::::N    N::::::::::Ne::::::eeeeeeeeeee        w:::::w:::::w   w:::::w:::::w            s::::::s
+  I::::I        t:::::t    tttttt     N::::::N     N:::::::::Ne:::::::e                  w:::::::::w     w:::::::::w       ssssss   s:::::s
+II::::::II      t::::::tttt:::::t     N::::::N      N::::::::Ne::::::::e                  w:::::::w       w:::::::w        s:::::ssss::::::s
+I::::::::I      tt::::::::::::::t     N::::::N       N:::::::N e::::::::eeeeeeee           w:::::w         w:::::w         s::::::::::::::s
+I::::::::I        tt:::::::::::tt     N::::::N        N::::::N  ee:::::::::::::e            w:::w           w:::w           s:::::::::::ss
+IIIIIIIIII          ttttttttttt       NNNNNNNN         NNNNNNN    eeeeeeeeeeeeee             www             www             sssssssssss
+github.com/prostfk/ItNews
