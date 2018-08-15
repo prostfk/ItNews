@@ -7,12 +7,26 @@ import org.springframework.stereotype.Component;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @Component
 public class UserDao extends Dao {
 
     @Autowired
     private Connection connection;
+
+    public List<User> findAll() {
+        //language=SQL
+        ResultSet resultSet = executeQueryWithResult("SELECT * FROM user");
+        try {
+            return usersFromResultSet(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
+    }
 
     public User findUserById(Long id) {
         //language=SQL
@@ -47,7 +61,15 @@ public class UserDao extends Dao {
         return null;
     }
 
-
+    private List<User> usersFromResultSet(ResultSet resultSet) throws SQLException {
+        List<User> users = new ArrayList<>();
+        while (resultSet.next()) {
+            users.add(new User(
+                    resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"), resultSet.getInt("blocked")
+            ));
+        }
+        return users;
+    }
 
 
 }

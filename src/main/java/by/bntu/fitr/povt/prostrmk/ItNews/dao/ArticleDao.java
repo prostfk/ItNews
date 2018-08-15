@@ -64,6 +64,18 @@ public class ArticleDao extends Dao{
         }
     }
 
+    public List<Article> findAll(){
+        //language=SQL
+        ResultSet resultSet = executeQueryWithResult("SELECT * FROM article");
+        try {
+            return articlesFromResultSet(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
+
+    }
+
     public List<Article> findAllReversed(){
         //language=SQL
         ResultSet resultSet = executeQueryWithResult("SELECT * FROM article ORDER BY id DESC");
