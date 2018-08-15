@@ -868,3 +868,131 @@
 2018-08-12 14:39:58 WARN  DaoComponent:29 - application.properties (No such file or directory)
 2018-08-12 14:40:52 WARN  DaoComponent:29 - ../resources/db.properties (No such file or directory)
 2018-08-12 14:41:40 WARN  DaoComponent:29 - ../../main/resources/db.properties (No such file or directory)
+2018-08-15 15:34:03 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:34:06 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:34:06 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:38:23 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:38:23 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:40:13 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:40:13 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:41:44 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:41:44 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:41:50 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='admin'
+2018-08-15 15:41:51 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:41:53 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:41:53 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:42:31 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:42:34 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:42:34 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:42:41 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='roman'
+2018-08-15 15:42:41 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:42:42 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:42:42 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:42:50 DEBUG Dao:21 - Sql query: INSERT INTO comment(username, content, article_id, date) VALUES ('roman','Love ','3','Wed Aug 15 15:42:50 MSK 2018')
+2018-08-15 15:42:50 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:42:50 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:46:49 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:46:49 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:47:48 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:47:48 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:48:09 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:48:09 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:48:13 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:48:13 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:48:25 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:48:27 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='2'
+2018-08-15 15:48:27 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=2
+2018-08-15 15:48:29 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:48:31 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='1'
+2018-08-15 15:48:31 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=1
+2018-08-15 15:48:33 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:48:35 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:48:35 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:53:11 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:53:11 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:53:47 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:53:47 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:54:17 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:54:17 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:56:41 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:56:41 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:57:07 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 15:57:07 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 15:57:19 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:57:21 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='2'
+2018-08-15 15:57:21 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=2
+2018-08-15 15:57:23 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 15:57:25 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='1'
+2018-08-15 15:57:25 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=1
+2018-08-15 18:09:13 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:09:17 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 18:09:17 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 18:09:36 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:24:30 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='roman'
+2018-08-15 18:24:32 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username=''
+2018-08-15 18:24:32 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username=''
+2018-08-15 18:24:32 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username=''
+2018-08-15 18:24:47 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='a'
+2018-08-15 18:24:47 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='ad'
+2018-08-15 18:24:47 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adn'
+2018-08-15 18:24:48 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnre'
+2018-08-15 18:24:48 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnrey'
+2018-08-15 18:24:48 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnrey'
+2018-08-15 18:24:57 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnrey'
+2018-08-15 18:24:59 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnre'
+2018-08-15 18:24:59 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adnr'
+2018-08-15 18:25:00 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='adn'
+2018-08-15 18:25:00 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='ad'
+2018-08-15 18:25:00 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='a'
+2018-08-15 18:25:00 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='and'
+2018-08-15 18:25:01 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='and'
+2018-08-15 18:25:01 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andre'
+2018-08-15 18:25:01 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andre'
+2018-08-15 18:25:01 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andrey'
+2018-08-15 18:25:17 DEBUG Dao:21 - Sql query: INSERT INTO user(username,password,blocked) VALUES ('andrey','$2a$10$vAragSl8zcrqpI9Jvm9go.NdLA0Gt9h0oACmAoSvcUZ/WRwEgmfai',0)
+2018-08-15 18:25:26 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andrey'
+2018-08-15 18:25:33 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:25:35 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 18:25:35 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 18:25:47 DEBUG Dao:21 - Sql query: INSERT INTO comment(username, content, article_id, date) VALUES ('andrey','Kotlin is better','3','Wed Aug 15 18:25:47 MSK 2018')
+2018-08-15 18:25:47 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='3'
+2018-08-15 18:25:47 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=3
+2018-08-15 18:26:05 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:28:02 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:28:06 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andrey'
+2018-08-15 18:28:08 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username=''
+2018-08-15 18:28:18 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='roman'
+2018-08-15 18:28:27 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='romanwsadfsfasfa'
+2018-08-15 18:28:30 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username=''
+2018-08-15 18:31:55 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='andrey'
+2018-08-15 18:32:02 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='anton'
+2018-08-15 18:32:06 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='anton'
+2018-08-15 18:32:06 DEBUG Dao:21 - Sql query: INSERT INTO user(username,password,blocked) VALUES ('anton','$2a$10$SSAo.w5yG98Ef/dq60dRcOH90MeqsCifUROMzlkzwj002n1BnBexO',0)
+2018-08-15 18:32:17 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='anton'
+2018-08-15 18:32:19 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:49:15 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:49:24 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='science'
+2018-08-15 18:49:24 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='favicon'
+2018-08-15 18:49:28 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 18:49:28 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='favicon'
+2018-08-15 18:58:50 DEBUG Dao:33 - Sql query: SELECT * FROM user WHERE username='admin'
+2018-08-15 18:59:08 DEBUG Dao:21 - Sql query: INSERT INTO article(title, content, type, path) values ('The Best Solution For Making Batteries Safer Might Be The Most Boring One','Sometimes batteries explode. The footage is frightening, but scientists and startups have long been working to build a safer battery. They’re tinkering with the design and testing new materials in hopes of solving the problem once and for all. But every approach seems to come with a catch, and the most practical solution, for now, might be the most boring one.  Improving batteries takes three main tacks: avoiding flammable liquids for a solid battery; making battery components fireproof; and, boringly, modifying slightly the existing features in a battery. It might be that change, at least for batteries, comes slowly.  To understand how researchers are trying to fix the problem, it’s important to know the basics of how batteries work, and why they break down. To be clear, we’re talking about lithium-ion batteries, which are the most common battery type because lithium holds so much energy. Scientists are also developing magnesium batteries (they’re slow) and sulfur batteries (they don’t last long), but li-ion','startup','/resources/pics/VRG_ILLO_2807_001.1534091367.jpg')
+2018-08-15 18:59:13 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 18:59:16 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE id='4'
+2018-08-15 18:59:16 DEBUG Dao:33 - Sql query: SELECT * FROM comment WHERE article_id=4
+2018-08-15 18:59:19 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 19:00:39 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 19:01:13 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-15 19:01:14 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='other'
+2018-08-15 19:01:14 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='favicon'
+2018-08-15 19:01:16 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='startup'
+2018-08-15 19:01:16 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='favicon'
+2018-08-15 19:01:20 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='science'
+2018-08-15 19:01:22 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 19:01:28 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 19:01:32 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 19:01:33 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='science'
+2018-08-15 19:01:34 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='startup'
+2018-08-15 19:01:35 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 19:01:56 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
+2018-08-15 19:02:00 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC

@@ -12,10 +12,17 @@
 <div th:include="~{index.html :: navbar}"></div>
 
 <div class="container">
-    <form th:object="${article}" action="/createArticle" method="post" enctype="multipart/form-data">
+    <form th:object="${article}" action="/admin/createArticle" method="post" enctype="multipart/form-data">
         <input placeholder="title" class="form-control" th:field="*{title}">
         <input placeholder="content" class="form-control" th:field="*{content}">
-        <input placeholder="type" class="form-control" th:field="*{type}">
+        <!--<input placeholder="type" class="form-control" th:field="*{type}">-->
+        <label for="type-select" class="form-control">Type</label>
+        <select id="type-select" th:field="*{type}">
+            <option value="programming">Programming</option>
+            <option value="startup">Start up</option>
+            <option value="science">Science</option>
+            <option value="other">Other</option>
+        </select>
         <input type="file" min="1" max="9999" name="file">
         <input type="submit"/>
     </form>

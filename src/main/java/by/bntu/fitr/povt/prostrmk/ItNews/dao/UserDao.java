@@ -61,6 +61,12 @@ public class UserDao extends Dao {
         return null;
     }
 
+    public boolean validateUser(User user){
+        int lengthUsername = user.getUsername().length();
+        int lengthPassword = user.getPassword().length();
+        return lengthPassword > 2 && lengthPassword < 10 && lengthUsername > 3 && lengthUsername < 15 && findUserByUsername(user.getUsername()) == null;
+    }
+
     private List<User> usersFromResultSet(ResultSet resultSet) throws SQLException {
         List<User> users = new ArrayList<>();
         while (resultSet.next()) {
@@ -70,6 +76,8 @@ public class UserDao extends Dao {
         }
         return users;
     }
+
+
 
 
 }
