@@ -47,7 +47,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutUrl("/logout")
                 .logoutSuccessUrl("/")
                 .invalidateHttpSession(true);
-
+        http
+                .authorizeRequests()
+                .antMatchers( "/favicon.ico").permitAll();
     }
 
     @Bean

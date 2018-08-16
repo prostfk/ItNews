@@ -52,7 +52,7 @@ public class ArticleDao extends Dao{
 
     public List<Article> findArticlesByType(String type){
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE type='%s'", type));
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE type='%s' ORDER BY id DESC ", type));
         try {
             return articlesFromResultSet(resultSet);
         } catch (SQLException e) {

@@ -6751,3 +6751,10 @@ body footer .container .footer-logo a {
 .container-article {
   padding: 2px 16px;
 }
+
+.error-box{
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  margin: auto;
+  background: white;
+}
