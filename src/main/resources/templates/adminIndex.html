@@ -22,6 +22,7 @@
                     <th scope="col">Username</th>
                     <th scope="col">Password</th>
                     <th scope="col">Blocked</th>
+                    <th scope="col">Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -29,7 +30,15 @@
                     <th scope="row" th:text="${user.id}"></th>
                     <td th:text="${user.username}"></td>
                     <td th:text="${user.password}"></td>
-                    <td th:text="${user.isBlocked()}"></td>
+                    <td th:text="${user.getStatus()}"></td>
+                    <td>
+                        <form th:action="@{'/admin/processUser/' + ${user.id}}" method="post">
+                            <button th:text="${user.getStatus()} ? 'Unblock' : 'Block'"
+                                    th:class="${user.getStatus()} ? 'btn btn-success' : 'btn btn-danger'"
+                                    type="submit">
+                            </button>
+                        </form>
+                    </td>
                 </tr>
 
                 </tbody>

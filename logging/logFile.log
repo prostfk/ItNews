@@ -996,3 +996,5 @@
 2018-08-15 19:01:35 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
 2018-08-15 19:01:56 DEBUG Dao:33 - Sql query: SELECT * FROM article WHERE type='programming'
 2018-08-15 19:02:00 DEBUG Dao:33 - Sql query: SELECT * FROM article ORDER BY id DESC
+2018-08-16 13:01:58 WARN  Dao:24 - An error occurred for sql query: INSERT INTO comment(username, content, article_id, date) VALUES ('anton','Well, it's good','4','Thu Aug 16 13:01:58 MSK 2018')
+2018-08-16 13:01:58 ERROR Dao:25 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's good','4','Thu Aug 16 13:01:58 MSK 2018')' at line 1

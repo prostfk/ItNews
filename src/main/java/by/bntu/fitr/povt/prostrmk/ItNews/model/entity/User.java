@@ -14,7 +14,7 @@ public class User implements Serializable {
 
     private String confirmPassword;
 
-    private int isBlocked;
+    private boolean isBlocked;
 
     public User() {
     }
@@ -34,7 +34,7 @@ public class User implements Serializable {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.isBlocked = isBlocked;
+        this.isBlocked = isBlocked != 0;
     }
 
     public User(String username, String password) {
@@ -75,11 +75,19 @@ public class User implements Serializable {
     }
 
     public int isBlocked() {
-        return isBlocked;
+        return isBlocked ? 1 : 0;
     }
 
     public void setBlocked(int blocked) {
-        isBlocked = blocked;
+        isBlocked = blocked != 0;
+    }
+
+    public boolean getStatus(){
+        return isBlocked;
+    }
+
+    public void setStatus(boolean status){
+        isBlocked = status;
     }
 
     @Override
@@ -99,6 +107,6 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("User{\n id= '%s', username= '%s' , password= '%s', is blocked = '%b' }",id,username,password, isBlocked);
+        return String.format("User{\n id= '%s', username= '%s' , password= '%s', is blocked = '%b' }", id, username, password, isBlocked);
     }
 }

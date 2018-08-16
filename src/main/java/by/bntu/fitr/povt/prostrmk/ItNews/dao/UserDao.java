@@ -33,7 +33,7 @@ public class UserDao extends Dao {
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user WHERE id='%d'", id));
         try {
             if (resultSet.next()) {
-                return new User(resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"));
+                return new User(resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"),resultSet.getInt("blocked"));
             } else {
                 System.out.println("No result set");
             }
@@ -59,6 +59,11 @@ public class UserDao extends Dao {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void update(Long id, User user){
+        //language=SQL
+        executeQuery(String.format("UPDATE user set username='%s', password='%s',blocked='%d' WHERE id='%d'", user.getUsername(),user.getPassword(),user.isBlocked(), id));
     }
 
     public boolean validateUser(User user){

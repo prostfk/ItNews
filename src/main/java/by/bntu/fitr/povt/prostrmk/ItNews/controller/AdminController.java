@@ -85,4 +85,14 @@ public class AdminController {
         return new ModelAndView("adminIndex","users",all);
     }
 
+    @PostMapping(value = "/processUser/{id}")
+    public String processUser(@PathVariable("id") String userId){
+        long id = Long.parseLong(userId);
+        User userById = userDao.findUserById(id);
+        userById.setStatus(!userById.getStatus());
+        userDao.update(id,userById);
+        return "redirect:/admin";
+    }
+
+
 }

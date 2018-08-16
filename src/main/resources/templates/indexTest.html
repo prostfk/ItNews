@@ -27,9 +27,9 @@
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
 				<li><a href="/">Home</a></li>
-				<li><a href="/auth">Services</a></li>
-                <li><a href="/registration">Partners</a></li>
-                <li><a href="/contact/">Contact</a></li>
+				<li><a href="/auth">Auth</a></li>
+                <li><a href="/registration">Registration</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="/about">About</a></li>
             </ul>
 		</nav>
@@ -58,6 +58,7 @@
 					<img th:src="${article.pathToFile}" style="max-height: 300px;max-width: 600px" class="thumbnail"/>
 					<p style="overflow: hidden;max-height: 65px" th:text="${article.content}"></p>
                     <a th:href="'/article/' + ${article.id}" class="btn btn-primary">READ MORE</a>
+                    <span th:text="'Comments: ' + ${article.comments.size()}"></span>
 					<div style="border: 1px solid silver;margin-bottom: 1%; margin-top: 1%"></div>
 				</div>
 			</section>

@@ -20,9 +20,6 @@ import java.util.List;
 public class ArticleDao extends Dao{
 
     @Autowired
-    private Connection connection;
-
-    @Autowired
     private CommentDao commentDao;
 
     public Article findArticleById(Long id){
@@ -123,7 +120,9 @@ public class ArticleDao extends Dao{
     private List<Article> articlesFromResultSet(ResultSet resultSet) throws SQLException {
         List<Article> articles = new ArrayList<>();
         while (resultSet.next()){
-            articles.add(new Article(resultSet.getLong("id"),resultSet.getString("title"),resultSet.getString("content"),resultSet.getString("type"), resultSet.getString("path")));
+            Article article = new Article(resultSet.getLong("id"), resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path"));
+            article.setComments(commentDao.findCommentsByArticleId(article.getId()));
+            articles.add(article);
         }
         return articles;
     }
