@@ -65,6 +65,7 @@
         <!--</section>-->
 
         <div sec:authorize="isAuthenticated()">
+            <a th:href="'/user/addArticleToMe/' + ${article.id}" class="btn btn-default">Save article</a>
             <form method="post" th:action="'/article/' + ${article.id} + '/comment'">
                 <div class="input-group">
                     <input class="form-control" name="comment-content" id="comment-input" placeholder="Comment here">

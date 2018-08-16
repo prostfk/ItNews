@@ -51,13 +51,6 @@ public class IndexController {
         return new ModelAndView("indexTest", "articles", articleDao.findAllReversed());
     }
 
-    @Secured("ROLE_USER")
-    @GetMapping(value = "/me")
-    public @ResponseBody
-    String getMe() {
-        return SecurityContextHolder.getContext().getAuthentication().getName();
-    }
-
     @GetMapping(value = "/search")
     public ModelAndView search(@RequestParam(name = "searchString") String searchString) {
         List<Article> articles = articleDao.findArticlesWhereTitleLikeIgnoreCase(searchString);
