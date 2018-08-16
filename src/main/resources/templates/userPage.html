@@ -30,6 +30,7 @@
                 <img th:src="${article.pathToFile}" style="max-height: 300px;max-width: 600px" class="thumbnail"/>
                 <p style="overflow: hidden;max-height: 65px" th:text="${article.content}"></p>
                 <a th:href="'/article/' + ${article.id}" class="btn btn-primary">READ MORE</a>
+                <a th:href="'/user/deleteMyArticle/' + ${article.id}" class="btn btn-danger">DELETE</a>
 
             </div>
         </section>

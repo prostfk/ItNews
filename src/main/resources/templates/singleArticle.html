@@ -28,13 +28,12 @@
     <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li><a href="/">About us</a></li>
-            <li><a href="/services/">Services</a></li>
-            <li><a href="/partners/">Partners</a></li>
-            <li><a href="/customers/">Customers</a></li>
-            <li><a href="/projects/">Projects</a></li>
-            <li><a href="/careers/">Careers</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li sec:authorize="isAuthenticated()"><a href="/user/me">My page</a></li>
+            <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
+            <li sec:authorize="!isAuthenticated()"><a href="/auth">Auth</a></li>
+            <li sec:authorize="!isAuthenticated()"><a href="/registration">Registration</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
     </nav>
     <div class="heading">

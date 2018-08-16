@@ -1000,3 +1000,12 @@
 2018-08-16 13:01:58 ERROR Dao:25 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's good','4','Thu Aug 16 13:01:58 MSK 2018')' at line 1
 2018-08-16 15:50:57 ERROR UserPostsDao:35 - Column 'article.id' not found.
 2018-08-16 15:52:24 ERROR UserPostsDao:35 - Column 'article.id' not found.
+2018-08-16 17:13:10 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_posts.id=1
+2018-08-16 17:13:10 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: Unknown column 'user_posts.id' in 'where clause'
+2018-08-16 17:13:10 ERROR UserPostsDao:35 - 
+2018-08-16 17:13:10 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_posts.id=1
+2018-08-16 17:13:10 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: Unknown column 'user_posts.id' in 'where clause'
+2018-08-16 17:13:10 ERROR UserPostsDao:35 - 
+2018-08-16 17:13:41 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_posts.id=1
+2018-08-16 17:13:41 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: Unknown column 'user_posts.id' in 'where clause'
+2018-08-16 17:13:41 ERROR UserPostsDao:35 - 

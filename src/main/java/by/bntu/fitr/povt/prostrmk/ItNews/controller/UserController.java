@@ -12,11 +12,13 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Secured("ROLE_USER")
 @Controller
+@RequestMapping(value = "/user")
 public class UserController {
 
     @Autowired private UserDao userDao;
@@ -39,14 +41,25 @@ public class UserController {
     }
 
 
-    @GetMapping(value = "/user/addArticleToMe/{id}")
+    @GetMapping(value = "/addArticleToMe/{id}")
     public String addArticleToMyCollection(@PathVariable("id") String idValue){
         long id = Long.parseLong(idValue);
         User user = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
         if (!userPostsDao.findArticlesByUser(user.getId()).contains(articleDao.findArticleById(id))){
             userPostsDao.save(user.getId(), id);
         }
-        return "redirect:/me";
+        return "redirect:/user/me";
+    }
+
+    @GetMapping(value = "/deleteMyArticle/{id}")
+    public String deleteMyArticle(@PathVariable("id")String idValue){
+        long id = Long.parseLong(idValue);
+        String name = SecurityContextHolder.getContext().getAuthentication().getName();
+        User userByUsername = userDao.findUserByUsername(name);
+        if (userByUsername!=null){
+            userPostsDao.delete(userByUsername.getId(), id);
+        }
+        return "redirect:/user/me";
     }
 
 }

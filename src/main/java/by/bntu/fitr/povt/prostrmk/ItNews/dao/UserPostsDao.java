@@ -21,7 +21,7 @@ public class UserPostsDao extends Dao {
 
     public List<Article> findArticlesByUser(Long id) {
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult("SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_posts.id=" + id);
+        ResultSet resultSet = executeQueryWithResult("SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_id=" + id);
         List<Article> articles = new ArrayList<>();
         try{
             while(resultSet.next()){
@@ -40,6 +40,11 @@ public class UserPostsDao extends Dao {
     public void save(long userId, long articleId){
         //language=SQL
         executeQuery(String.format("INSERT INTO user_posts(user_id, article_id) VALUES('%d','%d')", userId,articleId));
+    }
+
+    public void delete(long userId, long articleId){
+        //language=SQL
+        executeQuery(String.format("DELETE FROM user_posts WHERE user_id='%d' AND article_id='%d'", userId, articleId));
     }
 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:sec="http://www.springframework.org/security/tags" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Navbar</title>
@@ -12,19 +12,34 @@
     <![endif]-->
 </head>
 <body>
-<div class="wrapper container" th:fragment="nav">
-    <header>
-        <a href="/"><img src="/resources/icons/Logo.png" alt="Whitesquare logo"></a>
-        <form name="search" action="/search" method="get" class="form-inline form-search pull-right">
-            <div class="input-group">
-                <label class="sr-only" for="searchInput">Search</label>
-                <input class="form-control" id="searchInput" type="text" name="searchString" placeholder="Search">
-                <div class="input-group-btn">
-                    <button type="submit" class="btn btn-primary">GO</button>
+
+<div th:fragment="nav">
+    <div class="wrapper container">
+        <header>
+            <a href="/"><img src="/resources/icons/Logo.png" alt="Whitesquare logo"></a>
+            <form name="search" action="/search" method="get" class="form-inline form-search pull-right">
+                <div class="input-group">
+                    <label class="sr-only" for="searchInput">Search</label>
+                    <input class="form-control" id="searchInput" type="text" name="searchString" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-primary">GO</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </header>
+            </form>
+        </header>
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li sec:authorize="isAuthenticated()"><a href="/user/me">My page</a></li>
+                <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
+                <li sec:authorize="!isAuthenticated()"><a href="/auth">Auth</a></li>
+                <li sec:authorize="!isAuthenticated()"><a href="/registration">Registration</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
+
 </body>
 </html>
