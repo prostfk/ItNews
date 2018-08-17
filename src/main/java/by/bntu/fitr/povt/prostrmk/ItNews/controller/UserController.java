@@ -68,8 +68,8 @@ public class UserController {
     public ModelAndView dialogs(){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         User user = userDao.findUserByUsername(name);
-        List<Message> messagesBySenderId = messageDao.findMessagesBySenderId(user.getId());
-        return new ModelAndView("im", "messages", messagesBySenderId);
+        List<String> conversations = messageDao.findConversations(user.getId());
+        return new ModelAndView("im", "conversations", conversations);
     }
 
     @GetMapping(value = "/sendMessageTo{username}")
@@ -80,6 +80,7 @@ public class UserController {
             List<Message> messages = messageDao.findMessagesBySenderAndReceiver(sender.getId(), receiver.getId());
             ModelAndView modelAndView = new ModelAndView("sendMessageTo", "messages", messages);
             modelAndView.addObject("receiver", receiver.getUsername());
+            modelAndView.addObject("senderId", sender.getId());
             return modelAndView;
         }
         return new ModelAndView("redirect:/user");
@@ -87,8 +88,7 @@ public class UserController {
 
     @PostMapping(value = "/sendMessageTo{username}")
     public String sendPostMessage(@PathVariable("username") String username, @RequestParam("messageText") String text){
-        System.out.println(text);
-        if (text.equals("")|| text==null){
+        if (text.equals("")){
             return "redirect:/error?wrong+message";
         }
         User receiver = userDao.findUserByUsername(username);

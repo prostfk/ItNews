@@ -7,6 +7,7 @@ public class Message {
     private Long id;
     private Long senderId;
     private Long receiverId;
+    private String receiverName;
     private String text;
 
     public Message() {
@@ -22,6 +23,14 @@ public class Message {
         this.id = id;
         this.senderId = senderId;
         this.receiverId = receiverId;
+        this.text = text;
+    }
+
+    public Message(Long id, Long senderId, Long receiverId, String receiverName, String text) {
+        this.id = id;
+        this.senderId = senderId;
+        this.receiverId = receiverId;
+        this.receiverName = receiverName;
         this.text = text;
     }
 
@@ -55,6 +64,14 @@ public class Message {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public String getReceiverName() {
+        return receiverName;
+    }
+
+    public void setReceiverName(String receiverName) {
+        this.receiverName = receiverName;
     }
 
     @Override

@@ -31,6 +31,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li sec:authorize="isAuthenticated()"><a href="/user/me">My page</a></li>
+                <li sec:authorize="isAuthenticated()"><a href="/user/im">Messages</a></li>
                 <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
                 <li sec:authorize="!isAuthenticated()"><a href="/auth">Auth</a></li>
                 <li sec:authorize="!isAuthenticated()"><a href="/registration">Registration</a></li>

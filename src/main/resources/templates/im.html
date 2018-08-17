@@ -20,18 +20,16 @@
     <table class="table">
         <thead class="thead-light">
         <tr>
-            <th scope="col">N</th>
-            <th scope="col">S.id</th>
-            <th scope="col">R.id</th>
-            <th scope="col">Text</th>
+            <th scope="col">Name</th>
+            <th scope="col">Goto conversation</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="message : ${messages}">
-            <th scope="row" th:text="${message.id}"></th>
-            <td th:text="${message.senderId}"></td>
-            <td th:text="${message.receiverId}"></td>
-            <td th:text="${message.text}"></td>
+        <tr th:each="conversation : ${conversations}">
+            <th scope="col" th:text="${conversation}"></th>
+            <th scope="row">
+                <a th:href="'/user/sendMessageTo' + ${conversation}" class="btn btn-primary">Go to conversation</a>
+            </th>
         </tr>
 
         </tbody>

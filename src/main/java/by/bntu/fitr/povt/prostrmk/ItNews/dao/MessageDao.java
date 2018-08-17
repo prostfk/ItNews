@@ -35,7 +35,7 @@ public class MessageDao extends Dao {
 
     public List<Message> findMessagesBySenderAndReceiver(long senderId, long receiverId){
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user_message WHERE sender_id='%d' AND receiver_id='%d'", senderId, receiverId));
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user_message WHERE (sender_id='%d' AND receiver_id='%d') OR (receiver_id='%d' AND sender_id='%d')", senderId, receiverId, senderId,receiverId));
         List<Message> messages = new ArrayList<>();
         try {
             while (resultSet.next()){
@@ -48,6 +48,22 @@ public class MessageDao extends Dao {
             LOGGER.error(e.getMessage());
         }
         return messages;
+    }
+
+    public List<String> findConversations(Long userId){
+        //language=SQl
+        List<String> names = new ArrayList<>();
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT DISTINCT u.username, u.id FROM user_message JOIN user u on user_message.receiver_id = u.id JOIN user u2 on user_message.sender_id = u2.id WHERE u.id='%d' OR u2.id='%d'", userId, userId));
+        try{
+            if (resultSet.next()){
+                if (resultSet.getLong("id")!=userId){
+                    names.add(resultSet.getString("username"));
+                }
+            }
+        }catch (Exception e){
+            LOGGER.error(e.getMessage());
+        }
+        return names;
     }
 
     public void save(Message message){

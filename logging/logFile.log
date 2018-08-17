@@ -1009,3 +1009,4 @@
 2018-08-16 17:13:41 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM user_posts JOIN article a on user_posts.article_id = a.id WHERE user_posts.id=1
 2018-08-16 17:13:41 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: Unknown column 'user_posts.id' in 'where clause'
 2018-08-16 17:13:41 ERROR UserPostsDao:35 - 
+2018-08-17 15:15:37 ERROR MessageDao:62 - Before start of result set

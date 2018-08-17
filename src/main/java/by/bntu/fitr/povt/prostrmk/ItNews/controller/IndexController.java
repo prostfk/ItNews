@@ -37,7 +37,7 @@ public class IndexController {
             user.setPassword(encoder.encode(user.getPassword()));
             userDao.save(user);
         }
-        return "redirect:/me";
+        return "redirect:/auth";
     }
 
     @GetMapping(value = "/auth")
