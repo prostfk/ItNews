@@ -1,20 +1,20 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
+import by.bntu.fitr.povt.prostrmk.ItNews.dao.MessageDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserPostsDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dto.UserDto;
-import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
+import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Message;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @Secured("ROLE_USER")
 @Controller
@@ -26,6 +26,8 @@ public class UserController {
     @Autowired private ArticleDao articleDao;
 
     @Autowired private UserPostsDao userPostsDao;
+
+    @Autowired private MessageDao messageDao;
 
     @GetMapping(value = "/me")
     public ModelAndView getUserPage(){
@@ -60,6 +62,41 @@ public class UserController {
             userPostsDao.delete(userByUsername.getId(), id);
         }
         return "redirect:/user/me";
+    }
+
+    @GetMapping(value = "/im")
+    public ModelAndView dialogs(){
+        String name = SecurityContextHolder.getContext().getAuthentication().getName();
+        User user = userDao.findUserByUsername(name);
+        List<Message> messagesBySenderId = messageDao.findMessagesBySenderId(user.getId());
+        return new ModelAndView("im", "messages", messagesBySenderId);
+    }
+
+    @GetMapping(value = "/sendMessageTo{username}")
+    public ModelAndView sendMessage(@PathVariable("username") String username){
+        User receiver = userDao.findUserByUsername(username);
+        if (receiver!=null){
+            User sender = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
+            List<Message> messages = messageDao.findMessagesBySenderAndReceiver(sender.getId(), receiver.getId());
+            ModelAndView modelAndView = new ModelAndView("sendMessageTo", "messages", messages);
+            modelAndView.addObject("receiver", receiver.getUsername());
+            return modelAndView;
+        }
+        return new ModelAndView("redirect:/user");
+    }
+
+    @PostMapping(value = "/sendMessageTo{username}")
+    public String sendPostMessage(@PathVariable("username") String username, @RequestParam("messageText") String text){
+        System.out.println(text);
+        if (text.equals("")|| text==null){
+            return "redirect:/error?wrong+message";
+        }
+        User receiver = userDao.findUserByUsername(username);
+        User sender = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
+        messageDao.save(new Message(
+                sender.getId(),receiver.getId(),text
+        ));
+        return "redirect:/user/sendMessageTo" + username;
     }
 
 }
