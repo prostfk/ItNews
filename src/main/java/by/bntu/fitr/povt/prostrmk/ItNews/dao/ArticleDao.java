@@ -16,18 +16,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Component
-public class ArticleDao extends Dao{
+@by.bntu.fitr.povt.prostrmk.ItNews.annotation.Dao
+public class ArticleDao extends Dao {
 
     @Autowired
     private CommentDao commentDao;
 
-    public Article findArticleById(Long id){
+    public Article findArticleById(Long id) {
         //language=SQL
 
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE id='%d'", id));
         try {
-            if (resultSet.next()){
+            if (resultSet.next()) {
                 Article article = new Article(id, resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path"));
                 article.setComments(commentDao.findCommentsByArticleId(id));
                 return article;
@@ -38,7 +38,8 @@ public class ArticleDao extends Dao{
         return null;
     }
 
-    public List<Article> findArticlesWhereTitleLikeIgnoreCase(String title){
+
+    public List<Article> findArticlesWhereTitleLikeIgnoreCase(String title) {
         title = "%" + title + "%";
         //language=SQL
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE title LIKE '%s'", title));
@@ -50,7 +51,7 @@ public class ArticleDao extends Dao{
         }
     }
 
-    public List<Article> findArticlesByType(String type){
+    public List<Article> findArticlesByType(String type) {
         //language=SQL
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE type='%s' ORDER BY id DESC ", type));
         try {
@@ -61,7 +62,7 @@ public class ArticleDao extends Dao{
         }
     }
 
-    public List<Article> findAll(){
+    public List<Article> findAll() {
         //language=SQL
         ResultSet resultSet = executeQueryWithResult("SELECT * FROM article");
         try {
@@ -73,38 +74,38 @@ public class ArticleDao extends Dao{
 
     }
 
-    public List<Article> findAllReversed(){
+    public List<Article> findAllReversed() {
         //language=SQL
         ResultSet resultSet = executeQueryWithResult("SELECT * FROM article ORDER BY id DESC");
-        try{
+        try {
             return articlesFromResultSet(resultSet);
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return Collections.emptyList();
 
     }
 
-    public void save(Article article, MultipartFile file){
-        try{
+    public void save(Article article, MultipartFile file) {
+        try {
             String path = saveFile(file);
             //language=SQL
-            executeQuery(String.format("INSERT INTO article(title, content, type, path) values ('%s','%s','%s','%s')", article.getTitle(),article.getContent(),article.getType(),path));
-        }catch (Exception e){
+            executeQuery(String.format("INSERT INTO article(title, content, type, path) values ('%s','%s','%s','%s')", article.getTitle(), article.getContent(), article.getType(), path));
+        } catch (Exception e) {
             System.out.println("EXCEPTION");
         }
     }
 
-    public void update(Long id, Article article){
+    public void update(Long id, Article article) {
         //language=SQL
-        executeQuery(String.format("UPDATE article SET title='%s', content='%s', type='%s', path='%s' WHERE id='%d'",article.getTitle(),article.getContent(),article.getType(),article.getPathToFile(),id));
+        executeQuery(String.format("UPDATE article SET title='%s', content='%s', type='%s', path='%s' WHERE id='%d'", article.getTitle(), article.getContent(), article.getType(), article.getPathToFile(), id));
     }
 
     public String saveFile(MultipartFile file) throws Exception {
         String filePath = "src/main/webapp/resources/pics/";
         File javaFile = new File(filePath + file.getOriginalFilename());
         try {
-            byte []bytes = file.getBytes();
+            byte[] bytes = file.getBytes();
             javaFile = new File(javaFile.getAbsolutePath());
             BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(javaFile));
             stream.write(bytes);
@@ -119,7 +120,7 @@ public class ArticleDao extends Dao{
 
     private List<Article> articlesFromResultSet(ResultSet resultSet) throws SQLException {
         List<Article> articles = new ArrayList<>();
-        while (resultSet.next()){
+        while (resultSet.next()) {
             Article article = new Article(resultSet.getLong("id"), resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path"));
             article.setComments(commentDao.findCommentsByArticleId(article.getId()));
             articles.add(article);

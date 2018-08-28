@@ -1010,3 +1010,5 @@
 2018-08-16 17:13:41 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: Unknown column 'user_posts.id' in 'where clause'
 2018-08-16 17:13:41 ERROR UserPostsDao:35 - 
 2018-08-17 15:15:37 ERROR MessageDao:62 - Before start of result set
+2018-08-17 15:31:40 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM user WHERE username LIKE %roman%
+2018-08-17 15:31:40 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%roman%' at line 1

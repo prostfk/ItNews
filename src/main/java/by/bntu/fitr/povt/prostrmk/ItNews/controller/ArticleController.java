@@ -25,19 +25,17 @@ public class ArticleController {
     private CommentDao commentDao;
 
     @GetMapping(value = "/article/{id}")
-    public ModelAndView checkArticle(@PathVariable String id){
-        long l_id = Long.parseLong(id);
-        Article articleById = articleDao.findArticleById(l_id);
+    public ModelAndView checkArticle(@PathVariable Long id){
+        Article articleById = articleDao.findArticleById(id);
         return new ModelAndView("singleArticle", "article", articleById);
     }
 
     @Secured("ROLE_USER")
     @PostMapping(value = "/article/{id}/comment")
-    public String addComment(@PathVariable String id, @RequestParam("comment-content")String comment){
+    public String addComment(@PathVariable Long id, @RequestParam("comment-content")String comment){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         if (name!=null){
-            Long long_id = Long.parseLong(id);
-            Comment com = new Comment(name,comment,new Date().toString(),long_id);
+            Comment com = new Comment(name,comment,new Date().toString(),id);
             commentDao.save(com);
         }
         return "redirect:/article/" + id;

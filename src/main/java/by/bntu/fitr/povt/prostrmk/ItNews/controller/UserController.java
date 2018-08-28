@@ -99,4 +99,20 @@ public class UserController {
         return "redirect:/user/sendMessageTo" + username;
     }
 
+    @GetMapping(value = "/im/search")
+    public ModelAndView searchUser(@RequestParam("searchUser") String username){
+        List<User> users = userDao.findUsersByUsernameLike(username);
+        return new ModelAndView("userSeach", "users", users);
+    }
+
+//    AJAX
+
+    @PostMapping(value = "/user/update")
+    public String updateMessage(){
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();
+        List<Message> messagesBySenderId = messageDao.findMessagesBySenderId(userDao.findUserByUsername(username).getId());
+        Message message = messagesBySenderId.get(messagesBySenderId.size() - 1);
+        return message.getText();
+    }
+
 }

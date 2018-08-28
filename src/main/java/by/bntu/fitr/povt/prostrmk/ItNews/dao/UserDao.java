@@ -1,6 +1,7 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.dao;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +17,8 @@ public class UserDao extends Dao {
 
     @Autowired
     private Connection connection;
+
+    private static final Logger LOGGER = Logger.getLogger(UserDao.class);
 
     public List<User> findAll() {
         //language=SQL
@@ -70,6 +73,18 @@ public class UserDao extends Dao {
         int lengthUsername = user.getUsername().length();
         int lengthPassword = user.getPassword().length();
         return lengthPassword > 2 && lengthPassword < 10 && lengthUsername > 3 && lengthUsername < 15 && findUserByUsername(user.getUsername()) == null;
+    }
+
+    public List<User> findUsersByUsernameLike(String username){
+        username = "%" + username + "%";
+        //language=SQL
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user WHERE username LIKE '%s'", username));
+        try {
+            return usersFromResultSet(resultSet);
+        } catch (SQLException e) {
+            LOGGER.error(e);
+        }
+        return Collections.emptyList();
     }
 
     private List<User> usersFromResultSet(ResultSet resultSet) throws SQLException {
