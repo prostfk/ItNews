@@ -2,6 +2,7 @@ package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Objects;
 
 public class Article implements IArticles, Serializable {
 
@@ -110,8 +111,16 @@ public class Article implements IArticles, Serializable {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return obj == this && this.hashCode() == obj.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Article article = (Article) o;
+        return Objects.equals(id, article.id) &&
+                Objects.equals(title, article.title) &&
+                Objects.equals(content, article.content) &&
+                Objects.equals(type, article.type) &&
+                Objects.equals(pathToFile, article.pathToFile) &&
+                Objects.equals(comments, article.comments);
     }
 
     @Override
