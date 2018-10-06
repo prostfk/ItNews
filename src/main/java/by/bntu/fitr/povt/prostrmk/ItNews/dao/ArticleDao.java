@@ -2,25 +2,34 @@ package by.bntu.fitr.povt.prostrmk.ItNews.dao;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 @by.bntu.fitr.povt.prostrmk.ItNews.annotation.Dao
-public class ArticleDao extends Dao {
+public class ArticleDao extends AbstractDao<Article> {
 
     @Autowired
     private CommentDao commentDao;
+
+    public List<Article> findArticlesWithLimit(Long begin, Long count) {
+        //language=SQL
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article LIMIT %d,%d", begin, count));
+        try {
+            return articlesFromResultSet(resultSet);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return Collections.emptyList();
+    }
 
     public Article findArticleById(Long id) {
         //language=SQL
@@ -28,7 +37,7 @@ public class ArticleDao extends Dao {
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE id='%d'", id));
         try {
             if (resultSet.next()) {
-                Article article = new Article(id, resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path"));
+                Article article = new Article();
                 article.setComments(commentDao.findCommentsByArticleId(id));
                 return article;
             }
@@ -119,7 +128,7 @@ public class ArticleDao extends Dao {
     }
 
     private List<Article> articlesFromResultSet(ResultSet resultSet) throws SQLException {
-        List<Article> articles = new ArrayList<>();
+        List<Article> articles = new LinkedList<>();
         while (resultSet.next()) {
             Article article = new Article(resultSet.getLong("id"), resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path"));
             article.setComments(commentDao.findCommentsByArticleId(article.getId()));
@@ -128,5 +137,10 @@ public class ArticleDao extends Dao {
         return articles;
     }
 
-
+    @Override
+    protected Article createEntity(ResultSet resultSet) throws SQLException {
+        return new Article(
+                resultSet.getLong("id"), resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path")
+        );
+    }
 }

@@ -17,9 +17,6 @@ http://www.springframework.org/schema/beans ">
         <property name="maxUploadSize" value="10000"/>
     </bean>
 
-    <bean id="userDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao"/>
-    <bean id="articleDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao"/>
-    <bean id="commentDao" class="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao"/>
 
 
 </beans>

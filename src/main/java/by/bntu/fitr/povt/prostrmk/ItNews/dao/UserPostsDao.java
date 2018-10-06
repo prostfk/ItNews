@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Component
-public class UserPostsDao extends Dao {
+public class UserPostsDao extends AbstractDao {
 
     private static final Logger LOGGER = Logger.getLogger(UserPostsDao.class);
 
@@ -47,4 +47,8 @@ public class UserPostsDao extends Dao {
         executeQuery(String.format("DELETE FROM user_posts WHERE user_id='%d' AND article_id='%d'", userId, articleId));
     }
 
+    @Override
+    protected Object createEntity(ResultSet resultSet) throws SQLException {
+        return null;
+    }
 }

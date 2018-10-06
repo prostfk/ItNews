@@ -1,6 +1,7 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
+import by.bntu.fitr.povt.prostrmk.ItNews.dao.AbstractDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment;
@@ -9,7 +10,6 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;

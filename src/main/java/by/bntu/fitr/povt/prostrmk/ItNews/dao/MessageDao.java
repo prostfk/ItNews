@@ -6,11 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class MessageDao extends Dao {
+public class MessageDao extends AbstractDao<Message> {
 
     @Autowired private UserDao userDao;
 
@@ -38,12 +39,7 @@ public class MessageDao extends Dao {
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user_message WHERE (sender_id='%d' AND receiver_id='%d') OR (receiver_id='%d' AND sender_id='%d')", senderId, receiverId, senderId,receiverId));
         List<Message> messages = new ArrayList<>();
         try {
-            while (resultSet.next()){
-                messages.add(new Message(
-                        resultSet.getLong("id"),resultSet.getLong("sender_id"),
-                        resultSet.getLong("receiver_id"),resultSet.getString("content")
-                ));
-            }
+            return createList(resultSet);
         }catch (Exception e){
             LOGGER.error(e.getMessage());
         }
@@ -71,4 +67,11 @@ public class MessageDao extends Dao {
         executeQuery(String.format("INSERT INTO user_message(sender_id, receiver_id, content) values('%d','%d','%s')", message.getSenderId(),message.getReceiverId(),message.getText()));
     }
 
+    @Override
+    protected Message createEntity(ResultSet resultSet) throws SQLException {
+        return new Message(
+                resultSet.getLong("id"),resultSet.getLong("sender_id"),
+                resultSet.getLong("receiver_id"),resultSet.getString("content")
+        );
+    }
 }

@@ -13,22 +13,15 @@ import java.util.Collections;
 import java.util.List;
 
 @Component
-public class UserDao extends Dao {
+public class UserDao extends AbstractDao<User> {
 
-    @Autowired
-    private Connection connection;
 
     private static final Logger LOGGER = Logger.getLogger(UserDao.class);
 
     public List<User> findAll() {
         //language=SQL
         ResultSet resultSet = executeQueryWithResult("SELECT * FROM user");
-        try {
-            return usersFromResultSet(resultSet);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return Collections.emptyList();
-        }
+        return createList(resultSet);
     }
 
     public User findUserById(Long id) {
@@ -79,25 +72,13 @@ public class UserDao extends Dao {
         username = "%" + username + "%";
         //language=SQL
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user WHERE username LIKE '%s'", username));
-        try {
-            return usersFromResultSet(resultSet);
-        } catch (SQLException e) {
-            LOGGER.error(e);
-        }
-        return Collections.emptyList();
+        return createList(resultSet);
     }
 
-    private List<User> usersFromResultSet(ResultSet resultSet) throws SQLException {
-        List<User> users = new ArrayList<>();
-        while (resultSet.next()) {
-            users.add(new User(
-                    resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"), resultSet.getInt("blocked")
-            ));
-        }
-        return users;
+    @Override
+    protected User createEntity(ResultSet resultSet) throws SQLException {
+        return new User(
+                resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"), resultSet.getInt("blocked")
+        );
     }
-
-
-
-
 }

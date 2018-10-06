@@ -12,19 +12,14 @@ import java.util.Collections;
 import java.util.List;
 
 @Component
-public class CommentDao extends Dao {
+public class CommentDao extends AbstractDao<Comment> {
 
-    @Autowired
-    private Connection connection;
 
-    public List<Comment> findCommentsByArticleId(Long id){
-        //language=SQL
-        ResultSet resultSet = executeQueryWithResult("SELECT * FROM comment WHERE article_id=" + id);
-        try {
-            return commentsFromResultSet(resultSet);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return Collections.emptyList();
+    protected List<Comment> findCommentsByArticleId(Long id) {
+        try (ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM comment WHERE article_id = %d", id))) {
+            return createList(resultSet);
+        }catch (Exception e){
+            return null;
         }
     }
 
@@ -36,9 +31,17 @@ public class CommentDao extends Dao {
     private List<Comment> commentsFromResultSet(ResultSet resultSet) throws SQLException {
         List<Comment> comments = new ArrayList<>();
         while(resultSet.next()){
-            comments.add(new Comment(resultSet.getLong("id"),resultSet.getString("username"),resultSet.getString("content"),resultSet.getString("date"),resultSet.getLong("article_id")));
+            comments.add(createEntity(resultSet));
         }
         return comments;
     }
+
+    @Override
+    protected Comment createEntity(ResultSet resultSet) throws SQLException {
+        return new Comment(
+                resultSet.getLong("id"),resultSet.getString("username"),resultSet.getString("content"),resultSet.getString("date"),resultSet.getLong("article_id")
+        );
+    }
+
 
 }
