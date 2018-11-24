@@ -81,4 +81,10 @@ public class UserDao extends AbstractDao<User> {
                 resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"), resultSet.getInt("blocked")
         );
     }
+
+    public boolean authenticateUser(String username, String password){
+        User userByUsername = findUserByUsername(username);
+        return userByUsername != null && userByUsername.getPassword().equals(password);
+    }
+
 }

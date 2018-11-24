@@ -22,7 +22,8 @@ public class ArticleDao extends AbstractDao<Article> {
 
     public List<Article> findArticlesWithLimit(Long begin, Long count) {
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article LIMIT %d,%d", begin, count));
+        begin -= 1;
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article LIMIT %d,%d", begin * count, count));
         try {
             return articlesFromResultSet(resultSet);
         }catch (Exception e){
@@ -33,11 +34,12 @@ public class ArticleDao extends AbstractDao<Article> {
 
     public Article findArticleById(Long id) {
         //language=SQL
-
         ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM article WHERE id='%d'", id));
         try {
             if (resultSet.next()) {
-                Article article = new Article();
+                Article article = new Article(
+                        resultSet.getLong("id"),resultSet.getString("title"),resultSet.getString("content"),resultSet.getString("type"),resultSet.getString("path")
+                );
                 article.setComments(commentDao.findCommentsByArticleId(id));
                 return article;
             }
@@ -143,4 +145,26 @@ public class ArticleDao extends AbstractDao<Article> {
                 resultSet.getLong("id"), resultSet.getString("title"), resultSet.getString("content"), resultSet.getString("type"), resultSet.getString("path")
         );
     }
+
+    public List<Article> findTenLatestNews() {
+        try {
+            ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM article ORDER BY id DESC LIMIT 10");
+            return createList(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public List<Article> searchByTitle(String title){
+        try {
+            ResultSet resultSet = connection.createStatement().executeQuery(String.format("SELECT * FROM article WHERE title LIKE '%%%s%%'",title));
+            return createList(resultSet);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }

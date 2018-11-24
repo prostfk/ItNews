@@ -16,9 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = ItNewsApplication.class)
@@ -30,28 +28,40 @@ public class ArticleDaoTest {
     private ArticleDao articleDao;
 
     @Test
-    public void findArticlesByType() {
+    public void findArticlesByTypeCorrect() {
         List<Article> programming = articleDao.findArticlesByType("programming");
+        programming.forEach(article -> {
+            assertEquals("programming", article.getType());
+        });
         assertNotSame(Collections.EMPTY_LIST, programming);
+    }
+
+    @Test
+    public void findArticlesByTypeIncorrect() {
+        List<Article> programming = articleDao.findArticlesByType("famous");
+        assertEquals(Collections.EMPTY_LIST, programming);
     }
 
     @Test
     public void findAll() {
         List<Article> all = articleDao.findAll();
         assertNotSame(Collections.EMPTY_LIST, all);
+        all.forEach(Assert::assertNotNull);
     }
 
     @Test
-    public void findAllReversed() {
-        List<Article> all = articleDao.findAll();
-        List<Article> allReversed = articleDao.findAllReversed();
-        Collections.reverse(allReversed);
-        assertEquals(all,allReversed);
-    }
-
-    @Test
-    public void findByIdTest() {
+    public void findArticleByIdCorrect() {
         Article articleById = articleDao.findArticleById(1L);
-        assertNotNull(articleById);
+        long id = 1;
+        long articleBaseId = articleById.getId();
+        assertEquals(id, articleBaseId);
     }
+
+    @Test
+    public void findArticleByIdIncorrect() {
+        Article articleById = articleDao.findArticleById(null);
+        assertNull(articleById);
+    }
+
+
 }

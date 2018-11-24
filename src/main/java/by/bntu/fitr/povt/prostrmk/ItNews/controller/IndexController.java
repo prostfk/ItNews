@@ -81,5 +81,14 @@ public class IndexController {
         }
     }
 
+    @GetMapping(value = "/tes")
+    public String tes(){
+        return "restPaginationPage";
+    }
+
+    @GetMapping(value = "/check/{id}")
+    public String getTest(){
+        return "restSinglePage";
+    }
 
 }
