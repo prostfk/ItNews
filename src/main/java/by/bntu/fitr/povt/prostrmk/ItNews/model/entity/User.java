@@ -1,19 +1,30 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
+import org.springframework.data.annotation.Transient;
+
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 
+@Entity
 public class User implements Serializable {
 
     private static final long serialVersionUID = 2435636533523457538L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Size(min = 4, max=60)
     private String username;
 
+    @Size(min = 5,max = 20)
     private String password;
 
+    @Transient
     private String confirmPassword;
 
+    @Column(name = "blocked")
     private boolean isBlocked;
 
     public User() {

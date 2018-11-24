@@ -1,9 +1,8 @@
 package by.bntu.fitr.povt.prostrmk.ItNews;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
-import org.junit.Assert;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,20 +21,20 @@ import static org.junit.Assert.fail;
 public class UserDaoTest {
 
     @Autowired
-    private UserDao userDao;
+    private UserRepository userRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Test
     public void findUserByUsernameTestCorrect() {
-        User roman = userDao.findUserByUsername("roman");
+        User roman = userRepository.findUserByUsername("roman");
         assertEquals("roman",roman.getUsername());
     }
 
     @Test
     public void findUserByUsernameTestIncorrect() {
-        User roman = userDao.findUserByUsername("vova333");
+        User roman = userRepository.findUserByUsername("vova333");
         assertNull(roman);
     }
 
@@ -43,7 +42,7 @@ public class UserDaoTest {
     @Test
     public void checkUserAuthenticationCorrect(){
         User user = new User("roman", "123");
-        User base = userDao.findUserByUsername(user.getUsername());
+        User base = userRepository.findUserByUsername(user.getUsername());
         if (!passwordEncoder.matches(user.getPassword(),base.getPassword())){
             fail("Passwords does not matches!");
         }
@@ -52,7 +51,7 @@ public class UserDaoTest {
     @Test
     public void checkUserAuthenticationIncorrect(){
         User user = new User("roman", "zxccxz");
-        User base = userDao.findUserByUsername(user.getUsername());
+        User base = userRepository.findUserByUsername(user.getUsername());
         if (passwordEncoder.matches(user.getPassword(),base.getPassword())){
             fail("Passwords does not matches!");
         }

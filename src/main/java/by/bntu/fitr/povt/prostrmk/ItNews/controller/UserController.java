@@ -1,12 +1,12 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.MessageDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserPostsDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dto.UserDto;
+import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Message;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.MessageRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -21,21 +21,19 @@ import java.util.List;
 @RequestMapping(value = "/user")
 public class UserController {
 
-    @Autowired private UserDao userDao;
+    @Autowired private UserRepository userRepository;
 
-    @Autowired private ArticleDao articleDao;
+    @Autowired private ArticleRepository articleRepository;
 
-    @Autowired private UserPostsDao userPostsDao;
-
-    @Autowired private MessageDao messageDao;
+    @Autowired private MessageRepository messageRepository;
 
     @GetMapping(value = "/me")
     public ModelAndView getUserPage(){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
-        User userEntity = userDao.findUserByUsername(name);
+        User userEntity = userRepository.findUserByUsername(name);
         UserDto user;
         if (userEntity!=null){
-            user = new UserDto(userEntity, userPostsDao.findArticlesByUser(userEntity.getId()));
+            user = new UserDto(userEntity, articleRepository.findArticlesByUser(userEntity.getId()));
         }else{
             return new ModelAndView("redirect:/auth");
         }
@@ -46,9 +44,10 @@ public class UserController {
     @GetMapping(value = "/addArticleToMe/{id}")
     public String addArticleToMyCollection(@PathVariable("id") String idValue){
         long id = Long.parseLong(idValue);
-        User user = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
-        if (!userPostsDao.findArticlesByUser(user.getId()).contains(articleDao.findArticleById(id))){
-            userPostsDao.save(user.getId(), id);
+        User user = userRepository.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
+        List<Article> articlesByUser = articleRepository.findArticlesByUser(user.getId());
+        if (!articlesByUser.contains(articleRepository.findArticleById(id))){
+            articleRepository.saveArticleIntoUsersPosts(user.getId(), id);
         }
         return "redirect:/user/me";
     }
@@ -57,9 +56,9 @@ public class UserController {
     public String deleteMyArticle(@PathVariable("id")String idValue){
         long id = Long.parseLong(idValue);
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
-        User userByUsername = userDao.findUserByUsername(name);
+        User userByUsername = userRepository.findUserByUsername(name);
         if (userByUsername!=null){
-            userPostsDao.delete(userByUsername.getId(), id);
+            articleRepository.deleteArticleFromUserPosts(userByUsername.getId(), id);
         }
         return "redirect:/user/me";
     }
@@ -67,17 +66,17 @@ public class UserController {
     @GetMapping(value = "/im")
     public ModelAndView dialogs(){
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
-        User user = userDao.findUserByUsername(name);
-        List<String> conversations = messageDao.findConversations(user.getId());
+        User user = userRepository.findUserByUsername(name);
+        List<String> conversations = messageRepository.findConversations(user.getId());
         return new ModelAndView("im", "conversations", conversations);
     }
 
     @GetMapping(value = "/sendMessageTo{username}")
     public ModelAndView sendMessage(@PathVariable("username") String username){
-        User receiver = userDao.findUserByUsername(username);
+        User receiver = userRepository.findUserByUsername(username);
         if (receiver!=null){
-            User sender = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
-            List<Message> messages = messageDao.findMessagesBySenderAndReceiver(sender.getId(), receiver.getId());
+            User sender = userRepository.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
+            List<Message> messages = messageRepository.findMessagesBySenderIdAndReceiverId(sender.getId(), receiver.getId());
             ModelAndView modelAndView = new ModelAndView("sendMessageTo", "messages", messages);
             modelAndView.addObject("receiver", receiver.getUsername());
             modelAndView.addObject("senderId", sender.getId());
@@ -91,9 +90,9 @@ public class UserController {
         if (text.equals("")){
             return "redirect:/error?wrong+message";
         }
-        User receiver = userDao.findUserByUsername(username);
-        User sender = userDao.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
-        messageDao.save(new Message(
+        User receiver = userRepository.findUserByUsername(username);
+        User sender = userRepository.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
+        messageRepository.save(new Message(
                 sender.getId(),receiver.getId(),text
         ));
         return "redirect:/user/sendMessageTo" + username;
@@ -101,7 +100,7 @@ public class UserController {
 
     @GetMapping(value = "/im/search")
     public ModelAndView searchUser(@RequestParam("searchUser") String username){
-        List<User> users = userDao.findUsersByUsernameLike(username);
+        List<User> users = userRepository.findUsersByUsernameLikeIgnoreCase(username);
         return new ModelAndView("userSeach", "users", users);
     }
 
@@ -110,7 +109,7 @@ public class UserController {
     @PostMapping(value = "/user/update")
     public String updateMessage(){
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        List<Message> messagesBySenderId = messageDao.findMessagesBySenderId(userDao.findUserByUsername(username).getId());
+        List<Message> messagesBySenderId = messageRepository.findMessagesBySenderId(userRepository.findUserByUsername(username).getId());
         Message message = messagesBySenderId.get(messagesBySenderId.size() - 1);
         return message.getText();
     }

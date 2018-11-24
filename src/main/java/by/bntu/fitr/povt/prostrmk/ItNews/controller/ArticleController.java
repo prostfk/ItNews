@@ -1,15 +1,18 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.AbstractDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
@@ -19,14 +22,14 @@ import java.util.List;
 public class ArticleController {
 
     @Autowired
-    private ArticleDao articleDao;
+    private ArticleRepository articleRepository;
 
     @Autowired
-    private CommentDao commentDao;
+    private CommentRepository commentRepository;
 
     @GetMapping(value = "/article/{id}")
     public ModelAndView checkArticle(@PathVariable Long id){
-        Article articleById = articleDao.findArticleById(id);
+        Article articleById = articleRepository.findArticleById(id);
         return new ModelAndView("singleArticle", "article", articleById);
     }
 
@@ -36,14 +39,14 @@ public class ArticleController {
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         if (name!=null){
             Comment com = new Comment(name,comment,new Date().toString(),id);
-            commentDao.save(com);
+            commentRepository.save(com);
         }
         return "redirect:/article/" + id;
     }
 
     @GetMapping(value = "/articles/{type}")
-    public ModelAndView searchByType(@PathVariable String type){
-        List<Article> articlesByType = articleDao.findArticlesByType(type);
+    public ModelAndView searchByType(@PathVariable String type, Pageable pageable){
+        List<Article> articlesByType = articleRepository.findArticlesByType(type, pageable);
         return new ModelAndView("indexTest", "articles",articlesByType);
     }
 

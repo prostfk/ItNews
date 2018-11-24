@@ -1,27 +1,28 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 
+@Entity
 public class Article implements IArticles, Serializable {
 
     private static final long serialVersionUID = 2435636533523457536L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-//    @Column(name = "title")
     private String title;
 
-//    @Column(name = "content")
     private String content;
 
-//    @Column(name = "type")
     private String type;
 
-//    @Column(name = "pathToFile")
     private String pathToFile;
 
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Comment> comments;
 
     public Long getId() {

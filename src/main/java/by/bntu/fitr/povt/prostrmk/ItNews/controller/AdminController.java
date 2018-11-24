@@ -1,10 +1,12 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import by.bntu.fitr.povt.prostrmk.ItNews.model.util.FileUtil;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -19,10 +21,10 @@ import java.util.List;
 public class AdminController {
 
     @Autowired
-    private ArticleDao articleDao;
+    private ArticleRepository articleRepository;
 
     @Autowired
-    private UserDao userDao;
+    private UserRepository userRepository;
 
     @GetMapping(value = "/createArticle")
     public ModelAndView createArticleGet() {
@@ -32,13 +34,14 @@ public class AdminController {
     @PostMapping(value = "/createArticle")
     @ResponseBody
     public String createArticlePost(Article article, MultipartFile file) {
-        articleDao.save(article, file);
+        FileUtil.saveFile(file);
+        articleRepository.save(article);
         return "<i>success</i>";
     }
 
     @GetMapping(value = "/edit")
     public ModelAndView editArticleList(){
-        List<Article> allReversed = articleDao.findAll();
+        List<Article> allReversed = articleRepository.findAll();
         ModelAndView modelAndView = new ModelAndView("editArticles", "articles", allReversed);
         modelAndView.addObject("link", "/admin/edit-reversed");
         return modelAndView;
@@ -46,7 +49,7 @@ public class AdminController {
 
     @GetMapping(value = "/edit-reversed")
     public ModelAndView editArticleListReversed(){
-        List<Article> allReversed = articleDao.findAllReversed();
+        List<Article> allReversed = articleRepository.findAll();
         ModelAndView modelAndView = new ModelAndView("editArticles", "articles", allReversed);
         modelAndView.addObject("link", "/admin/edit");
         return modelAndView;
@@ -54,7 +57,7 @@ public class AdminController {
 
     @GetMapping("/edit/{id}")
     public ModelAndView editArticle(@PathVariable String id){
-        Article articleById = articleDao.findArticleById(Long.parseLong(id));
+        Article articleById = articleRepository.findArticleById(Long.parseLong(id));
         if (articleById!=null) {
             return new ModelAndView("editArticle", "article", articleById);
         }
@@ -66,11 +69,11 @@ public class AdminController {
         if (article!=null){
             try {
                 if (!file.getOriginalFilename().equals("")){
-                    article.setPathToFile(articleDao.saveFile(file));
+                    article.setPathToFile(FileUtil.saveFile(file));
                 }else{
-                    article.setPathToFile(articleDao.findArticleById(Long.parseLong(id)).getPathToFile());
+                    article.setPathToFile(articleRepository.findArticleById(Long.parseLong(id)).getPathToFile());
                 }
-                articleDao.update(Long.parseLong(id), article);
+                articleRepository.save(article);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -79,18 +82,18 @@ public class AdminController {
         return "redirect:/admin";
     }
 
-    @GetMapping(value = "")
-    public ModelAndView getUsers(){
-        List<User> all = userDao.findAll();
+    @GetMapping(value = "/")
+    public ModelAndView getUsers(Pageable pageable){
+        List<User> all = userRepository.findAll(pageable);
         return new ModelAndView("adminIndex","users",all);
     }
 
     @PostMapping(value = "/processUser/{id}")
     public String processUser(@PathVariable("id") String userId){
         long id = Long.parseLong(userId);
-        User userById = userDao.findUserById(id);
+        User userById = userRepository.findUserById(id);
         userById.setStatus(!userById.getStatus());
-        userDao.update(id,userById);
+        userRepository.save(userById);
         return "redirect:/admin";
     }
 

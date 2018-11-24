@@ -1,11 +1,18 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
+@Entity
 public class Comment implements Serializable {
 
     private static final long serialVersionUID = 2435636533523457537L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String username;

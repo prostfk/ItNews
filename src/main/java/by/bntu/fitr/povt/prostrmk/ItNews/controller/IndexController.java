@@ -1,27 +1,30 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.controller;
 
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
-import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
 public class IndexController {
 
     @Autowired
-    private UserDao userDao;
+    private UserRepository userRepository;
 
     @Autowired
-    private ArticleDao articleDao;
+    private ArticleRepository articleRepository;
 
     @Autowired
     private PasswordEncoder encoder;
@@ -32,11 +35,9 @@ public class IndexController {
     }
 
     @PostMapping(value = "/registration")
-    public String savePerson(User user) {
-        if (userDao.validateUser(user)) {
-            user.setPassword(encoder.encode(user.getPassword()));
-            userDao.save(user);
-        }
+    public String savePerson(@Valid User user) {
+        user.setPassword(encoder.encode(user.getPassword()));
+        userRepository.save(user);
         return "redirect:/auth";
     }
 
@@ -47,13 +48,13 @@ public class IndexController {
 
 
     @GetMapping(value = "/")
-    public ModelAndView getIndexPage() {
-        return new ModelAndView("indexTest", "articles", articleDao.findAllReversed());
+    public ModelAndView getIndexPage(Pageable pageable) {
+        return new ModelAndView("indexTest", "articles", articleRepository.findAll(pageable));
     }
 
     @GetMapping(value = "/search")
     public ModelAndView search(@RequestParam(name = "searchString") String searchString) {
-        List<Article> articles = articleDao.findArticlesWhereTitleLikeIgnoreCase(searchString);
+        List<Article> articles = articleRepository.findArticlesByTitleLikeIgnoreCase(searchString);
         return new ModelAndView("indexTest", "articles", articles);
     }
 
@@ -74,7 +75,7 @@ public class IndexController {
     @GetMapping(value = "/checkUsername")
     @ResponseBody
     public String checkUsername(String username) {
-        if (userDao.findUserByUsername(username) == null && username.length() > 3) {
+        if (userRepository.findUserByUsername(username) == null && username.length() > 3) {
             return "Good username";
         } else {
             return "User with such username already exists";
@@ -82,12 +83,12 @@ public class IndexController {
     }
 
     @GetMapping(value = "/tes")
-    public String tes(){
+    public String tes() {
         return "restPaginationPage";
     }
 
     @GetMapping(value = "/check/{id}")
-    public String getTest(){
+    public String getTest() {
         return "restSinglePage";
     }
 
