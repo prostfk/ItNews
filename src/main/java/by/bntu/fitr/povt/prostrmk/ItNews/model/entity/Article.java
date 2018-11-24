@@ -6,12 +6,13 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
+@Table(name = "article")
 public class Article implements IArticles, Serializable {
 
     private static final long serialVersionUID = 2435636533523457536L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
@@ -20,9 +21,11 @@ public class Article implements IArticles, Serializable {
 
     private String type;
 
+    @Column(name = "path")
     private String pathToFile;
 
     @OneToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "comment")
     private List<Comment> comments;
 
     public Long getId() {

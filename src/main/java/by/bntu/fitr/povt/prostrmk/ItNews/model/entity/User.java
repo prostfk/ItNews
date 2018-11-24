@@ -12,17 +12,17 @@ public class User implements Serializable {
     private static final long serialVersionUID = 2435636533523457538L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Size(min = 4, max=60)
     private String username;
 
-    @Size(min = 5,max = 20)
+    @Size(min = 1,max = 100)
     private String password;
 
     @Transient
-    private String confirmPassword;
+    private transient String confirmPassword;
 
     @Column(name = "blocked")
     private boolean isBlocked;

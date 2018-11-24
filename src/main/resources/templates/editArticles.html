@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit</title>
+    <link rel="stylesheet" href="/resources/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,14 +36,15 @@
                 <th scope="col">Edit</th>
             </tr>
             </thead>
-            <tbody>
-            <tr th:each="article : ${articles}">
-                <th scope="row" th:text="${article.id}"></th>
-                <td class="article-content" th:text="${article.title}"></td>
-                <td th:text="${article.type}"></td>
-                <td class="article-content" th:text="${article.content}"></td>
-                <td><a th:href="'/admin/edit/' + ${article.id}" class="btn btn-primary">Edit</a></td>
-            </tr>
+            <tbody id="article-container">
+            <!--<tr th:each="article : ${articles}">-->
+                <!--<th scope="row" th:text="${article.id}"></th>-->
+                <!--<td class="article-content" th:text="${article.title}"></td>-->
+                <!--<td th:text="${article.type}"></td>-->
+                <!--<td class="article-content" th:text="${article.content}"></td>-->
+                <!--<td><a th:href="'/admin/edit/' + ${article.id}" class="btn btn-primary">Edit</a></td>-->
+                <!--<td><a th:href="'/admin/delete/' + ${article.id}" class="btn btn-danger" >Delete</a></td>-->
+            <!--</tr>-->
 
             </tbody>
         </table>
@@ -50,6 +52,36 @@
 
 </div>
 
+
+<script>
+    getNews();
+    function deleteArticle(id) {
+        fetch(`/admin/delete/${id}`, {method:"DELETE"}).then(response=>{
+            return response.json()
+        }).then(data=>{
+            //location.reload();
+            getNews();
+        })
+    }
+    function getNews() {
+        fetch('/admin/getNews').then(response=>{
+            return response.json();
+        }).then(data=>{
+            let str = '';
+            for (let i = 0; i < data.length; i++) {
+                str+= `<tr class="animated fadeInUp">
+                <th scope="row">${data[i].id}</th>
+                <td class="article-content">${data[i].title}</td>
+                <td>${data[i].type}</td>
+                <td class="article-content">${data[i].content}</td>
+                <td><a href="/admin/edit/${data[i].id}" class="btn btn-primary">Edit</a></td>
+                <td><a onclick="deleteArticle(${data[i].id})" class="btn btn-danger" >Delete</a></td>
+            </tr>`
+            }
+            document.getElementById('article-container').innerHTML = str;
+        })
+    }
+</script>
 
 
 </body>

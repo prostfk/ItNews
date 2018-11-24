@@ -52,10 +52,10 @@
         <p style="font-size: medium" id="article-content"></p>
         <!--<div th:if="!${article.comments.isEmpty()}">-->
             <!--<div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 40%;"-->
-                 <!--th:each="comment : ${article.comments}">-->
+                 <!--th:each="content : ${article.comments}">-->
                 <!--<div style="padding: 2px 16px;">-->
-                    <!--<h4><b th:text="${comment.username}"></b></h4>-->
-                    <!--<p th:text="${comment.comment}"></p>-->
+                    <!--<h4><b th:text="${content.username}"></b></h4>-->
+                    <!--<p th:text="${content.content}"></p>-->
                 <!--</div>-->
             <!--</div>-->
         <!--</div>-->
@@ -63,18 +63,18 @@
 
         <div sec:authorize="isAuthenticated()">
             <a th:href="'/user/addArticleToMe/' + ${article.id}" class="btn btn-default">Save article</a>
-            <form method="post" th:action="'/article/' + ${article.id} + '/comment'">
+            <form method="post" th:action="'/article/' + ${article.id} + '/content'">
                 <div class="input-group">
-                    <input class="form-control" name="comment-content" id="comment-input" placeholder="Comment here">
+                    <input class="form-control" name="content-content" id="content-input" placeholder="Comment here">
                     <div class="input-group-btn">
-                        <button type="submit" class="btn btn-primary">Add comment</button>
+                        <button type="submit" class="btn btn-primary">Add content</button>
                     </div>
                 </div>
             </form>
         </div>
         <div sec:authorize="!isAuthenticated()">
             <a href="/auth" class="btn btn-primary">
-                Please auth to leave a comment
+                Please auth to leave a content
             </a>
         </div>
 

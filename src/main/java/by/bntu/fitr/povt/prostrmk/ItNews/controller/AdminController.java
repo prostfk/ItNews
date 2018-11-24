@@ -4,7 +4,9 @@ import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.util.FileUtil;
 import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
+import by.bntu.fitr.povt.prostrmk.ItNews.repository.CommentRepository;
 import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.annotation.Secured;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @Secured("ROLE_ADMIN")
@@ -24,6 +27,9 @@ public class AdminController {
     private ArticleRepository articleRepository;
 
     @Autowired
+    private CommentRepository commentRepository;
+
+    @Autowired
     private UserRepository userRepository;
 
     @GetMapping(value = "/createArticle")
@@ -32,19 +38,20 @@ public class AdminController {
     }
 
     @PostMapping(value = "/createArticle")
-    @ResponseBody
     public String createArticlePost(Article article, MultipartFile file) {
-        FileUtil.saveFile(file);
+        article.setPathToFile(FileUtil.saveFile(file));
+
         articleRepository.save(article);
-        return "<i>success</i>";
+        return "redirect:/admin";
     }
 
     @GetMapping(value = "/edit")
     public ModelAndView editArticleList(){
-        List<Article> allReversed = articleRepository.findAll();
-        ModelAndView modelAndView = new ModelAndView("editArticles", "articles", allReversed);
-        modelAndView.addObject("link", "/admin/edit-reversed");
-        return modelAndView;
+
+//        List<Article> allReversed = articleRepository.findAll();
+//        ModelAndView modelAndView = new ModelAndView("editArticles", "articles", allReversed);
+//        modelAndView.addObject("link", "/admin/edit-reversed");
+        return new ModelAndView("editArticles");
     }
 
     @GetMapping(value = "/edit-reversed")
@@ -82,10 +89,29 @@ public class AdminController {
         return "redirect:/admin";
     }
 
-    @GetMapping(value = "/")
-    public ModelAndView getUsers(Pageable pageable){
-        List<User> all = userRepository.findAll(pageable);
-        return new ModelAndView("adminIndex","users",all);
+    @DeleteMapping(value = "/delete/{id}")
+    @ResponseBody
+    public String deleteArticle(@PathVariable Long id) throws Exception{
+        articleRepository.delete(articleRepository.findArticleById(id));
+        System.out.println("deleted");
+        JSONObject json = new JSONObject();
+        json.put("status", "ok");
+        return json.toString();
+    }
+
+    @GetMapping(value = "/getNews")
+    @ResponseBody
+    public List<Article> getNews(){
+        List<Article> all = articleRepository.findAll();
+        for (int i = 0; i < all.size(); i++) {
+            all.get(i).setComments(new LinkedList<>());
+        }
+        return all;
+    }
+
+    @GetMapping(value = "")
+    public ModelAndView getUsers(){
+        return new ModelAndView("adminIndex");
     }
 
     @PostMapping(value = "/processUser/{id}")

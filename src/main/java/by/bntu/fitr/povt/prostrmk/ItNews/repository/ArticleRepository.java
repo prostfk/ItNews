@@ -2,9 +2,11 @@ package by.bntu.fitr.povt.prostrmk.ItNews.repository;
 
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -25,6 +27,8 @@ public interface ArticleRepository extends CrudRepository<Article, Long> {
     void saveArticleIntoUsersPosts(@Param("userId")Long userId, @Param("articleId")Long articleId);
 
     @Query(value = "DELETE FROM user_posts WHERE user_id=:userId AND article_id=:articleId",nativeQuery = true)
+    @Transactional
+    @Modifying
     void deleteArticleFromUserPosts(@Param("userId")Long userId, @Param("articleId")Long articleId);
 
     List<Article> findAll();

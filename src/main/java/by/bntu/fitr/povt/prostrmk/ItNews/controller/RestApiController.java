@@ -5,10 +5,12 @@ import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
 import by.bntu.fitr.povt.prostrmk.ItNews.repository.ArticleRepository;
 import by.bntu.fitr.povt.prostrmk.ItNews.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api")
@@ -33,6 +35,13 @@ public class RestApiController {
     @GetMapping(value = "/user/{id}")
     public User findUserById(@PathVariable Long id){
         return userRepository.findUserById(id);
+    }
+
+    @Secured("ROLE_ADMIN")
+    @GetMapping(value = "/admin/users")
+    public List<User> getUsers(@RequestParam Integer page){
+        page = page == 0 ? 0 : page * 10;
+        return userRepository.findUsers(page);
     }
 
 }

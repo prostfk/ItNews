@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.PostConstruct;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -49,7 +50,7 @@ public class IndexController {
 
     @GetMapping(value = "/")
     public ModelAndView getIndexPage(Pageable pageable) {
-        return new ModelAndView("indexTest", "articles", articleRepository.findAll(pageable));
+        return new ModelAndView("indexTest", "articles", articleRepository.findAll());
     }
 
     @GetMapping(value = "/search")

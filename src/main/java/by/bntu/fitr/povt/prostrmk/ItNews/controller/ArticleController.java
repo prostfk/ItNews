@@ -30,19 +30,21 @@ public class ArticleController {
     @GetMapping(value = "/article/{id}")
     public ModelAndView checkArticle(@PathVariable Long id){
         Article articleById = articleRepository.findArticleById(id);
+        List<Comment> commentsByArticleId = commentRepository.findCommentsByArticleId(articleById.getId());
+        articleById.setComments(commentsByArticleId);
         return new ModelAndView("singleArticle", "article", articleById);
     }
 
-    @Secured("ROLE_USER")
-    @PostMapping(value = "/article/{id}/comment")
-    public String addComment(@PathVariable Long id, @RequestParam("comment-content")String comment){
-        String name = SecurityContextHolder.getContext().getAuthentication().getName();
-        if (name!=null){
-            Comment com = new Comment(name,comment,new Date().toString(),id);
-            commentRepository.save(com);
-        }
-        return "redirect:/article/" + id;
-    }
+//    @Secured("ROLE_USER")
+//    @PostMapping(value = "/article/{id}/comment")
+//    public String addComment(@PathVariable Long id, @RequestParam("comment-content")String comment){
+//        String name = SecurityContextHolder.getContext().getAuthentication().getName();
+//        if (name!=null){
+//            Comment com = new Comment(name,comment,new Date().toString(),id);
+//            commentRepository.save(com);
+//        }
+//        return "redirect:/article/" + id;
+//    }
 
     @GetMapping(value = "/articles/{type}")
     public ModelAndView searchByType(@PathVariable String type, Pageable pageable){

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin page</title>
+    <link rel="stylesheet" href="/resources/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
@@ -25,21 +26,7 @@
                     <th scope="col">Action</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr th:each="user : ${users}">
-                    <th scope="row" th:text="${user.id}"></th>
-                    <td th:text="${user.username}"></td>
-                    <td th:text="${user.password}"></td>
-                    <td th:text="${user.getStatus()}"></td>
-                    <td>
-                        <form th:action="@{'/admin/processUser/' + ${user.id}}" method="post">
-                            <button th:text="${user.getStatus()} ? 'Unblock' : 'Block'"
-                                    th:class="${user.getStatus()} ? 'btn btn-success' : 'btn btn-danger'"
-                                    type="submit">
-                            </button>
-                        </form>
-                    </td>
-                </tr>
+                <tbody id="users-tr">
 
                 </tbody>
             </table>
@@ -48,6 +35,33 @@
     </div>
 
 </div>
+
+<script>
+    let userPage = 0;
+    initUsers();
+    function initUsers() {
+        fetch(`/api/admin/users?page=${userPage}`).then(response=>{
+            return response.json()
+        }).then(data=>{
+            console.log(data);
+            let str = '';
+            for (let i = 0; i < data.length; i++) {
+                str += `<tr class="animated fadeInUp"><th scope="row">${data[i].id}</th>
+                    <td>${data[i].username}</td>
+                    <td>${data[i].password}</td>
+                    <td>${data[i].status}</td>
+                    <td>
+                        <form action="/admin/processUser/${data[i].id}" method="post">
+                            <button class="${data[i].status ? 'btn btn-success' : 'btn btn-danger'}
+                                    type="submit">${data[i].status ? 'Unblock' : 'Block'}
+                            </button>
+                        </form>
+                    </td></tr>`
+            }
+            document.getElementById('users-tr').innerHTML = str;
+        })
+    }
+</script>
 
 </body>
 </html>

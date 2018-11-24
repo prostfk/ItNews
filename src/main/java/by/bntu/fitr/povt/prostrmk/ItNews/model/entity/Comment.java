@@ -1,50 +1,39 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Table(name = "comment")
 public class Comment implements Serializable {
 
     private static final long serialVersionUID = 2435636533523457537L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String username;
 
-    private String comment;
+    private String content;
 
     private String date;
-
-    private Long articleId;
 
     public Comment() {
     }
 
-    public Comment(String username, String comment, String date) {
+    public Comment(String username, String content, String date) {
         this.username = username;
-        this.comment = comment;
+        this.content = content;
         this.date = date;
     }
 
-    public Comment(String username, String comment, String date, Long articleId) {
-        this.username = username;
-        this.comment = comment;
-        this.date = date;
-        this.articleId = articleId;
-    }
 
-    public Comment(Long id, String username, String comment, String date, Long articleId) {
+    public Comment(Long id, String username, String content, String date, Long articleId) {
         this.id = id;
         this.username = username;
-        this.comment = comment;
+        this.content = content;
         this.date = date;
-        this.articleId = articleId;
     }
 
     public String getDate() {
@@ -71,19 +60,12 @@ public class Comment implements Serializable {
         this.username = username;
     }
 
-    public String getComment() {
-        return comment;
+    public String getContent() {
+        return content;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public Long getArticleId() {
-        return articleId;
-    }
-
-    public void setArticleId(Long articleId) {
-        this.articleId = articleId;
-    }
 }

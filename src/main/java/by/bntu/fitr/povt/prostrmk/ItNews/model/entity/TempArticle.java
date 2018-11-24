@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class TempArticle implements IArticles {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
