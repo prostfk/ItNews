@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Offered </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+</head>
+<body>
+
+<div th:include="~{index.html :: navbar}"></div>
+
+<div class="content">
+
+    <div class="offset-md-3 col-md-6">
+        <div th:each="article : ${articles}" class="animated fadeInUp">
+            <div class="card" style="margin-top: 1%">
+                <img class="card-img-top" th:src="${article.pathToFile}"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${article.title}"/>
+                    <p class="card-text" th:text="${article.content}" style="overflow: hidden"/>
+                    <a th:href="'/admin/offered/' + ${article.id}" class="btn btn-primary">Check article</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

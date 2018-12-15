@@ -5,26 +5,27 @@
     <title>Create articleId</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 
 </head>
 <body>
 
 <div th:include="~{index.html :: navbar}"></div>
 
-<div class="container">
+<div class="container animated fadeInUp">
     <form th:object="${article}" action="/admin/createArticle" method="post" enctype="multipart/form-data">
         <input placeholder="title" class="form-control" th:field="*{title}">
         <input placeholder="content" class="form-control" th:field="*{content}">
         <!--<input placeholder="type" class="form-control" th:field="*{type}">-->
         <label for="type-select" class="form-control">Type</label>
-        <select id="type-select" th:field="*{type}">
+        <select id="type-select" class="form-control" th:field="*{type}">
             <option value="programming">Programming</option>
             <option value="startup">Start up</option>
             <option value="science">Science</option>
             <option value="other">Other</option>
         </select>
         <input type="file" min="1" max="9999" name="file">
-        <input type="submit"/>
+        <input type="submit" class="btn btn-primary"/>
     </form>
 </div>
 

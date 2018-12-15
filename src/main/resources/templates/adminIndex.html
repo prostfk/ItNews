@@ -5,6 +5,7 @@
     <title>Admin page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 
 </head>
 <body>
@@ -17,7 +18,7 @@
         <div class="col-md-7">
             <table class="table">
                 <thead>
-                <tr>
+                <tr class="animated fadeInUp">
                     <th scope="col">id</th>
                     <th scope="col">Username</th>
                     <th scope="col">Password</th>
@@ -26,11 +27,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="user : ${users}">
-                    <th scope="row" th:text="${user.id}"></th>
-                    <td th:text="${user.username}"></td>
-                    <td th:text="${user.password}"></td>
-                    <td th:text="${user.getStatus()}"></td>
+                <tr th:each="user : ${users}" class="animated fadeInUp">
+                    <th scope="row" th:text="${user.id}"/>
+                    <td th:text="${user.username}"/>
+                    <td th:text="${user.password}"/>
+                    <td th:text="${user.getStatus()}"/>
                     <td>
                         <form th:action="@{'/admin/processUser/' + ${user.id}}" method="post">
                             <button th:text="${user.getStatus()} ? 'Unblock' : 'Block'"

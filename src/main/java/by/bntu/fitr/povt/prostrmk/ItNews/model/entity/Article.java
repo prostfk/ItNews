@@ -1,5 +1,6 @@
 package by.bntu.fitr.povt.prostrmk.ItNews.model.entity;
 
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
@@ -11,9 +12,11 @@ public class Article implements IArticles, Serializable {
     private Long id;
 
 //    @Column(name = "title")
+    @Size(min = 3, max = 150)
     private String title;
 
 //    @Column(name = "content")
+    @Size(min = 100)
     private String content;
 
 //    @Column(name = "type")
@@ -21,6 +24,8 @@ public class Article implements IArticles, Serializable {
 
 //    @Column(name = "pathToFile")
     private String pathToFile;
+
+    private Integer countOfComments;
 
     private List<Comment> comments;
 
@@ -72,6 +77,14 @@ public class Article implements IArticles, Serializable {
         this.comments = comments;
     }
 
+    public Integer getCountOfComments() {
+        return countOfComments;
+    }
+
+    public void setCountOfComments(Integer countOfComments) {
+        this.countOfComments = countOfComments;
+    }
+
     public Article() {
     }
 
@@ -97,6 +110,15 @@ public class Article implements IArticles, Serializable {
         this.type = type;
         this.pathToFile = pathToFile;
         this.comments = comments;
+    }
+
+    public Article(Long id, String title, String content, String type, String pathToFile, Integer countOfComments) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.type = type;
+        this.pathToFile = pathToFile;
+        this.countOfComments = countOfComments;
     }
 
     @Override

@@ -94,5 +94,30 @@ public class AdminController {
         return "redirect:/admin";
     }
 
+    @PostMapping(value = "/offered/{id}/remove")
+    public String removeOffered(@PathVariable Long id){
+        articleDao.deleteOfferedArticleById(id);
+        return "redirect:/admin/offered";
+    }
+
+    @PostMapping(value = "/offered/{id}/submit")
+    public String submitOffered(@PathVariable Long id){
+        Article offeredArticleById = articleDao.findOfferedArticleById(id);
+        articleDao.putFromSaveToArticles(offeredArticleById,offeredArticleById.getId());
+        return "redirect:/admin/offered";
+    }
+
+    @GetMapping(value = "/offered")
+    public ModelAndView findAllOffered(){
+        List<Article> allOffered = articleDao.findAllOffered();
+        return new ModelAndView("adminOffered", "articles", allOffered);
+    }
+
+    @GetMapping(value = "/offered/{id}")
+    public ModelAndView findOfferedById(@PathVariable Long id){
+        Article allOffered = articleDao.findOfferedArticleById(id);
+        return new ModelAndView("adminSingleOffered", "article", allOffered);
+    }
+
 
 }

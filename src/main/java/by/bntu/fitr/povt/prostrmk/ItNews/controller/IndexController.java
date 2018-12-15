@@ -48,7 +48,7 @@ public class IndexController {
 
     @GetMapping(value = "/")
     public ModelAndView getIndexPage() {
-        return new ModelAndView("indexTest", "articles", articleDao.findAllReversed());
+        return new ModelAndView("indexTest", "articles", articleDao.findIndexPage());
     }
 
     @GetMapping(value = "/search")
@@ -81,5 +81,14 @@ public class IndexController {
         }
     }
 
+    @GetMapping(value = "/tes")
+    public String tes(){
+        return "restPaginationPage";
+    }
+
+    @GetMapping(value = "/check/{id}")
+    public String getTest(){
+        return "restSinglePage";
+    }
 
 }

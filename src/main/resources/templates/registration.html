@@ -11,22 +11,24 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
 </head>
 <body>
 
 <div th:include="~{auth.html :: navbar}"></div>
 
-<div class="container">
+<div class="container animated fadeInUp">
     <form th:object="${user}" action="/registration" method="post">
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" th:field="*{username}" onblur="checkUsername()" class="form-control" id="username" placeholder="Enter username">
-            <span style="float: right;" id="data-username"></span>
+            <span style="float: right;" id="data-username"/>
             <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone else.</small>
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <span style="float: right;" id="data-password"></span>
+            <span style="float: right;" id="data-password"/>
             <input type="password" th:field="*{password}" onkeyup="checkPassword()" class="form-control" id="password" placeholder="Password">
         </div>
         <input type="submit" class="btn btn-primary" value="submit">

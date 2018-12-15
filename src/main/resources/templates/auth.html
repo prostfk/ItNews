@@ -10,6 +10,8 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
 </head>
 <body>
 <div th:fragment="navbar">
@@ -27,22 +29,15 @@
                 </div>
             </form>
         </header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default animated fadeInUp">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="/">About us</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/partners/">Partners</a></li>
-                <li><a href="/customers/">Customers</a></li>
-                <li><a href="/projects/">Projects</a></li>
-                <li><a href="/careers/">Careers</a></li>
-                <li><a href="/contact/">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
 
-<div class="container">
+<div class="container animated fadeInUp">
     <form th:object="${user}" action="/auth" method="post">
         <div class="form-group">
             <label for="username">Username</label>

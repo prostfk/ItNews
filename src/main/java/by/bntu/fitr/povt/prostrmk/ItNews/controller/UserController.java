@@ -5,15 +5,21 @@ import by.bntu.fitr.povt.prostrmk.ItNews.dao.MessageDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserPostsDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dto.UserDto;
+import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Message;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.List;
 
 @Secured("ROLE_USER")
@@ -103,6 +109,18 @@ public class UserController {
     public ModelAndView searchUser(@RequestParam("searchUser") String username){
         List<User> users = userDao.findUsersByUsernameLike(username);
         return new ModelAndView("userSeach", "users", users);
+    }
+
+    @PostMapping(value = "/offerArticle")
+    public String offerArticle(@ModelAttribute Article article, @RequestParam(value = "file") MultipartFile file, HttpServletRequest request) throws JSONException {
+        String name = SecurityContextHolder.getContext().getAuthentication().getName();
+        User userByUsername = userDao.findUserByUsername(name);
+        if (userByUsername!=null){
+            articleDao.saveOffered(article, userByUsername.getUsername(), file);
+            return "redirect:/";
+        }else{
+            return "redirect:/error?incorrect+data";
+        }
     }
 
 //    AJAX

@@ -46,7 +46,7 @@ public class UserDao extends AbstractDao<User> {
 
     public User findUserByUsername(String username) {
         //language=SQL
-        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user WHERE username='%s'", username));
+        ResultSet resultSet = executeQueryWithResult(String.format("SELECT * FROM user WHERE username='%s' AND blocked=0", username));
         try {
             if (resultSet.next()) {
                 return new User(resultSet.getLong("id"), username, resultSet.getString("password"), resultSet.getInt("blocked"));
@@ -81,4 +81,10 @@ public class UserDao extends AbstractDao<User> {
                 resultSet.getLong("id"), resultSet.getString("username"), resultSet.getString("password"), resultSet.getInt("blocked")
         );
     }
+
+    public boolean authenticateUser(String username, String password){
+        User userByUsername = findUserByUsername(username);
+        return userByUsername != null && userByUsername.getPassword().equals(password);
+    }
+
 }

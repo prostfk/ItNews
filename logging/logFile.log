@@ -1014,3 +1014,41 @@
 2018-08-17 15:31:40 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%roman%' at line 1
 2018-10-06 15:40:25 WARN  Dao:36 - An error occurred for sql query: SELECT * FROM article LIMIT (1,10)
 2018-10-06 15:40:25 ERROR Dao:37 - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(1,10)' at line 1
+2018-11-19 14:51:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost' (using password: YES)
+2018-11-19 14:51:31 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost' (using password: YES)
+2018-11-19 14:51:31 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost' (using password: YES)
+2018-11-19 14:51:31 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost' (using password: YES)
+2018-11-19 14:51:31 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost' (using password: YES)
+2018-11-19 14:52:06 WARN  AbstractDao:31 - Unable to load authentication plugin 'caching_sha2_password'.
+2018-11-19 14:52:07 WARN  AbstractDao:31 - Unable to load authentication plugin 'caching_sha2_password'.
+2018-11-19 14:52:07 WARN  AbstractDao:31 - Unable to load authentication plugin 'caching_sha2_password'.
+2018-11-19 14:52:07 WARN  AbstractDao:31 - Unable to load authentication plugin 'caching_sha2_password'.
+2018-11-19 14:52:07 WARN  AbstractDao:31 - Unable to load authentication plugin 'caching_sha2_password'.
+2018-11-19 14:53:43 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:53:44 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:53:44 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:53:44 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:53:44 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:55:36 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:55:37 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:55:37 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:55:37 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 14:55:37 WARN  AbstractDao:31 - Access denied for user 'nikita'@'localhost' (using password: YES)
+2018-11-19 15:05:39 ERROR MessageDao:32 - Column 'content' not found.
+2018-11-19 15:08:03 ERROR MessageDao:32 - Column 'content' not found.
+2018-11-19 15:10:41 ERROR MessageDao:32 - Column 'content' not found.
+2018-12-04 23:18:54 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:18:55 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:18:55 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:18:55 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:18:55 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:05 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:06 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:06 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:06 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:06 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'
+2018-12-04 23:20:30 WARN  AbstractDao:31 - Access denied for user 'root'@'localhost'

@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -13,7 +14,8 @@ import java.util.List;
 @Component
 public class MessageDao extends AbstractDao<Message> {
 
-    @Autowired private UserDao userDao;
+    @Autowired
+    private UserDao userDao;
 
     private static final Logger LOGGER = Logger.getLogger(MessageDao.class);
 
@@ -49,12 +51,13 @@ public class MessageDao extends AbstractDao<Message> {
     public List<String> findConversations(Long userId){
         //language=SQl
         List<String> names = new ArrayList<>();
-        ResultSet resultSet = executeQueryWithResult(String.format("SELECT DISTINCT u.username, u.id FROM user_message JOIN user u on user_message.receiver_id = u.id JOIN user u2 on user_message.sender_id = u2.id WHERE u.id='%d' OR u2.id='%d'", userId, userId));
         try{
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT DISTINCT u.username, u.id FROM user_message JOIN user u on user_message.receiver_id = u.id JOIN user u2 on user_message.sender_id = u2.id WHERE u.id=? OR u2.id=?");
+            preparedStatement.setLong(1,userId);
+            preparedStatement.setLong(2,userId);
+            ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()){
-                if (resultSet.getLong("id")!=userId){
-                    names.add(resultSet.getString("username"));
-                }
+                names.add(resultSet.getString("username"));
             }
         }catch (Exception e){
             LOGGER.error(e.getMessage());

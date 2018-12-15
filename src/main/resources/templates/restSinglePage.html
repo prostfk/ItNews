@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:sec="http://www.springframework.org/security/tags" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:sec="http://www.springframework.org/security/tags">
 <head>
     <meta charset="UTF-8">
-    <title>Article</title>
+    <title>Title</title>
     <link href="/resources/css/styles.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,300" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-
 </head>
 <body>
+
 
 <div class="wrapper container">
     <header>
@@ -29,13 +26,15 @@
             </div>
         </form>
     </header>
-    <nav class="navbar navbar-default animated fadeInUp">
+    <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
             <li sec:authorize="isAuthenticated()"><a href="/user/me">My page</a></li>
             <li sec:authorize="isAuthenticated()"><a href="/logout">Logout</a></li>
             <li sec:authorize="!isAuthenticated()"><a href="/auth">Auth</a></li>
             <li sec:authorize="!isAuthenticated()"><a href="/registration">Registration</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
     </nav>
     <div class="heading">
@@ -45,30 +44,27 @@
         <!--<section class="col-md-17">-->
         <div class="jumbotron">
             <blockquote>
-                <p th:text="${article.title}"/>
-                <small th:text="${article.type}"/>
+                <p id="article-title"></p>
+                <small id="article-type"></small>
             </blockquote>
         </div>
-        <img th:src="${article.pathToFile}" style="max-height: 300px;max-width: 600px" class="thumbnail animated fadeInUp"/>
-        <p style="font-size: medium" th:text="${article.content}"/>
-        <div th:if="!${article.comments.isEmpty()}">
-            <div class="w3-container" style="margin-bottom: 2%" th:each="comment : ${article.comments}">
-                <div class="w3-card-4">
-                    <div class="w3-container animated fadeInUp">
-                        <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="Avatar" style="width:60px" class="w3-left w3-circle">
-                        <p th:text="${comment.username} + ': ' +${comment.comment}"/>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+        <img id="article-pathToFile" style="max-height: 300px;max-width: 600px" class="thumbnail"/>
+        <p style="font-size: medium" id="article-content"></p>
+        <!--<div th:if="!${article.comments.isEmpty()}">-->
+            <!--<div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);transition: 0.3s;width: 40%;"-->
+                 <!--th:each="comment : ${article.comments}">-->
+                <!--<div style="padding: 2px 16px;">-->
+                    <!--<h4><b th:text="${comment.username}"></b></h4>-->
+                    <!--<p th:text="${comment.comment}"></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <!--</section>-->
 
         <div sec:authorize="isAuthenticated()">
-            <a th:href="'/user/addArticleToMe/' + ${article.id}" class="btn btn-default animated fadeInUp">Save article</a>
+            <a th:href="'/user/addArticleToMe/' + ${article.id}" class="btn btn-default">Save article</a>
             <form method="post" th:action="'/article/' + ${article.id} + '/comment'">
-                <div class="input-group animated fadeInUp">
+                <div class="input-group">
                     <input class="form-control" name="comment-content" id="comment-input" placeholder="Comment here">
                     <div class="input-group-btn">
                         <button type="submit" class="btn btn-primary">Add comment</button>
@@ -77,13 +73,31 @@
             </form>
         </div>
         <div sec:authorize="!isAuthenticated()">
-            <a href="/auth" class="btn btn-primary animated fadeInUp">
+            <a href="/auth" class="btn btn-primary">
                 Please auth to leave a comment
             </a>
         </div>
 
     </div>
 </div>
+
+<script>
+    var link = location.href.split('/');
+    var id = link[link.length - 1];
+    fetch('/rest/article/' + id).then(function (response) {
+        response.json().then(function (data) {
+            console.log(data);
+            if (data.error===undefined){
+                document.getElementById('article-title').innerText = data.title;
+                document.getElementById('article-type').innerText = data.type;
+                document.getElementById('article-pathToFile').innerText = data.pathToFile;
+                document.getElementById('article-content').innerText = data.content;
+
+
+            }
+        })
+    })
+</script>
 
 </body>
 </html>

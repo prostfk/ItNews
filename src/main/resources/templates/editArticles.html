@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
     <style>
         .article-content{
             white-space: nowrap;
@@ -13,39 +14,43 @@
             text-overflow: ellipsis;
             max-width: 100px;
         }
+        .h{
+            overflow: hidden;
+            max-height: 40px;
+        }
     </style>
 </head>
 <body>
 
 <div th:include="~{index.html :: navbar}"></div>
 
-<div class="row">
+<div>
 
-    <div align="center" style="margin: auto;width: 98%">
+    <div class="offset-md-1 col-md-9" style="margin: auto;width: 98%">
         <a th:href="${link}">
-            <i class="fa fa-unsorted" style="font-size:36px"></i>
+            <i class="fa fa-unsorted" style="font-size:36px"/>
         </a>
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">id</th>
-                <th scope="col">Title</th>
-                <th scope="col">Type</th>
-                <th scope="col">Content</th>
-                <th scope="col">Edit</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="article : ${articles}">
-                <th scope="row" th:text="${article.id}"></th>
-                <td class="article-content" th:text="${article.title}"></td>
-                <td th:text="${article.type}"></td>
-                <td class="article-content" th:text="${article.content}"></td>
-                <td><a th:href="'/admin/edit/' + ${article.id}" class="btn btn-primary">Edit</a></td>
-            </tr>
+        <div class="table animated fadeInUp">
+            <div>
+            <div class="row">
+                <div class="col-md-1">id</div>
+                <div class="col-md-3">Title</div>
+                <div class="col-md-2">Type</div>
+                <div class="col-md-3">Content</div>
+                <div class="col-md-1">Edit</div>
+            </div>
+            </div>
+            <div>
+            <div th:each="article : ${articles}" class="row">
+                <div class="col-md-1 h" th:text="${article.id}"></div>
+                <div class="col-md-3 h" th:text="${article.title}"></div>
+                <div class="col-md-2 h" th:text="${article.type}"></div>
+                <div class="col-md-3 h" th:text="${article.content}"></div>
+                <div class="col-md-1 h"><a th:href="'/admin/edit/' + ${article.id}" class="btn btn-primary">Edit</a></div>
+            </div>
 
-            </tbody>
-        </table>
+            </div>
+        </div>
     </div>
 
 </div>
