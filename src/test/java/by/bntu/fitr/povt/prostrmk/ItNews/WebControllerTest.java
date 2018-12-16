@@ -40,18 +40,18 @@ public class WebControllerTest {
     @Test
     public void viewResolverStatusCheckShouldBe200() throws Exception {
         this.mockMvc.perform(get("/check/1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("restSinglePage")));
+                .andExpect(content().string(containsString("Title")));
     }
 
     @Test
     public void findArticleByIdRestShouldBeOk() throws Exception {
-        this.mockMvc.perform(get("/articleRest/1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string("{\"id\":1,\"title\":\"title\",\"content\":\"content\",\"type\":\"type\",\"pathToFile\":\"path\",\"comments\":[]}"));
+        this.mockMvc.perform(get("/api/article/1")).andDo(print()).andExpect(status().isOk())
+                .andExpect(content().string(containsString("{\"id\":1")));
     }
 
     @Test
     public void findArticleByIdRestShouldBeFailed() throws Exception {
-        this.mockMvc.perform(get("/articleRest/-1")).andDo(print()).andExpect(status().isBadRequest());
+        this.mockMvc.perform(get("/api/article/-1")).andDo(print()).andExpect(content().string(""));
     }
 
     @Test
@@ -76,8 +76,11 @@ public class WebControllerTest {
 
     @Test
     public void testAnonInformationNull() throws Exception {
-        this.mockMvc.perform(get("/rest/checkRole")).andDo(print())
-        .andExpect(content().string("{\"remoteAddress\":\"127.0.0.1\",\"sessionId\":null}"));
+        this.mockMvc.perform(get("/api/checkRole")).andDo(print())
+        .andExpect(content().string("{\"principal\":" +
+                "\"anonymousUser\"," +
+                "\"role\":\"\"," +
+                "\"details\":\"org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null\"}"));
     }
 
 

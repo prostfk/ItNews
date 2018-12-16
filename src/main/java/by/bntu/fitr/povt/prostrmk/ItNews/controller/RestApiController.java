@@ -4,7 +4,10 @@ import by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article;
 import by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +30,7 @@ public class RestApiController {
         return articleDao.findArticlesWithLimit(page, 10L);
     }
 
-    @GetMapping(value = "/rest/article/{id}")
+    @GetMapping(value = "/article/{id}")
     public Article findArticleById(@PathVariable Long id){
         return articleDao.findArticleById(id);
     }
@@ -35,6 +38,15 @@ public class RestApiController {
     @GetMapping(value = "/user/{id}")
     public User findUserById(@PathVariable Long id){
         return userDao.findUserById(id);
+    }
+
+    @GetMapping(value = "/checkRole")
+    public String checkRole() throws JSONException {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("role", SecurityContextHolder.getContext().getAuthentication().getCredentials());
+        jsonObject.put("principal", SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+        jsonObject.put("details", SecurityContextHolder.getContext().getAuthentication().getDetails());
+        return jsonObject.toString();
     }
 
 }

@@ -3,324 +3,59 @@
   <ID>JAVA</ID>
   <OriginalElement>by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication</OriginalElement>
   <nodes>
-    <node x="1902.4832706766915" y="0.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.IArticles</node>
-    <node x="2036.9832706766915" y="105.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article</node>
-    <node x="0.0" y="1766.0">org.springframework.boot.autoconfigure.SpringBootApplication</node>
-    <node x="2705.874190685046" y="117.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment</node>
-    <node x="1062.5249373433583" y="670.0">by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork</node>
-    <node x="122.85827067669175" y="1081.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController</node>
-    <node x="2408.6701911027567" y="718.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao</node>
-    <node x="2864.958333333333" y="706.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.CommentsList</node>
-    <node x="2081.926493316624" y="1165.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController</node>
-    <node x="12.75" y="1421.0">org.springframework.context.annotation.ComponentScan</node>
-    <node x="1833.7374999999997" y="658.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao</node>
-    <node x="678.8582706766917" y="1141.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController</node>
-    <node x="1678.9264933166244" y="1177.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController</node>
-    <node x="57.75" y="1943.0">by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication</node>
-    <node x="1473.5839129072683" y="742.0">by.bntu.fitr.povt.prostrmk.ItNews.model.util.StringsWork</node>
-    <node x="337.1519214703426" y="105.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User</node>
-    <node x="801.8880325814537" y="105.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.TempArticle</node>
-    <node x="1005.75" y="1421.0">by.bntu.fitr.povt.prostrmk.ItNews.config.WebMvcConfig</node>
-    <node x="1159.5249373433583" y="237.0">by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil</node>
-    <node x="522.75" y="1421.0">by.bntu.fitr.povt.prostrmk.ItNews.config.WebSecurityConfig</node>
-    <node x="2477.926493316624" y="1177.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController</node>
-    <node x="94.4576441102754" y="730.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao</node>
+    <node x="790.75" y="105.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article</node>
+    <node x="674.0" y="0.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.IArticles</node>
+    <node x="0.0" y="345.0">org.springframework.boot.autoconfigure.SpringBootApplication</node>
+    <node x="858.0" y="646.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment</node>
+    <node x="0.0" y="1178.0">by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController</node>
+    <node x="954.0" y="1178.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao</node>
+    <node x="12.75" y="0.0">org.springframework.context.annotation.ComponentScan</node>
+    <node x="0.0" y="646.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao</node>
+    <node x="57.75" y="522.0">by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication</node>
+    <node x="515.0" y="646.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User</node>
+    <node x="522.75" y="153.0">by.bntu.fitr.povt.prostrmk.ItNews.model.entity.TempArticle</node>
+    <node x="0.0" y="1470.0">by.bntu.fitr.povt.prostrmk.ItNews.config.WebMvcConfig</node>
+    <node x="533.0" y="1178.0">by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil">
-      <point x="-104.66666666666652" y="-51.5" />
-      <point x="2461.0035244360897" y="488.0" />
-      <point x="1439.4249373433584" y="488.0" />
-      <point x="124.40000000000009" y="39.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="95.75" y="-51.5" />
-      <point x="1966.1764933166244" y="1041.0" />
-      <point x="2251.7166666666662" y="1041.0" />
-      <point x="2251.7166666666662" y="638.0" />
-      <point x="2173.3832706766916" y="638.0" />
-      <point x="12.400000000000091" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="0.0" y="-99.5" />
-      <point x="1214.0249373433583" y="538.0" />
-      <point x="585.485254803676" y="538.0" />
-      <point x="99.33333333333337" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.StringsWork">
-      <point x="-158.66666666666674" y="-51.5" />
-      <point x="2557.2598266499576" y="921.0" />
-      <point x="1675.3339129072683" y="921.0" />
-      <point x="67.25" y="27.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil">
-      <point x="101.0" y="-99.5" />
-      <point x="0.0" y="39.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao">
-      <point x="251.55555555555554" y="-87.5" />
-      <point x="1213.4138262322472" y="1061.0" />
-      <point x="1876.3624999999997" y="1061.0" />
-      <point x="-127.875" y="111.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork">
-      <point x="229.71428571428572" y="-147.5" />
-      <point x="620.5725563909775" y="1021.0" />
-      <point x="1092.8249373433582" y="1021.0" />
-      <point x="-121.20000000000005" y="99.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork">
-      <point x="62.8888888888888" y="-87.5" />
-      <point x="1024.7471595655807" y="1031.0" />
-      <point x="1153.4249373433584" y="1031.0" />
-      <point x="-60.59999999999991" y="99.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment">
-      <point x="158.66666666666652" y="-51.5" />
-      <point x="2874.593159983291" y="1061.0" />
-      <point x="2843.458333333333" y="1061.0" />
-      <point x="2843.458333333333" y="638.0" />
-      <point x="2837.124190685046" y="638.0" />
-      <point x="-26.25" y="159.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="0.0" y="-63.5" />
-      <point x="2269.926493316624" y="1041.0" />
-      <point x="2297.3797462406014" y="1041.0" />
-      <point x="2297.3797462406014" y="628.0" />
-      <point x="2198.183270676692" y="628.0" />
-      <point x="37.200000000000045" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="105.77777777777783" y="-51.5" />
-      <point x="2821.7042710944024" y="1061.0" />
-      <point x="2806.258333333333" y="1061.0" />
-      <point x="2806.258333333333" y="468.0" />
-      <point x="2272.5832706766914" y="468.0" />
-      <point x="111.59999999999991" y="171.5" />
-    </edge>
     <edge source="org.springframework.boot.autoconfigure.SpringBootApplication" target="org.springframework.context.annotation.ComponentScan">
       <point x="0.0" y="-63.5" />
-      <point x="160.0" y="1741.0" />
-      <point x="129.0" y="1741.0" />
+      <point x="160.0" y="320.0" />
+      <point x="129.0" y="320.0" />
       <point x="-116.25" y="147.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.TempArticle">
-      <point x="-125.77777777777794" y="-87.5" />
-      <point x="836.0804928989138" y="1001.0" />
-      <point x="796.4470081453636" y="1001.0" />
-      <point x="796.4470081453636" y="568.0" />
-      <point x="843.221365914787" y="568.0" />
-      <point x="-82.66666666666663" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.StringsWork">
-      <point x="188.66666666666663" y="-87.5" />
-      <point x="1150.5249373433585" y="1051.0" />
-      <point x="1540.8339129072683" y="1051.0" />
-      <point x="-67.25" y="27.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao">
-      <point x="159.58333333333326" y="-51.5" />
-      <point x="2030.0098266499576" y="1051.0" />
-      <point x="2461.0035244360897" y="1051.0" />
-      <point x="-104.66666666666652" y="51.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork">
-      <point x="-95.75" y="-51.5" />
-      <point x="1774.6764933166244" y="971.0" />
-      <point x="1214.0249373433583" y="971.0" />
-      <point x="0.0" y="99.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.IArticles">
-      <point x="42.625" y="-111.5" />
-      <point x="2046.8624999999997" y="498.0" />
-      <point x="1903.4348266499578" y="498.0" />
-      <point x="1903.4348266499578" y="85.0" />
-      <point x="2026.4832706766915" y="85.0" />
-      <point x="0.0" y="27.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.TempArticle">
-      <point x="-127.875" y="-111.5" />
-      <point x="1876.3624999999997" y="518.0" />
-      <point x="1008.5546992481204" y="518.0" />
-      <point x="82.66666666666674" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment">
-      <point x="0.0" y="-51.5" />
-      <point x="2565.6701911027567" y="628.0" />
-      <point x="2732.124190685046" y="628.0" />
-      <point x="-131.25" y="159.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao">
-      <point x="31.916666666666742" y="-51.5" />
-      <point x="1902.3431599832911" y="1031.0" />
-      <point x="1961.6124999999997" y="1031.0" />
-      <point x="-42.625" y="111.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao">
-      <point x="-52.888888888888914" y="-51.5" />
-      <point x="2663.0376044277355" y="901.0" />
-      <point x="2132.1124999999997" y="901.0" />
-      <point x="127.875" y="111.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="-105.77777777777783" y="-51.5" />
-      <point x="2610.148715538847" y="911.0" />
-      <point x="1764.0839129072683" y="911.0" />
-      <point x="1764.0839129072683" y="528.0" />
-      <point x="618.596365914787" y="528.0" />
-      <point x="132.44444444444446" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil">
-      <point x="58.0" y="-39.5" />
-      <point x="268.4576441102754" y="588.0" />
-      <point x="1190.6249373433582" y="588.0" />
-      <point x="-124.40000000000009" y="39.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao">
-      <point x="-75.19999999999982" y="-63.5" />
-      <point x="2194.7264933166243" y="941.0" />
-      <point x="2046.8624999999997" y="941.0" />
-      <point x="42.625" y="111.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.CommentsList" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment">
-      <point x="78.75" y="-63.5" />
-      <point x="3101.208333333333" y="638.0" />
-      <point x="2994.624190685046" y="638.0" />
-      <point x="131.25" y="159.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork">
-      <point x="-150.4000000000001" y="-63.5" />
-      <point x="2119.5264933166245" y="951.0" />
-      <point x="1274.6249373433582" y="951.0" />
-      <point x="60.59999999999991" y="99.5" />
     </edge>
     <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.TempArticle" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.IArticles">
       <point x="0.0" y="-171.5" />
-      <point x="925.8880325814537" y="75.0" />
-      <point x="1943.8166040100248" y="75.0" />
-      <point x="-82.66666666666674" y="27.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.MainController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao">
-      <point x="150.4000000000001" y="-63.5" />
-      <point x="2420.3264933166247" y="1061.0" />
-      <point x="2565.6701911027567" y="1061.0" />
-      <point x="0.0" y="51.5" />
+      <point x="646.75" y="80.0" />
+      <point x="736.0" y="80.0" />
+      <point x="-62.0" y="27.5" />
     </edge>
     <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.IArticles">
-      <point x="0.0" y="-171.5" />
-      <point x="2160.9832706766915" y="85.0" />
-      <point x="2109.149937343358" y="85.0" />
-      <point x="82.66666666666652" y="27.5" />
+      <point x="0.0" y="-219.5" />
+      <point x="949.25" y="80.0" />
+      <point x="860.0" y="80.0" />
+      <point x="62.0" y="27.5" />
     </edge>
     <edge source="by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication" target="org.springframework.context.annotation.ComponentScan">
       <point x="93.75" y="-39.5" />
-      <point x="339.0" y="1918.0" />
-      <point x="330.5" y="1918.0" />
-      <point x="330.5" y="1741.0" />
-      <point x="361.5" y="1741.0" />
+      <point x="339.0" y="497.0" />
+      <point x="330.5" y="497.0" />
+      <point x="330.5" y="320.0" />
+      <point x="361.5" y="320.0" />
       <point x="116.25" y="147.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil">
-      <point x="-42.625" y="-111.5" />
-      <point x="1961.6124999999997" y="508.0" />
-      <point x="1377.2249373433583" y="508.0" />
-      <point x="62.200000000000045" y="39.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao">
-      <point x="0.0" y="-51.5" />
-      <point x="2715.926493316624" y="1061.0" />
-      <point x="2670.3368577694227" y="1061.0" />
-      <point x="104.66666666666652" y="51.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="-229.71428571428555" y="-147.5" />
-      <point x="161.1439849624062" y="1061.0" />
-      <point x="28.0" y="1061.0" />
-      <point x="28.0" y="558.0" />
-      <point x="353.70747702589824" y="558.0" />
-      <point x="-132.44444444444434" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.TypeController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.DataBaseWork">
-      <point x="-211.55555555555566" y="-51.5" />
-      <point x="2504.3709377610685" y="931.0" />
-      <point x="1335.2249373433583" y="931.0" />
-      <point x="121.20000000000005" y="99.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="-58.0" y="-39.5" />
-      <point x="152.4576441102754" y="578.0" />
-      <point x="419.9296992481204" y="578.0" />
-      <point x="-66.22222222222217" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.UserDao">
-      <point x="0.0" y="-147.5" />
-      <point x="390.85827067669175" y="1031.0" />
-      <point x="268.4576441102754" y="1031.0" />
-      <point x="58.0" y="39.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Comment" target="by.bntu.fitr.povt.prostrmk.ItNews.dao.CommentDao">
-      <point x="-78.75" y="159.5" />
-      <point x="2784.624190685046" y="638.0" />
-      <point x="2670.3368577694227" y="638.0" />
-      <point x="104.66666666666652" y="-51.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.dao.ArticleDao" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="127.875" y="-111.5" />
-      <point x="2132.1124999999997" y="638.0" />
-      <point x="2148.5832706766914" y="638.0" />
-      <point x="-12.400000000000091" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="-188.66666666666686" y="-87.5" />
-      <point x="773.1916040100249" y="981.0" />
-      <point x="571.7076441102754" y="981.0" />
-      <point x="571.7076441102754" y="568.0" />
-      <point x="486.1519214703426" y="568.0" />
-      <point x="0.0" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.OfferController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="-1.1368683772161603E-13" y="-87.5" />
-      <point x="961.8582706766916" y="1011.0" />
-      <point x="1044.7749373433583" y="1011.0" />
-      <point x="1044.7749373433583" y="618.0" />
-      <point x="2074.183270676692" y="618.0" />
-      <point x="-86.79999999999995" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.DataController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User">
-      <point x="-159.58333333333348" y="-51.5" />
-      <point x="1710.843159983291" y="981.0" />
-      <point x="785.4470081453636" y="981.0" />
-      <point x="785.4470081453636" y="558.0" />
-      <point x="519.2630325814537" y="558.0" />
-      <point x="33.111111111111086" y="171.5" />
-    </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.entity.Article">
-      <point x="153.1428571428571" y="-147.5" />
-      <point x="544.0011278195489" y="1011.0" />
-      <point x="907.8470081453637" y="1011.0" />
-      <point x="907.8470081453637" y="608.0" />
-      <point x="2049.3832706766916" y="608.0" />
-      <point x="-111.59999999999991" y="171.5" />
     </edge>
     <edge source="by.bntu.fitr.povt.prostrmk.ItNews.config.ItNewsApplication" target="org.springframework.boot.autoconfigure.SpringBootApplication">
       <point x="-93.75" y="-39.5" />
-      <point x="151.5" y="1918.0" />
-      <point x="160.0" y="1918.0" />
+      <point x="151.5" y="497.0" />
+      <point x="160.0" y="497.0" />
       <point x="0.0" y="63.5" />
     </edge>
-    <edge source="by.bntu.fitr.povt.prostrmk.ItNews.controller.UserController" target="by.bntu.fitr.povt.prostrmk.ItNews.model.util.HibernateUtil">
-      <point x="76.57142857142867" y="-147.5" />
-      <point x="467.4296992481204" y="1001.0" />
-      <point x="560.7076441102754" y="1001.0" />
-      <point x="560.7076441102754" y="598.0" />
-      <point x="1252.8249373433582" y="598.0" />
-      <point x="-62.200000000000045" y="39.5" />
-    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="1645.9999999999995" y="986.9999999999999" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="1646.0" y="987.0" />
+  <SelectedNodes>
+    <node>by.bntu.fitr.povt.prostrmk.ItNews.model.entity.User</node>
+  </SelectedNodes>
   <Categories>
     <Category>Methods</Category>
   </Categories>
